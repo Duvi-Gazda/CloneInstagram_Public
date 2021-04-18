@@ -1,0 +1,108 @@
+@import "../../themes/index.scss";
+
+@include respond(992) {
+  .sidebar {
+    display: none !important;
+  }
+  .container {
+    & .box1 {
+      align-items: center;
+
+      & .addPost {
+        align-self: flex-start;
+      }
+    }
+  }
+}
+
+@include respond(630) {
+  .container {
+    & .box1 {
+      align-items: unset;
+    }
+  }
+}
+.container {
+  display: flex;
+
+  & .box1 {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.addPost {
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 17px;
+  color: var(--white);
+  border-radius: 10px;
+  margin: 15px;
+  background: var(--instagram);
+}
+
+.sidebar {
+  margin-top: 52px;
+  margin-left: 29px;
+  .sidebarHead {
+    display: flex;
+    align-items: center;
+    .shDetail {
+      margin-left: 18px;
+      p:nth-child(1) {
+        font-size: 15px;
+        font-weight: 600;
+        color: var(--black-26);
+        margin-bottom: 5px;
+      }
+      p:nth-child(2) {
+        font-size: 14px;
+        color: var(--gray-8e);
+      }
+    }
+  }
+}
+
+.modal form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: var(--white);
+  z-index: 999;
+  opacity: 1;
+  flex-direction: column;
+
+  & label {
+    font-size: 14px;
+
+    & .fileInput {
+      max-width: 180px;
+    }
+    & .textInput {
+      border: 1px solid var(--gray-db);
+      outline: none;
+      padding: 2px 5px;
+      border-radius: 5px;
+      margin-top: 25px;
+    }
+  }
+  & .submitInput {
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border: none;
+    color: var(--white);
+    margin-top: 30px;
+    cursor: pointer;
+    background: var(--blue-00);
+
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+}

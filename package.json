@@ -1,0 +1,12 @@
+{
+  "name": "clone_instagramm",
+  "version": "1.0.0",
+  "description": "Instagram clone made with MERN (MongoDB, Express, React, Nodejs)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "gazda.haimdavid@gmail.com",
+  "license": "ISC"
+}

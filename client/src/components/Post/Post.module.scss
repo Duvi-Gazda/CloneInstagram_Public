@@ -1,0 +1,122 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-bottom: 60px;
+}
+
+.imgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 614px;
+  width: 100%;
+  svg {
+    position: absolute;
+  }
+  .img {
+    width: 100%;
+    max-width: 614px;
+  }
+}
+
+.cartInfo {
+  background-color: var(--white);
+  border: 1px solid var(--gray-ef);
+  max-width: 614px;
+  width: 100%;
+
+  & .cartIcons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+
+    & svg {
+      cursor: pointer;
+    }
+
+    & .CILeft {
+      & svg:nth-child(1) {
+        margin-left: 16px;
+      }
+      & svg:nth-child(2) {
+        margin-left: 15px;
+      }
+      & svg:nth-child(3) {
+        margin-left: 15px;
+      }
+    }
+
+    & .CIRight {
+      margin-right: 16px;
+    }
+  }
+
+  & .likes {
+    display: flex;
+    color: var(--black-26);
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 16px;
+    margin-top: 14px;
+  }
+
+  & .cartName {
+    color: var(--black-26);
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 16px;
+    margin-top: 14px;
+    display: flex;
+
+    & p {
+      font-size: 14px;
+      overflow: hidden;
+      font-weight: 400;
+      text-overflow: ellipsis;
+    }
+  }
+
+  & .comments {
+    display: inline-block;
+    color: var(--gray-8e);
+    font-size: 14px;
+    margin-left: 16px;
+    margin-top: 11px;
+    cursor: pointer;
+
+    &:active {
+      color: var(--gray-db);
+    }
+  }
+
+  & .commentName {
+    color: var(--black-26);
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 16px;
+    margin-top: 10px;
+    display: flex;
+
+    & p {
+      font-size: 14px;
+      font-weight: 400;
+      width: 450px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+
+  & .timeAgo {
+    font-size: 10px;
+    color: var(--gray-8e);
+    text-transform: uppercase;
+    margin-left: 16px;
+    margin-top: 11px;
+  }
+
+  & .hr {
+    background-color: var(--gray-ef);
+  }
+}
