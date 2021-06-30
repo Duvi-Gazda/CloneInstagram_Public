@@ -16,7 +16,7 @@ class Test extends Parent_IT_daat {
         $this->settings->getDataFromDatabase($this->moduleCode());
         $license = $this->settings->getVlaueByKey('license');
         echo $license;
-        $this->log->log($this->generateLicense('Attributer.shop',$this->moduleCode(),date("Y-m-d"),$this->moduleUniqueKey()));
+        $this->log->log($this->generateLicense('llorry.shop',$this->moduleCode(),date("Y-m-d"),$this->moduleUniqueKey()));
         if($this->decodeLicenseToArray((string)$license,$this->moduleUniqueKey()) != null){
             $this->log->log('test is opened', 'Test.php');
         }

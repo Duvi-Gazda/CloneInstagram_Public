@@ -1,12 +1,12 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://local.Attributer.shop/');
+define('HTTP_SERVER', 'http://local.llorry.shop/');
 
 // HTTPS
-define('HTTPS_SERVER', 'http://local.Attributer.shop/');
+define('HTTPS_SERVER', 'http://local.llorry.shop/');
 
 // DIR
-define('DIR_APPLICATION', '/home/david/Project/Sync/GazdaStudio/Attributer/catalog');
+define('DIR_APPLICATION', '/home/david/Project/Sync/GazdaStudio/Attributer/catalog/');
 define('DIR_SYSTEM', '/home/david/Project/Sync/GazdaStudio/Attributer/system/');
 define('DIR_IMAGE', '/home/david/Project/Sync/GazdaStudio/Attributer/image/');
 define('DIR_STORAGE', '/home/david/Project/Sync/GazdaStudio/Attributer/storage/');
@@ -25,6 +25,6 @@ define('DB_DRIVER', 'mysqli');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', 'root');
-define('DB_DATABASE', 'Attributer');
+define('DB_DATABASE', 'llorry');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');

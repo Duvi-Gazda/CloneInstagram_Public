@@ -1454,9 +1454,9 @@
   string(7) "enabled"
 }
 
-[2021-06-24 09:34:32] INFO: string(71) "php /home/david/Project/Sync/GazdaStudio/Attributer/system//ITdaat/test.php"
+[2021-06-24 09:34:32] INFO: string(71) "php /home/david/Project/Sync/GazdaStudio/LLorry/system//ITdaat/test.php"
 
-[2021-06-24 09:34:32] INFO: string(71) "php /home/david/Project/Sync/GazdaStudio/Attributer/system//ITdaat/test.php"
+[2021-06-24 09:34:32] INFO: string(71) "php /home/david/Project/Sync/GazdaStudio/LLorry/system//ITdaat/test.php"
 
 [2021-06-24 09:34:32] INFO: array(2) {
   [0]=>
@@ -1472,5 +1472,5 @@
   string(7) "enabled"
 }
 
-[2021-06-24 09:34:32] INFO: string(71) "php /home/david/Project/Sync/GazdaStudio/Attributer/system//ITdaat/test.php"
+[2021-06-24 09:34:32] INFO: string(71) "php /home/david/Project/Sync/GazdaStudio/LLorry/system//ITdaat/test.php"
 
