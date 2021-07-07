@@ -32,9 +32,10 @@ trait itdaat_htmlGenerator {
     * @param  mixed $value - array of values ['key' => 'value']
     * @param  mixed $label - text label
     * @param  mixed $id - id of the input (for HTML)
+    * @param  mixed $data_index - index in the data array
     * @return string
     */
-   protected function addInputText(string $name, $value,&$data, string $label = '', string $id = ''):string{
+   protected function addInputText(string $name, $value,&$data, string $label = '', string $id = '', string $data_index = 'itdaatInputs'):string{
        $res = '<div class="form-group">';
        // $col_sm_input - size of the input.
        // it is setted in the value because it is possible to change the size if label is not setted
@@ -50,7 +51,7 @@ trait itdaat_htmlGenerator {
        </div>';
        $res .= '</div>';
        // write to the $data array link 
-       $data['itdaatInputs'] .= $res;
+       $data[$data_index] .= $res;
        return $res;
    }    
    /**
@@ -65,9 +66,10 @@ trait itdaat_htmlGenerator {
     * @param  mixed $keyLanguage - if in the values array are setted only keys of the language text
     * - True if only keys.
     * - False if keys and values
+    * @param  mixed $data_index - index in the data array
     * @return string
     */
-   protected function addInputSelect(string $name,array $values,$selected,&$data,string $label = '', string $id = '', bool $keyLanguage = false):string{
+   protected function addInputSelect(string $name,array $values,$selected,&$data,string $label = '', string $id = '', bool $keyLanguage = false, string $data_index = 'itdaatInputs'):string{
        $res = '<div class="form-group">';
        $col_sm_input = '12';
        if($label != ''){
@@ -89,8 +91,8 @@ trait itdaat_htmlGenerator {
            }
        }
        $res .= '</select> </div></div>';
-       $data['itdaatInputs'] = isset($data['itdaatInputs']) ? $data['itdaatInputs'] : '';
-       $data['itdaatInputs'] .= $res;
+       $data[$data_index] = isset($data[$data_index]) ? $data[$data_index] : '';
+       $data[$data_index] .= $res;
        return $res;
    }    
    /**

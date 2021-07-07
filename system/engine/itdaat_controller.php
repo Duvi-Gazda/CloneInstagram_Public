@@ -5,6 +5,7 @@ require_once (DIR_SYSTEM . "/helper/itdaat_htmlGenerator.php");
 require_once (DIR_SYSTEM . "/helper/itdaat_log.php");
 require_once (DIR_SYSTEM . "/helper/itdaat_listeners.php");
 require_once (DIR_SYSTEM . "/helper/itdaat_license.php");
+require_once (DIR_SYSTEM . '/ITdaat/Itdaat.php');
 
 abstract class ControllerItDaat extends Controller {
     // add license checking
@@ -27,19 +28,20 @@ abstract class ControllerItDaat extends Controller {
     private $error = array();  
     // main data (like opencart)    
     protected $data;
-    /**
-     * runModule
-     * runs the module from the module file
-     * @return void
-     */
-    protected function runModule(){
-        $cmd = ('curl '. $this->moduleFilePath);
-        if(substr(php_uname(), 0, 7) == "Windows"){
-            pclose(popen("start /B ". $cmd, "r")); 
-           }else {
-            exec($cmd . " > /dev/null &"); 
-           }
-    }
+    protected Parent_IT_daat  $module;
+//    /**
+//     * runModule
+//     * runs the module from the module file
+//     * @return void
+//     */
+//    protected function runModule(){
+//        $cmd = ('curl '. $this->moduleFilePath);
+//        if(substr(php_uname(), 0, 7) == "Windows"){
+//            pclose(popen("start /B ". $cmd, "r"));
+//           }else {
+//            exec($cmd . " > /dev/null &");
+//           }
+//    }
     /**
      * run
      *
@@ -78,9 +80,6 @@ abstract class ControllerItDaat extends Controller {
         $this->data['itdaatInputs'] = '';
         // set uesr tocken
         $this->userToken = 'uesr_token=' . $this->session->data['user_token'];
-        $this->generateBreadcrumbs($this->data,$moduleLink);
-        $this->addCancelButton($this->data,'marketplace/extension');
-		$this->addSaveSettingsButton($this->data,$moduleLink);
         $this->addFullInputSelect(
             'enabled',
             [
@@ -92,7 +91,10 @@ abstract class ControllerItDaat extends Controller {
             'enabled',
             false
         );
-    }    
+    }
+    protected function includeModule(){
+        include_once (self::MODULE_LINK);
+    }
     /**
      * setDefaultOutput
      * sets the default output with default header footer left sidebar
@@ -130,9 +132,10 @@ abstract class ControllerItDaat extends Controller {
      * - True if only keys.
      * - False if keys and values
      * - [ key(for the view) => value(for the database)]
+    * @param  mixed $data_index - index in the data array
      * @return void
      */
-    public function addFullInputSelect(string $name, array $values, &$data, string $label = '', string $id = '',bool $keyLanguage = true, $selected = null){
+    public function addFullInputSelect(string $name, array $values, &$data, string $label = '', string $id = '',bool $keyLanguage = true, $selected = null,string $data_index = 'itdaatInputs'){
         $this->addInputListener($name, $data,$this->moduleCode);
         if($selected == null){
             if($name == 'enabled'){
@@ -142,7 +145,7 @@ abstract class ControllerItDaat extends Controller {
             }
         }
         
-        $this->addInputSelect($name, $values, $selected, $data, $label, $id, $keyLanguage);
+        $this->addInputSelect($name, $values, $selected, $data, $label, $id, $keyLanguage,$data_index);
     }
     /**
      * addFUllInputText
@@ -153,13 +156,14 @@ abstract class ControllerItDaat extends Controller {
      * @param  mixed $moduleCode - module code to db
      * @param  mixed $label - text label for the input
      * @param  mixed $id - id of the input (for HTML)
+    *  @param  mixed $data_index - index in the data array
      * @return void
      */
-    public function addFullInputText ($name, &$data,$label = '', $id = '',$value = ''):void{
+    public function addFullInputText ($name, &$data,$label = '', $id = '',$value = '', string $data_index = 'itdaatInputs'):void{
         $this->addInputListener($name, $data, $this->moduleCode);
         if($value == null){
             $value = $this->settings->getVlaueByKey($name);
         }
-        $this->addInputText($name,$value, $data,$label,$id);
+        $this->addInputText($name,$value, $data,$label,$id,$data_index);
     }
 }

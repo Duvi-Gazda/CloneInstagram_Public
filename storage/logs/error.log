@@ -1089,3 +1089,15 @@
 2021-06-24 9:31:50 - PHP Notice:  Array to string conversion in /home/david/Project/Sync/GazdaStudio/LLorry/system/helper/itdaat_settings.php on line 226
 2021-06-24 9:32:01 - PHP Notice:  Array to string conversion in /home/david/Project/Sync/GazdaStudio/LLorry/system/helper/itdaat_settings.php on line 226
 2021-06-24 13:44:50 - PHP Notice:  Array to string conversion in /home/david/Project/Sync/GazdaStudio/LLorry/system/helper/itdaat_listeners.php on line 31
+2021-07-07 17:31:20 - PHP Warning:  mysqli::__construct(): (HY000/1049): Unknown database 'Attributer_5' in /home/david/Sync/Projects/ITdaat/Attributer/system/library/db/mysqli.php on line 7
+2021-07-07 17:31:20 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /home/david/Sync/Projects/ITdaat/Attributer/system/library/db/mysqli.php on line 10
+2021-07-07 17:31:20 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /home/david/Sync/Projects/ITdaat/Attributer/system/library/db/mysqli.php on line 10
+2021-07-07 18:03:46 - PHP Warning:  mysqli::__construct(): (HY000/1698): Access denied for user 'root'@'localhost' in /home/david/Sync/Projects/ITdaat/Attributer/system/library/db/mysqli.php on line 7
+2021-07-07 18:03:46 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /home/david/Sync/Projects/ITdaat/Attributer/system/library/db/mysqli.php on line 10
+2021-07-07 18:03:46 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /home/david/Sync/Projects/ITdaat/Attributer/system/library/db/mysqli.php on line 10
+2021-07-07 18:03:46 - PHP Warning:  mysqli::__construct(): (HY000/1698): Access denied for user 'root'@'localhost' in /home/david/Sync/Projects/ITdaat/Attributer/system/library/db/mysqli.php on line 7
+2021-07-07 18:03:46 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /home/david/Sync/Projects/ITdaat/Attributer/system/library/db/mysqli.php on line 10
+2021-07-07 18:03:46 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /home/david/Sync/Projects/ITdaat/Attributer/system/library/db/mysqli.php on line 10
+2021-07-07 18:03:49 - PHP Warning:  mysqli::__construct(): (HY000/1698): Access denied for user 'root'@'localhost' in /home/david/Sync/Projects/ITdaat/Attributer/system/library/db/mysqli.php on line 7
+2021-07-07 18:03:49 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /home/david/Sync/Projects/ITdaat/Attributer/system/library/db/mysqli.php on line 10
+2021-07-07 18:03:49 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /home/david/Sync/Projects/ITdaat/Attributer/system/library/db/mysqli.php on line 10
