@@ -78,7 +78,7 @@ abstract class ControllerItDaat extends Controller {
 		}
         // set all data inputs
         $this->data['itdaatInputs'] = '';
-        // set uesr tocken
+        // set user token
         $this->userToken = 'uesr_token=' . $this->session->data['user_token'];
         $this->addFullInputSelect(
             'enabled',

@@ -34,7 +34,6 @@ class itdaat_settings{
      * @param  mixed $dbName
      * @param  mixed $dbPort
      * @param  mixed $dbPrefix
-     * @return void
      */
     public function __construct (string $hostName,string $userLogin,string $userPass, string $dbName,string $dbPort,string $dbPrefix, string $tableName = 'itdaat_settings'){
         // set all data

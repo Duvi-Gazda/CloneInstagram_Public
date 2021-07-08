@@ -68,7 +68,6 @@ trait itdaat_license{
      */
     protected function decodeLicenseTo_JSON_String(string $license, string $moduleKey, string $domainName = null): string
     {
-        $decodedLicense = null;
         $num = 0;
         do {
             $domainName = $this->getDomainName($num) != null ? $this->getDomainName($num): $domainName;

@@ -123,13 +123,4 @@ class itdaat_log{
         }
     }
     
-    /* create an empty file ensuring that path is constructed */
-    private function createFile( $path=false, $filename=false ){
-        if( $path && $filename ){
-            $this->createDir( $path );
-            return true;
-        }
-        return false;
-    }
-    
 }

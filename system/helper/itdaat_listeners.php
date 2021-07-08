@@ -62,9 +62,7 @@ trait itdaat_listeners
         }else{
             $this->settings->setDataToDatabase($this->settings->dataBase, $moduleCode); 
         }
-        if(isset($_GET['updated']) && $_GET['updated'] == 'true'){
-            $this->runModule();
-        }
+
     }
     /**
      * addListeners_itdaat
