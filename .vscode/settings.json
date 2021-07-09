@@ -1,0 +1,21 @@
+{
+    "cSpell.enableFiletypes": [
+        "!rust",
+        "sql"
+    ],
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 500,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MariaDB",
+            "name": "mariadb",
+            "database": "Attributer",
+            "username": "inteli",
+            "password": "inteli"
+        }
+    ]
+}

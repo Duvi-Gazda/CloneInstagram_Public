@@ -33,30 +33,32 @@
       <div class="panel-body">
         <form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-module" class="form-horizontal">
           <div class="col-sm-12">
-          <div class="col-sm-6" style="border-right: 1px solid black;">
+          <div class="col-sm-6">
               <div class="col-sm-12 text-center">
                 <h3>Attributes</h3>
+                <br>
               </div>
               <div class="col-sm-12">
                 {{attributes}}
               </div>
           </div>
+
           <div class="col-sm-6" style="border-left: 1px solid black;">
             <div class="col-sm-12 text-center">
               <h3>New Attributes</h3>
+              <br>
             </div>
-              {{% for itdaat_attribute in itdaat_attributes %}}
-                <div class="col-sm-12">
-                  <div class="list-group">
-                    <a href="" class="list-group-item ">
-                      <h4 class="list-group-item-heading">{{itdaat_attribute.name}}</h4>
-                      <p class="list-group-item-text">{{itdaat_attribute.values}}</p>
-                    </a>
-                  </div>
-              {{% endfor %}}
               {# {{itdaat_attributes}} #}
-
-            </div>
+              {% for itdaat_attribute in itdaat_attributes %}
+                    <div class="col-sm-12">
+                    <div class="list-group">
+                      <a href="" class="list-group-item ">
+                        <h4 class="list-group-item-heading">{{itdaat_attribute.name}}</h4>
+                        <p class="list-group-item-text">{{itdaat_attribute.value}}</p>
+                      </a>
+                    </div>
+                  </div>
+              {% endfor %}
           </div>
           </div>
         </form>

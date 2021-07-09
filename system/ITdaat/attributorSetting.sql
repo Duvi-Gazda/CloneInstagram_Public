@@ -122,8 +122,7 @@ begin
         end if;
     end if;
 end//
-DELIMITER //
-create trigger itdaat_update_product_attribute before update on `oc_product_attribute` for each row
+create trigger if not exists itdaat_update_product_attribute before update on oc_product_attribute for each row
 begin
     select
         `oc_itdaat_attribute_name`.`name`, `oc_itdaat_attribute_value`.`value`, `oc_itdaat_dictionary`.`itdaat_attribute_id`
@@ -211,7 +210,9 @@ begin
         end if;
 #     end if;
     end if;
-end//
+end;
+
+
 -- create trigger on delete
 delimiter //
 create trigger itdaat_delete_product_attribute before delete on `oc_product_attribute` for each row

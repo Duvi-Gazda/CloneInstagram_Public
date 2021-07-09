@@ -4,6 +4,7 @@ require_once (DIR_SYSTEM . "/helper/itdaat_settings.php");
 require_once (DIR_SYSTEM . "/helper/itdaat_htmlGenerator.php");
 require_once (DIR_SYSTEM . "/helper/itdaat_log.php");
 require_once (DIR_SYSTEM . "/helper/itdaat_listeners.php");
+require_once (DIR_SYSTEM . '/helper/itdaat_database.php');
 require_once (DIR_SYSTEM . "/helper/itdaat_license.php");
 require_once (DIR_SYSTEM . '/ITdaat/Itdaat.php');
 
@@ -16,6 +17,10 @@ abstract class ControllerItDaat extends Controller {
     use itdaat_htmlGenerator;
     // settings functionality
     protected itdaat_settings $settings;
+    /**
+     * @var itdaat_database
+     */
+    protected itdaat_database $database;
     // log functionality
     protected itdaat_log $log;
     // code of the module for database (for the column code)
@@ -55,6 +60,8 @@ abstract class ControllerItDaat extends Controller {
         $this->settings = new itdaat_settings(DB_HOSTNAME,DB_USERNAME, DB_PASSWORD,DB_DATABASE, DB_PORT,DB_PREFIX);
         // get all data from database
         $this->settings->getDataFromDatabase($this->moduleCode);
+//        add new itdaat database for work with database
+        $this->database = new itdaat_database();
         // add logs
         $this->log = new itdaat_log(DIR_LOGS . "/log.log",true);
         // add setting model
@@ -93,7 +100,7 @@ abstract class ControllerItDaat extends Controller {
         );
     }
     protected function includeModule(){
-        include_once (self::MODULE_LINK);
+        require_once ($this->moduleFilePath);
     }
     /**
      * setDefaultOutput
