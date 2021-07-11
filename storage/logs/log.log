@@ -1,3 +1,333 @@
+[2021-07-11 19:43:13] INFO: array(13) {
+  ["name"]=>
+  string(10) "Длина"
+  [0]=>
+  array(1) {
+    ["value"]=>
+    string(8) "400 мм"
+  }
+  [1]=>
+  array(1) {
+    ["value"]=>
+    string(7) "38 см"
+  }
+  [2]=>
+  array(1) {
+    ["value"]=>
+    string(8) "196 мм"
+  }
+  [3]=>
+  array(1) {
+    ["value"]=>
+    string(3) "350"
+  }
+  [4]=>
+  array(1) {
+    ["value"]=>
+    string(3) "210"
+  }
+  [5]=>
+  array(1) {
+    ["value"]=>
+    string(7) "38 см"
+  }
+  [6]=>
+  array(1) {
+    ["value"]=>
+    string(3) "400"
+  }
+  [7]=>
+  array(1) {
+    ["value"]=>
+    string(3) "350"
+  }
+  [8]=>
+  array(1) {
+    ["value"]=>
+    string(8) "400 мм"
+  }
+  [9]=>
+  array(1) {
+    ["value"]=>
+    string(8) "196 мм"
+  }
+  [10]=>
+  array(1) {
+    ["value"]=>
+    string(3) "400"
+  }
+  [11]=>
+  array(1) {
+    ["value"]=>
+    string(3) "210"
+  }
+}
+
+[2021-07-11 19:43:09] INFO: array(13) {
+  ["name"]=>
+  string(10) "Длина"
+  [0]=>
+  array(1) {
+    ["value"]=>
+    string(8) "400 мм"
+  }
+  [1]=>
+  array(1) {
+    ["value"]=>
+    string(7) "38 см"
+  }
+  [2]=>
+  array(1) {
+    ["value"]=>
+    string(8) "196 мм"
+  }
+  [3]=>
+  array(1) {
+    ["value"]=>
+    string(3) "350"
+  }
+  [4]=>
+  array(1) {
+    ["value"]=>
+    string(3) "210"
+  }
+  [5]=>
+  array(1) {
+    ["value"]=>
+    string(7) "38 см"
+  }
+  [6]=>
+  array(1) {
+    ["value"]=>
+    string(3) "400"
+  }
+  [7]=>
+  array(1) {
+    ["value"]=>
+    string(3) "350"
+  }
+  [8]=>
+  array(1) {
+    ["value"]=>
+    string(8) "400 мм"
+  }
+  [9]=>
+  array(1) {
+    ["value"]=>
+    string(8) "196 мм"
+  }
+  [10]=>
+  array(1) {
+    ["value"]=>
+    string(3) "400"
+  }
+  [11]=>
+  array(1) {
+    ["value"]=>
+    string(3) "210"
+  }
+}
+
+[2021-07-11 19:43:04] INFO: array(13) {
+  ["name"]=>
+  string(10) "Длина"
+  [0]=>
+  array(1) {
+    ["value"]=>
+    string(8) "400 мм"
+  }
+  [1]=>
+  array(1) {
+    ["value"]=>
+    string(7) "38 см"
+  }
+  [2]=>
+  array(1) {
+    ["value"]=>
+    string(8) "196 мм"
+  }
+  [3]=>
+  array(1) {
+    ["value"]=>
+    string(3) "350"
+  }
+  [4]=>
+  array(1) {
+    ["value"]=>
+    string(3) "210"
+  }
+  [5]=>
+  array(1) {
+    ["value"]=>
+    string(7) "38 см"
+  }
+  [6]=>
+  array(1) {
+    ["value"]=>
+    string(3) "400"
+  }
+  [7]=>
+  array(1) {
+    ["value"]=>
+    string(3) "350"
+  }
+  [8]=>
+  array(1) {
+    ["value"]=>
+    string(8) "400 мм"
+  }
+  [9]=>
+  array(1) {
+    ["value"]=>
+    string(8) "196 мм"
+  }
+  [10]=>
+  array(1) {
+    ["value"]=>
+    string(3) "400"
+  }
+  [11]=>
+  array(1) {
+    ["value"]=>
+    string(3) "210"
+  }
+}
+
+[2021-07-11 19:41:20] INFO: array(13) {
+  ["name"]=>
+  string(10) "Длина"
+  [0]=>
+  array(1) {
+    ["value"]=>
+    string(8) "400 мм"
+  }
+  [1]=>
+  array(1) {
+    ["value"]=>
+    string(7) "38 см"
+  }
+  [2]=>
+  array(1) {
+    ["value"]=>
+    string(8) "196 мм"
+  }
+  [3]=>
+  array(1) {
+    ["value"]=>
+    string(3) "350"
+  }
+  [4]=>
+  array(1) {
+    ["value"]=>
+    string(3) "210"
+  }
+  [5]=>
+  array(1) {
+    ["value"]=>
+    string(7) "38 см"
+  }
+  [6]=>
+  array(1) {
+    ["value"]=>
+    string(3) "400"
+  }
+  [7]=>
+  array(1) {
+    ["value"]=>
+    string(3) "350"
+  }
+  [8]=>
+  array(1) {
+    ["value"]=>
+    string(8) "400 мм"
+  }
+  [9]=>
+  array(1) {
+    ["value"]=>
+    string(8) "196 мм"
+  }
+  [10]=>
+  array(1) {
+    ["value"]=>
+    string(3) "400"
+  }
+  [11]=>
+  array(1) {
+    ["value"]=>
+    string(3) "210"
+  }
+}
+
+[2021-07-11 19:38:18] INFO: array(0) {
+}
+
+[2021-07-11 19:38:16] INFO: array(0) {
+}
+
+[2021-07-11 19:36:51] INFO: array(0) {
+}
+
+[2021-07-11 19:21:02] INFO: array(2) {
+  ["name"]=>
+  string(34) "Very long texxxxt woow Description"
+  [0]=>
+  array(1) {
+    ["value"]=>
+    string(4) "text"
+  }
+}
+
+[2021-07-11 19:15:15] INFO: array(0) {
+}
+
+[2021-07-11 19:12:52] INFO: array(0) {
+}
+
+[2021-07-11 15:39:05] INFO: array(6) {
+  ["name"]=>
+  string(34) "Very long texxxxt woow Description"
+  [0]=>
+  array(1) {
+    ["value"]=>
+    string(4) "text"
+  }
+  [1]=>
+  array(1) {
+    ["value"]=>
+    string(2) "rw"
+  }
+  [2]=>
+  array(1) {
+    ["value"]=>
+    string(6) "TEeext"
+  }
+  [3]=>
+  array(1) {
+    ["value"]=>
+    string(6) "TEeext"
+  }
+  [4]=>
+  array(1) {
+    ["value"]=>
+    string(3) "423"
+  }
+}
+
+[2021-07-11 13:10:46] INFO: array(3) {
+  ["name"]=>
+  string(11) "Description"
+  [0]=>
+  array(1) {
+    ["oc_attribute_value"]=>
+    string(4) "text"
+  }
+  [1]=>
+  array(1) {
+    ["oc_attribute_value"]=>
+    string(2) "rw"
+  }
+}
+
 [2021-07-11 12:23:42] INFO: array(2) {
   [0]=>
   array(3) {

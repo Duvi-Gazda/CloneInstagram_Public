@@ -1,0 +1,40 @@
+.list-group-item {
+    user-select: none;
+}
+.list-group input[type="checkbox"] {
+    display: none;
+}
+
+.list-group input[type="checkbox"]+.list-group-item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    font-weight: 500;
+    margin-left: 50px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.itdaat-container{
+    height: 100% !important;
+    /* overflow-y: scroll; */
+    /* overflow-x: hidden; */
+
+}
+.list-group input[type="checkbox"]+.list-group-item:before {
+    content: "\2713";
+    color: transparent;
+}
+
+
+.list-group input[type="checkbox"]:checked+.list-group-item {
+    background-color: #F5F5F5;
+    /* color: #FFF; */
+}
+
+.list-group input[type="checkbox"]:checked+.list-group-item:before {
+    color: inherit;
+}
+#panel-more-space{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

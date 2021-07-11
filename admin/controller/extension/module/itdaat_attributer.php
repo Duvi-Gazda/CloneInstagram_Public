@@ -22,7 +22,8 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
         $this->generateBreadcrumbs($this->data, self::MODULE_LINK);
         $this->addCancelButton($this->data,'marketplace/extension');
         $this->addSaveSettingsButton($this->data, self::MODULE_LINK);
-        $this->getAttributeToSet();
+        $this->generateOC_Attributes();
+
         $this->database->getAssocRequest("select name from oc_language");
         $languages = $this->database->getValueToValue_Field();
         $this->addFullInputSelect(
@@ -37,6 +38,13 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
         $this->setDefaultOutput(self::MODULE_LINK);
     }
 
+    private function generateOC_Attributes(){
+        $attributes = $this->getAttributeToSet();
+        $this->data['itdaat_oc_attribute_name'] = $attributes['name'];
+        unset($attributes['name']);
+        $this->data['itdaat_oc_attribute_values'] = $attributes;
+    }
+
     private function getAttributeToSet(){
         $attributes_not_formatted = $this->database->getAssocRequest("
             select oc_attribute_description.name, oc_itdaat_dictionary.oc_attribute_value, oc_attribute_description.attribute_id from oc_itdaat_dictionary 
@@ -49,7 +57,12 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
         $row = [];
         $attributes = [];
         foreach ($attributes_not_formatted as $attribute){
+            $attributes['name'] = $attribute['name'];
+            $row['value'] = $attribute['oc_attribute_value'];
+            $attributes[] = $row;
         }
+        $this->log->log($attributes);
+        return $attributes;
     }
 
     private function connectItdaatAttributes(){

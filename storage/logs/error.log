@@ -4481,3 +4481,16 @@
 2021-07-11 10:36:55 - PHP Notice:  Array to string conversion in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 52
 2021-07-11 10:37:21 - PHP Notice:  Array to string conversion in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 53
 2021-07-11 10:37:38 - PHP Notice:  Array to string conversion in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 53
+2021-07-11 19:12:52 - PHP Notice:  Undefined index: name in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 43
+2021-07-11 19:15:15 - PHP Notice:  Undefined index: name in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 43
+2021-07-11 19:36:51 - PHP Notice:  Undefined index: name in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 43
+2021-07-11 19:36:51 - PHP Notice:  Undefined offset: 0 in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 72
+2021-07-11 19:36:51 - PHP Notice:  Trying to access array offset on value of type null in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 72
+2021-07-11 19:38:16 - PHP Notice:  Undefined index: name in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 43
+2021-07-11 19:38:16 - PHP Notice:  Undefined offset: 0 in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 72
+2021-07-11 19:38:16 - PHP Notice:  Trying to access array offset on value of type null in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 72
+2021-07-11 19:38:18 - PHP Notice:  Undefined index: name in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 43
+2021-07-11 19:38:18 - PHP Notice:  Undefined offset: 0 in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 72
+2021-07-11 19:38:18 - PHP Notice:  Trying to access array offset on value of type null in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 72
+2021-07-11 19:41:20 - PHP Notice:  Undefined offset: 0 in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 72
+2021-07-11 19:41:20 - PHP Notice:  Trying to access array offset on value of type null in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 72

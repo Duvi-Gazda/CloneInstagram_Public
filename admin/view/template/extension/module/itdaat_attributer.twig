@@ -29,7 +29,7 @@
         </form>
       </div>
     </div>
-     <div class="panel panel-default">
+     <div class="panel panel-default" id="panel-more-space">
       <div class="panel-body">
         <form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-module" class="form-horizontal">
           <div class="col-sm-12">
@@ -39,7 +39,19 @@
                 <br>
               </div>
               <div class="col-sm-12">
-                {{attributes}}
+                {# heading #}
+                <div class="col-sm-3">
+                  <h3>{{itdaat_oc_attribute_name}}</h3>
+                </div>
+                {# all values #}
+                <div class="col-sm-9 overflow-auto itdaat-container">
+                  {% for itdaat_oc_attribute_value in itdaat_oc_attribute_values %}
+                    <div class="list-group">
+                      <input type="checkbox" name="CheckBoxInputName" value="{{itdaat_oc_attribute_value.value}}" id="{{itdaat_oc_attribute_value.value}}" />
+                      <label class="list-group-item" for="{{itdaat_oc_attribute_value.value}}">&nbsp;{{itdaat_oc_attribute_value.value}}</label>
+                    </div>
+                  {% endfor %}
+              </div>
               </div>
           </div>
 
@@ -52,7 +64,7 @@
               {% for itdaat_attribute in itdaat_attributes %}
                     <div class="col-sm-12">
                     <div class="list-group">
-                      <a href="" class="list-group-item ">
+                      <a class="list-group-item ">
                         <h4 class="list-group-item-heading">{{itdaat_attribute.name}}</h4>
                         <p class="list-group-item-text">{{itdaat_attribute.value}}</p>
                       </a>
