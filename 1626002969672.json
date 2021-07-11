@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Description",
+    "oc_attribute_value": "text",
+    "attribute_id": "1"
+  },
+  {
+    "name": "Description",
+    "oc_attribute_value": "rw",
+    "attribute_id": "1"
+  },
+  {
+    "name": "Clockspeed",
+    "oc_attribute_value": "text",
+    "attribute_id": "3"
+  },
+  {
+    "name": "test 6",
+    "oc_attribute_value": "rw",
+    "attribute_id": "9"
+  },
+  {
+    "name": "test 6",
+    "oc_attribute_value": "rw",
+    "attribute_id": "9"
+  },
+  {
+    "name": "test 7",
+    "oc_attribute_value": "rw",
+    "attribute_id": "10"
+  },
+  {
+    "name": null,
+    "oc_attribute_value": "rw",
+    "attribute_id": null
+  },
+  {
+    "name": null,
+    "oc_attribute_value": "rw",
+    "attribute_id": null
+  },
+  {
+    "name": null,
+    "oc_attribute_value": "rw",
+    "attribute_id": null
+  }
+]

@@ -25,12 +25,12 @@ trait itdaat_listeners
             if($name == 'enabled'){
                 $data[$name] = $this->settings->getModuleStatus($this->moduleCode);
             }else{
-                $data[$name] = $this->settings->getVlaueByKey($name);
+                $data[$name] = $this->settings->getValueByKey($name);
             }
         }
         $exists = false; // shows if the are data in the db or not
         // This variable is used to check if the data is in the db already. If not create, if it is update
-        // in сicle to sort out each sended data and check if it is in the db already.
+        // in circle to sort out each sended data and check if it is in the db already.
         foreach ($this->settings->dataBase as $key => &$data_e) {
             //  first condition is to protected
             if ((isset($data_e['key'])) && (!$exists)) {
@@ -38,7 +38,7 @@ trait itdaat_listeners
                 $exists = ($data_e['key'] == $name) && (!$exists);
                 // if such data exists already, update it (will be created below)
                 if ($exists) {
-                    // update only value and date becouse are constants
+                    // update only value and date because are constants
                     $this->settings->dataBase[$key]['value'] = $data[$name];
                     $this->settings->dataBase[$key]['date'] = date('Y-m-d');
                 }
@@ -80,5 +80,6 @@ trait itdaat_listeners
             // set listeners
             $this->addInputListener($name, $data, $moduleCode);
         }
+        return $data;
     }
 }

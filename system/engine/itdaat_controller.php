@@ -50,7 +50,7 @@ abstract class ControllerItDaat extends Controller {
     /**
      * run
      *
-     * @param  mixed $language - paht to language file
+     * @param  mixed $language - path to language file
      * @param  mixed $moduleCode module Code to the database
      * @return void
      */
@@ -68,7 +68,7 @@ abstract class ControllerItDaat extends Controller {
         $this->load->model('setting/setting');
         // add language
 		$this->load->language($moduleLink);
-        // set headung title
+        // set heading title
 		$this->document->setTitle($this->language->get('heading_title'));
         // if data is setted in the request like post and this user has all permissions to work with this module
         if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate($moduleLink)) {
@@ -86,7 +86,7 @@ abstract class ControllerItDaat extends Controller {
         // set all data inputs
         $this->data['itdaatInputs'] = '';
         // set user token
-        $this->userToken = 'uesr_token=' . $this->session->data['user_token'];
+        $this->userToken = 'user_token=' . $this->session->data['user_token'];
         $this->addFullInputSelect(
             'enabled',
             [
@@ -135,7 +135,7 @@ abstract class ControllerItDaat extends Controller {
      * @param  mixed $moduleCode - module code to db
      * @param  mixed $label - text label for the input
      * @param  mixed $id - id of the input (for HTML)
-     * @param  mixed $keyLanguage - if in the values array are setted only keys of the language text will
+     * @param  mixed $keyLanguage - if in the values array are set only keys of the language text will
      * - True if only keys.
      * - False if keys and values
      * - [ key(for the view) => value(for the database)]
@@ -148,7 +148,7 @@ abstract class ControllerItDaat extends Controller {
             if($name == 'enabled'){
                 $selected = $this->settings->getModuleStatus($this->moduleCode);
             }else{
-                $selected= $this->settings->getVlaueByKey($name);
+                $selected= $this->settings->getValueByKey($name);
             }
         }
         
@@ -169,7 +169,7 @@ abstract class ControllerItDaat extends Controller {
     public function addFullInputText ($name, &$data,$label = '', $id = '',$value = '', string $data_index = 'itdaatInputs'):void{
         $this->addInputListener($name, $data, $this->moduleCode);
         if($value == null){
-            $value = $this->settings->getVlaueByKey($name);
+            $value = $this->settings->getValueByKey($name);
         }
         $this->addInputText($name,$value, $data,$label,$id,$data_index);
     }

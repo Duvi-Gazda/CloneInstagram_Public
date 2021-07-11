@@ -248,7 +248,15 @@ class itdaat_database
         $this->fields[] = $arr;
         return $arr != [] ? $arr : false;
     }
-
+    public function getValueToValue_Field(){
+        $arr = [];
+        foreach ($this->fields as $field){
+            foreach ($field as $key => $value) {
+                $arr[$value] = $value;
+            }
+        }
+        return $arr != [] ? $arr : false;
+    }
     /**
      * @param $key_f
      * @return array|false

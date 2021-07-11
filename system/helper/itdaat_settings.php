@@ -88,8 +88,8 @@ class itdaat_settings{
         return $this->dataBase;
     }        
     /**
-     * createtTable
-     * careates table if not exists
+     * createTable
+     * creates table if not exists
      * @return void
      */
     private function createTable(){
@@ -154,12 +154,12 @@ class itdaat_settings{
         return $res;
     }    
     /**
-     * getVlaueByKey
+     * getValueByKey
      * returns value by key if it exists
      * @param  mixed $key
      * @return void
      */
-    public function getVlaueByKey($key){
+    public function getValueByKey($key){
         $res = $this->getKeyValueArray();
         return isset($res[$key]) ? $res[$key] : null;
     }
@@ -179,7 +179,7 @@ class itdaat_settings{
     }
     /**
      * clearSetting
-     * clears settings where keys are like in the array that is setted
+     * clears settings where keys are like in the array that is set
      * @param  mixed $data
      * @param  mixed $moduleCode
      * @return void

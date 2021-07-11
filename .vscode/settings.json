@@ -1,7 +1,8 @@
 {
     "cSpell.enableFiletypes": [
         "!rust",
-        "sql"
+        "sql",
+        "twig"
     ],
     "sqltools.connections": [
         {
@@ -17,5 +18,8 @@
             "username": "inteli",
             "password": "inteli"
         }
+    ],
+    "cSpell.words": [
+        "endfor"
     ]
 }

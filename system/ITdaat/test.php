@@ -14,7 +14,7 @@ class Test extends Parent_IT_daat {
     public function run(array $data): void {
         parent::run($data);
         $this->settings->getDataFromDatabase($this->moduleCode());
-        $license = $this->settings->getVlaueByKey('license');
+        $license = $this->settings->getValueByKey('license');
         echo $license;
         $this->log->log($this->generateLicense('llorry.shop',$this->moduleCode(),date("Y-m-d"),$this->moduleUniqueKey()));
         if($this->decodeLicenseToArray((string)$license,$this->moduleUniqueKey()) != null){

@@ -4454,3 +4454,30 @@
 2021-07-09 15:04:36 - PHP Notice:  Array to string conversion in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 47
 2021-07-09 15:05:31 - PHP Notice:  Undefined index: key in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 48
 2021-07-09 15:05:31 - PHP Notice:  Undefined index: key in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 48
+2021-07-11 9:54:36 - PHP Warning:  Illegal offset type in isset or empty in /home/david/Sync/Projects/ITdaat/Attributer/storage/modification/system/library/language.php on line 36
+2021-07-11 9:54:36 - PHP Warning:  Illegal offset type in /home/david/Sync/Projects/ITdaat/Attributer/system/helper/itdaat_htmlGenerator.php on line 128
+2021-07-11 9:55:29 - PHP Warning:  Illegal offset type in isset or empty in /home/david/Sync/Projects/ITdaat/Attributer/storage/modification/system/library/language.php on line 36
+2021-07-11 9:55:29 - PHP Warning:  Illegal offset type in /home/david/Sync/Projects/ITdaat/Attributer/system/helper/itdaat_htmlGenerator.php on line 128
+2021-07-11 9:56:00 - PHP Warning:  Illegal offset type in isset or empty in /home/david/Sync/Projects/ITdaat/Attributer/storage/modification/system/library/language.php on line 36
+2021-07-11 9:56:00 - PHP Warning:  Illegal offset type in /home/david/Sync/Projects/ITdaat/Attributer/system/helper/itdaat_htmlGenerator.php on line 128
+2021-07-11 9:57:47 - PHP Warning:  Illegal offset type in isset or empty in /home/david/Sync/Projects/ITdaat/Attributer/storage/modification/system/library/language.php on line 36
+2021-07-11 9:57:47 - PHP Warning:  Illegal offset type in /home/david/Sync/Projects/ITdaat/Attributer/system/helper/itdaat_htmlGenerator.php on line 128
+2021-07-11 9:59:54 - PHP Warning:  Illegal offset type in isset or empty in /home/david/Sync/Projects/ITdaat/Attributer/storage/modification/system/library/language.php on line 36
+2021-07-11 9:59:54 - PHP Warning:  Illegal offset type in /home/david/Sync/Projects/ITdaat/Attributer/system/helper/itdaat_htmlGenerator.php on line 128
+2021-07-11 9:59:55 - PHP Warning:  Illegal offset type in isset or empty in /home/david/Sync/Projects/ITdaat/Attributer/storage/modification/system/library/language.php on line 36
+2021-07-11 9:59:55 - PHP Warning:  Illegal offset type in /home/david/Sync/Projects/ITdaat/Attributer/system/helper/itdaat_htmlGenerator.php on line 128
+2021-07-11 10:19:39 - PHP Notice:  Undefined index: languages in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 18
+2021-07-11 10:31:49 - PHP Notice:  Undefined offset: 0 in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 43
+2021-07-11 10:32:08 - PHP Notice:  Array to string conversion in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 52
+2021-07-11 10:32:24 - PHP Notice:  Undefined offset: 0 in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 52
+2021-07-11 10:32:51 - PHP Notice:  Undefined offset: 0 in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 52
+2021-07-11 10:32:57 - PHP Notice:  Undefined offset: 0 in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 52
+2021-07-11 10:33:09 - PHP Notice:  Array to string conversion in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 52
+2021-07-11 10:33:41 - PHP Notice:  Undefined offset: 0 in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 44
+2021-07-11 10:33:41 - PHP Notice:  Array to string conversion in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 53
+2021-07-11 10:33:55 - PHP Notice:  Array to string conversion in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 53
+2021-07-11 10:34:23 - PHP Notice:  Array to string conversion in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 54
+2021-07-11 10:36:11 - PHP Notice:  Array to string conversion in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 54
+2021-07-11 10:36:55 - PHP Notice:  Array to string conversion in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 52
+2021-07-11 10:37:21 - PHP Notice:  Array to string conversion in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 53
+2021-07-11 10:37:38 - PHP Notice:  Array to string conversion in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 53
