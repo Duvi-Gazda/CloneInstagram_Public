@@ -32,7 +32,7 @@ Create table `oc_itdaat_attribute_dictionary`(
 create table `oc_itdaat_dictionary`(
     language_id int(11),
     oc_attribute_id int(11),
-    oc_attribute_value text,
+    oc_attribute_value varchar(256),
     itdaat_attribute_id int(11),
     itdaat_attribute_value_id int(11),
     primary key (language_id,oc_attribute_id,oc_attribute_value)
@@ -48,32 +48,34 @@ create table oc_itdaat_attribute_value_exists (
 delimiter //
 create trigger itdaat_update before update on oc_product_attribute for each row
 begin
-    insert into oc_itdaat_dictionary (language_id, oc_attribute_id, oc_attribute_value) values (NEW.language_id, NEW.attribute_id, NEW.text) on duplicate key update language_id = language_id;
+    if(select !isnull(NEW.attribute_id) and !isnull(NEW.text)) then
+        insert into oc_itdaat_dictionary (language_id, oc_attribute_id, oc_attribute_value) values (NEW.language_id, NEW.attribute_id, NEW.text) on duplicate key update language_id = language_id;
 
 
-    select oc_itdaat_attribute_name.name, oc_itdaat_attribute_value.value, oc_itdaat_dictionary.itdaat_attribute_id
-        into  @name, @value, @itdaat_attribute_id
-        from oc_itdaat_dictionary
-    left join oc_itdaat_attribute_name
-        on oc_itdaat_attribute_name.itdaat_attribute_id = oc_itdaat_dictionary.itdaat_attribute_id and oc_itdaat_attribute_name.language_id = oc_itdaat_dictionary.language_id
-    left join oc_itdaat_attribute_value
-        on oc_itdaat_attribute_value.id = oc_itdaat_dictionary.itdaat_attribute_value_id and oc_itdaat_attribute_value.itdaat_attribute_id = oc_itdaat_dictionary.itdaat_attribute_id and oc_itdaat_attribute_value.language_id = oc_itdaat_dictionary.language_id
-    where
-        oc_itdaat_dictionary.language_id = NEW.language_id and oc_itdaat_dictionary.oc_attribute_id = NEW.attribute_id and oc_itdaat_dictionary.oc_attribute_value = NEW.text;
-    
+        select oc_itdaat_attribute_name.name, oc_itdaat_attribute_value.value, oc_itdaat_dictionary.itdaat_attribute_id
+            into  @name, @value, @itdaat_attribute_id
+            from oc_itdaat_dictionary
+        left join oc_itdaat_attribute_name
+            on oc_itdaat_attribute_name.itdaat_attribute_id = oc_itdaat_dictionary.itdaat_attribute_id and oc_itdaat_attribute_name.language_id = oc_itdaat_dictionary.language_id
+        left join oc_itdaat_attribute_value
+            on oc_itdaat_attribute_value.id = oc_itdaat_dictionary.itdaat_attribute_value_id and oc_itdaat_attribute_value.itdaat_attribute_id = oc_itdaat_dictionary.itdaat_attribute_id and oc_itdaat_attribute_value.language_id = oc_itdaat_dictionary.language_id
+        where
+            oc_itdaat_dictionary.language_id = NEW.language_id and oc_itdaat_dictionary.oc_attribute_id = NEW.attribute_id and oc_itdaat_dictionary.oc_attribute_value = NEW.text;
+        
 
-    select oc_itdaat_attribute_dictionary.attribute_id into @attribute_id from oc_itdaat_attribute_dictionary
-        where 
-            oc_itdaat_attribute_dictionary.itdaat_attribute_id = @itdaat_attribute_id;
+        select oc_itdaat_attribute_dictionary.attribute_id into @attribute_id from oc_itdaat_attribute_dictionary
+            where 
+                oc_itdaat_attribute_dictionary.itdaat_attribute_id = @itdaat_attribute_id;
 
-    if (select isnull(@attribute_id) and !isnull(@itdaat_attribute_id))then
-        select max( oc_attribute.attribute_id ) + 1 into @attribute_id_max from oc_attribute;
-        select oc_attribute.attribute_group_id, oc_attribute.sort_order into @group_id, @sort_order from oc_attribute where oc_attribute.attribute = NEW.attribute_id;
-        insert into oc_attribute (attribute_id, attribute_group_id, sort_order) values (@attribute_id_max, @group_id, @sort_order);
-        insert into oc_attribute_description (attribute_id, language_id, name) values (@attribute_id, NEW.language_id, @name);
-        insert into oc_itdaat_attribute_dictionary (attribute_id,itdaat_attribute_id) values (@attribute_id_max, @itdaat_attribute_id);
+        if (select isnull(@attribute_id) and !isnull(@itdaat_attribute_id))then
+            select max( oc_attribute.attribute_id ) + 1 into @attribute_id_max from oc_attribute;
+            select oc_attribute.attribute_group_id, oc_attribute.sort_order into @group_id, @sort_order from oc_attribute where oc_attribute.attribute = NEW.attribute_id;
+            insert into oc_attribute (attribute_id, attribute_group_id, sort_order) values (@attribute_id_max, @group_id, @sort_order);
+            insert into oc_attribute_description (attribute_id, language_id, name) values (@attribute_id, NEW.language_id, @name);
+            insert into oc_itdaat_attribute_dictionary (attribute_id,itdaat_attribute_id) values (@attribute_id_max, @itdaat_attribute_id);
+        end if;
+
+        set NEW.text = @value, NEW.attribute_id = @attribute_id;
     end if;
-
-    set NEW.text = @value, NEW.attribute_id = @attribute_id;
 
 end; //
