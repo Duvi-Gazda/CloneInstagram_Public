@@ -37,20 +37,22 @@ create table `oc_itdaat_dictionary`(
     itdaat_attribute_value_id int(11),
     primary key (language_id,oc_attribute_id,oc_attribute_value)
 );
--- create table that will continue all values that are already set in the product_attribute table
-create table oc_itdaat_attribute_value_exists (
-    id integer primary key auto_increment,
-    product_id int(11),
-    language_id int(3),
-    attribute_id int(11)
-);
+-- create table copy of the oc_product_attribute
+CREATE TABLE `oc_itdaat_product_attribute` (
+  `product_id` int(11) DEFAULT NULL,
+  `attribute_id` int(11) DEFAULT NULL,
+  `language_id` int(11) DEFAULT NULL,
+  `text` text DEFAULT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=utf8
+
+
 -- create trigger on adding to the product_attribute table
 delimiter //
 create trigger itdaat_update before update on oc_product_attribute for each row
 begin
     if(select !isnull(NEW.attribute_id) and !isnull(NEW.text)) then
         insert into oc_itdaat_dictionary (language_id, oc_attribute_id, oc_attribute_value) values (NEW.language_id, NEW.attribute_id, NEW.text) on duplicate key update language_id = language_id;
-
+        insert into 
 
         select oc_itdaat_attribute_name.name, oc_itdaat_attribute_value.value, oc_itdaat_dictionary.itdaat_attribute_id
             into  @name, @value, @itdaat_attribute_id

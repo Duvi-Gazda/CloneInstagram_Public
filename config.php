@@ -6,10 +6,10 @@ define('HTTP_SERVER', 'http://local.llorry.shop/');
 define('HTTPS_SERVER', 'http://local.llorry.shop/');
 
 // DIR
-define('DIR_APPLICATION', '/home/david/Sync/Projects/ITdaat/Attributer/catalog/');
-define('DIR_SYSTEM', '/home/david/Sync/Projects/ITdaat/Attributer/system/');
-define('DIR_IMAGE', '/home/david/Sync/Projects/ITdaat/Attributer/image/');
-define('DIR_STORAGE', '/home/david/Sync/Projects/ITdaat/Attributer/storage/');
+define('DIR_APPLICATION', '/home/david/Sync/Projects/ITdaat/Opencart/Attributer/catalog/');
+define('DIR_SYSTEM', '/home/david/Sync/Projects/ITdaat/Opencart/Attributer/system/');
+define('DIR_IMAGE', '/home/david/Sync/Projects/ITdaat/Opencart/Attributer/image/');
+define('DIR_STORAGE', '/home/david/Sync/Projects/ITdaat/Opencart/Attributer/storage/');
 define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
 define('DIR_TEMPLATE', DIR_APPLICATION . 'view/theme/');
 define('DIR_CONFIG', DIR_SYSTEM . 'config/');
@@ -25,6 +25,6 @@ define('DB_DRIVER', 'mysqli');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', 'root');
-define('DB_DATABASE', 'Attributer_4');
+define('DB_DATABASE', 'Attributer_3');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');

@@ -4494,3 +4494,9 @@
 2021-07-11 19:38:18 - PHP Notice:  Trying to access array offset on value of type null in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 72
 2021-07-11 19:41:20 - PHP Notice:  Undefined offset: 0 in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 72
 2021-07-11 19:41:20 - PHP Notice:  Trying to access array offset on value of type null in /home/david/Sync/Projects/ITdaat/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 72
+2021-07-15 14:20:02 - PHP Warning:  mysqli::__construct(): (HY000/1049): Unknown database 'Attributer_4' in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/system/library/db/mysqli.php on line 7
+2021-07-15 14:20:02 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/system/library/db/mysqli.php on line 10
+2021-07-15 14:20:02 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/system/library/db/mysqli.php on line 10
+2021-07-15 14:20:03 - PHP Warning:  mysqli::__construct(): (HY000/1049): Unknown database 'Attributer_4' in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/system/library/db/mysqli.php on line 7
+2021-07-15 14:20:03 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/system/library/db/mysqli.php on line 10
+2021-07-15 14:20:03 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/system/library/db/mysqli.php on line 10
