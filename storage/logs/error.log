@@ -4500,3 +4500,12 @@
 2021-07-15 14:20:03 - PHP Warning:  mysqli::__construct(): (HY000/1049): Unknown database 'Attributer_4' in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/system/library/db/mysqli.php on line 7
 2021-07-15 14:20:03 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/system/library/db/mysqli.php on line 10
 2021-07-15 14:20:03 - PHP Warning:  DB\MySQLi::__construct(): Couldn't fetch mysqli in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/system/library/db/mysqli.php on line 10
+2021-07-16 10:01:08 - PHP Notice:  Undefined index: name in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 43
+2021-07-16 10:01:08 - PHP Notice:  Undefined offset: 0 in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 72
+2021-07-16 10:01:08 - PHP Notice:  Trying to access array offset on value of type null in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 72
+2021-07-16 10:01:27 - PHP Notice:  Undefined index: name in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 43
+2021-07-16 10:01:27 - PHP Notice:  Undefined offset: 0 in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 72
+2021-07-16 10:01:27 - PHP Notice:  Trying to access array offset on value of type null in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 72
+2021-07-16 10:02:38 - PHP Notice:  Undefined index: name in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 43
+2021-07-16 10:02:38 - PHP Notice:  Undefined offset: 0 in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 72
+2021-07-16 10:02:38 - PHP Notice:  Trying to access array offset on value of type null in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 72
