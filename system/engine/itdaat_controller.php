@@ -108,11 +108,11 @@ abstract class ControllerItDaat extends Controller {
      * @param  mixed $moduleLink
      * @return void
      */
-    protected function setDefaultOutput($moduleLink):void{
+    protected function setDefaultOutput($viewLink):void{
         $this->data['header'] = $this->load->controller('common/header');
 		$this->data['column_left'] = $this->load->controller('common/column_left');
 		$this->data['footer'] = $this->load->controller('common/footer');
-		$this->response->setOutput($this->load->view($moduleLink, $this->data));
+		$this->response->setOutput($this->load->view($viewLink, $this->data));
     }
     /**
      * validate

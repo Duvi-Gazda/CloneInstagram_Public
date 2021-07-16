@@ -26,12 +26,12 @@
       <div class="panel-body">
         <form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-module" class="form-horizontal">
           {{itdaatInputs}}
-        </form>
+        {# </form> #}
       </div>
     </div>
      <div class="panel panel-default" id="panel-more-space">
       <div class="panel-body">
-        <form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-module" class="form-horizontal">
+        {# <form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-module" class="form-horizontal"> #}
           <div class="col-sm-12">
           <div class="col-sm-6">
               <div class="col-sm-12 text-center">
@@ -47,7 +47,7 @@
                 <div class="col-sm-9 overflow-auto itdaat-container itdaat-container-overflow">
                   {% for itdaat_oc_attribute_value in itdaat_oc_attribute_values %}
                     <div class="list-group">
-                      <input type="checkbox" name="CheckBoxInputName" value="{{itdaat_oc_attribute_value.value}}" id="{{itdaat_oc_attribute_value.value}}" />
+                      <input disabled type="checkbox" name="{{itdaat_oc_attribute_value.value}}" value="{{itdaat_oc_attribute_value.value}}" id="{{itdaat_oc_attribute_value.value}}" />
                       <label class="list-group-item" for="{{itdaat_oc_attribute_value.value}}">&nbsp;{{itdaat_oc_attribute_value.value}}</label>
                     </div>
                   {% endfor %}
@@ -56,10 +56,26 @@
           </div>
 
           <div class="col-sm-6" style="border-left: 1px solid black;">
-            <div class="col-sm-12 text-center itdaat-container-overflow">
+            <div class="col-sm-12 text-center">
               <h3>New Attributes</h3>
               <br>
             </div>
+             <div class="col-sm-11">
+               <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search" id="txtSearch"/>
+                     <div class="input-group-btn">
+                        <button class="btn btn-primary" type="submit" name="search" value="search">
+                        <i class="fa fa-search"></i>
+                         </button>
+                      </div>
+                </div>
+              </div>
+             <div class="col-sm-1">
+                <button class="btn btn-primary" type="submit" name="action" value="new_itdaat_attribute" >
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
+              </div>
+            <div class="col-sm-12 itdaat-container-overflow" >
             {# TODO SEARCH IN New attributes #}
               {% for itdaat_attribute in itdaat_attributes %}
                     <div class="col-sm-12">
@@ -71,6 +87,7 @@
                     </div>
                   </div>
               {% endfor %}
+            </div>
           </div>
           </div>
         </form>
@@ -78,4 +95,3 @@
     </div>
   </div>
 </div>
-{{ footer }}
