@@ -44,7 +44,7 @@
                   <h3>{{itdaat_oc_attribute_name}}</h3>
                 </div>
                 {# all values #}
-                <div class="col-sm-9 overflow-auto itdaat-container">
+                <div class="col-sm-9 overflow-auto itdaat-container itdaat-container-overflow">
                   {% for itdaat_oc_attribute_value in itdaat_oc_attribute_values %}
                     <div class="list-group">
                       <input type="checkbox" name="CheckBoxInputName" value="{{itdaat_oc_attribute_value.value}}" id="{{itdaat_oc_attribute_value.value}}" />
@@ -56,7 +56,7 @@
           </div>
 
           <div class="col-sm-6" style="border-left: 1px solid black;">
-            <div class="col-sm-12 text-center">
+            <div class="col-sm-12 text-center itdaat-container-overflow">
               <h3>New Attributes</h3>
               <br>
             </div>

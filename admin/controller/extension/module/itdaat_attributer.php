@@ -64,27 +64,34 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
         $this->log->log($attributes);
         return $attributes;
     }
-
+    
+    /**
+     * connectItdaatAttributes
+     * this function connects all attributes in the array
+     * @return void
+     */
     private function connectItdaatAttributes(){
         $db = new itdaat_database();
         $languages = $this->settings->getValueByKey('languages');
         $language_id = $this->database->getAssocRequest("select language_id from oc_language where name = '{$languages}' ");
         $language_id = (($language_id)[0])['language_id'];
         $query = "
-        SELECT
-        oc_itdaat_attribute_name.name,
-        oc_itdaat_attribute_value.value
-        from
-        oc_itdaat_attribute
-        left join oc_itdaat_attribute_name on oc_itdaat_attribute.id = oc_itdaat_attribute_name.itdaat_attribute_id
-        left join oc_itdaat_attribute_value on oc_itdaat_attribute_value.itdaat_attribute_id = oc_itdaat_attribute.id and oc_itdaat_attribute_name.language_id = oc_itdaat_attribute_value.language_id
-        where oc_itdaat_attribute_name.language_id = '$language_id' and oc_itdaat_attribute.id = 
+            SELECT
+            oc_itdaat_attribute_name.name,
+            oc_itdaat_attribute_value.value
+            from
+            oc_itdaat_attribute
+            left join oc_itdaat_attribute_name on oc_itdaat_attribute.id = oc_itdaat_attribute_name.itdaat_attribute_id
+            left join oc_itdaat_attribute_value on oc_itdaat_attribute_value.itdaat_attribute_id = oc_itdaat_attribute.id and oc_itdaat_attribute_name.language_id = oc_itdaat_attribute_value.language_id
+            where oc_itdaat_attribute_name.language_id = '$language_id' and oc_itdaat_attribute.id = 
         ";
         $itdaat_attributes = $db->getAssocRequest("SELECT id from oc_itdaat_attribute");
+        $this->log->log($itdaat_attributes, "attributes");
         $res = [];
         $rows = [];
         foreach ($itdaat_attributes as $key => $attr){
             $rows[$key] = $db->getAssocRequest($query . $attr['id'] . " limit 100");
+            $this->log->log($query . $attr['id'] . " limit 100");
             $r = [];
             foreach ($rows[$key] as &$row){
                 $r['name'] = $row['name']; 
@@ -98,6 +105,7 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
                 $res[] = $r;
             }
         }
+        $this->log->log($res);
         return $res;
     }
 }

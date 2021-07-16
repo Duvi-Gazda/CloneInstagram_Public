@@ -15,7 +15,7 @@
     cursor: pointer;
 }
 .itdaat-container{
-    height: 100% !important;
+    /* height: 100% !important; */
     /* overflow-y: scroll; */
     /* overflow-x: hidden; */
 
@@ -37,4 +37,8 @@
 #panel-more-space{
     padding-top: 20px;
     padding-bottom: 20px;
+}
+.itdaat-container-overflow{
+    overflow-y: scroll;
+    height: 50vh;
 }
