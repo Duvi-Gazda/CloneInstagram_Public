@@ -48,11 +48,11 @@ CREATE TABLE `oc_itdaat_product_attribute` (
 
 -- create trigger on adding to the product_attribute table
 delimiter //
-create trigger itdaat_update before update on oc_product_attribute for each row
+create trigger itdaat_update_product_attribute before update on oc_product_attribute for each row
 begin
     if(select !isnull(NEW.attribute_id) and !isnull(NEW.text)) then
         insert into oc_itdaat_dictionary (language_id, oc_attribute_id, oc_attribute_value) values (NEW.language_id, NEW.attribute_id, NEW.text) on duplicate key update language_id = language_id;
-        insert into 
+        insert into oc_itdaat_product_attribute (product_id, attribute_id, language_id, text) values (NEW.product_id, NEW.attribute_id, NEW.language_id, NEW.text);
 
         select oc_itdaat_attribute_name.name, oc_itdaat_attribute_value.value, oc_itdaat_dictionary.itdaat_attribute_id
             into  @name, @value, @itdaat_attribute_id
