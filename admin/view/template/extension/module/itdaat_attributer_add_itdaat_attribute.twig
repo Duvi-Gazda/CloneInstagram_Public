@@ -4,7 +4,7 @@
 		<div class="container-fluid">
 			<div class="pull-right">
 				<button type="submit" form="form-module" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary">
-					<i class="fa fa-save"></i>
+					<i class="fa fa-plus" aria-hidden="true"></i>
 				</button>
 				<a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default">
 					<i class="fa fa-reply"></i>
@@ -37,45 +37,42 @@
 			<div class="panel-body">
 				<form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-module" class="form-horizontal">
 					{{itdaatInputs}}
-					{# </form> #}
 				</div>
 			</div>
 			<div class="panel panel-default" id="panel-more-space">
-				<div
-					class="panel-body">
-					{# <form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-module" class="form-horizontal"> #}
+				<div class="panel-body">
 					<div class="col-sm-12">
 						<div class="col-sm-12 text-center">
 							<h3>Create new attribute</h3>
 							<br>
 						</div>
-						<div class="col-sm-12 text-center" style="margin-bottom:30px">
-							{# <div class="col-sm-6"> #}
-								<div class="input-group">
-									<input type="text" class="form-control" placeholder="New Attribute name" id="txtSearch" name="attribute_name"/>
-									<div class="input-group-btn">
-										<button class="btn btn-primary" type="submit" name="action" value="add_new_attribute_add">
-											<i class="fa fa-plus" aria-hidden="true"></i>
-										</button>
-									</div>
+
+						{# <div class="col-sm-6"> #}
+
+						{% for language in itdaat_languages %}
+							<div class="col-sm-12 text-center" style="margin-bottom:30px">
+								<div class="col-sm-2">
+									<label class="list-group-item" for="{{language.name}}">{{language.name}}</label>
 								</div>
-							{# </div> #}
-						</div>
-						<div class="col-sm-12">
-							{# heading #}
-							{# all values #}
-							<div class="col-sm-12 overflow-auto itdaat-container itdaat-container-overflow">
-								{% for itdaat_oc_attribute_value in itdaat_oc_attribute_values %}
-									<div class="list-group">
-										<input type="checkbox" name="CheckBoxInputName" value="{{itdaat_oc_attribute_value.value}}" id="{{itdaat_oc_attribute_value.value}}"/>
-										<label class="list-group-item" for="{{itdaat_oc_attribute_value.value}}">&nbsp;{{itdaat_oc_attribute_value.value}}</label>
-									</div>
-								{% endfor %}
+								<div class="input-group col-sm-10">
+								<input type="text" class="form-control" placeholder="{{add_attribute_placeholder}}&nbsp; {{language.name}}" id="txtSearch" name="attribute_name[{{language.name}}]"/>
 							</div>
 						</div>
+					{% endfor %}
+
+					{# </div> #}
+					<div class="col-sm-12">
+						<div class="col-sm-12 overflow-auto itdaat-container itdaat-container-overflow">
+							{% for itdaat_oc_attribute_value in itdaat_oc_attribute_values %}
+								<div class="list-group">
+									<input type="checkbox" name="itdaat_oc_attributes[]" value="z{{itdaat_oc_attribute_value.value}}" id="{{itdaat_oc_attribute_value.value}}"/>
+									<label class="list-group-item" for="{{itdaat_oc_attribute_value.value}}">&nbsp;{{itdaat_oc_attribute_value.value}}</label>
+								</div>
+							{% endfor %}
+						</div>
 					</div>
-				</form>
-			</div>
+				</div>
+			</form>
 		</div>
 	</div>
-</div>
+</div></div>

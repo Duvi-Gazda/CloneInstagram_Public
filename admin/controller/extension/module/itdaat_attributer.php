@@ -8,6 +8,7 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
         $this->moduleCode = 'attributer';
         $this->moduleFilePath = DIR_SYSTEM.'/ITdaat/itdaat_attributer.php';
         $this->run(self::MODULE_LINK,'extension/module');
+        $this->addItdaat_Attribute();
         $this->generateViewData();
         $this->module();
     }
@@ -36,6 +37,21 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
         }
     }
 
+    private function addItdaat_Attribute (){
+
+        if(!isset($_POST['itdaat_oc_attributes'] )|| !is_array($_POST['itdaat_oc_attributes'])){
+            return [];
+        }        
+
+        if(isset($_POST['itdaat_oc_attributes']))
+        
+        $itdaat_attributes = $_POST['itdaat_oc_attributes'];
+
+        $this->database->getAssocRequest("select language_id, name from oc_language");
+        $languages = $this->database->getFields();
+        $this->data['itdaat_languages'] = $languages;
+
+    }
 
     private function generateViewData(){
         $this->generateBreadcrumbs($this->data, self::MODULE_LINK);
@@ -55,6 +71,7 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
         );
         $this->data['itdaat_attributes'] = $this->connectItdaatAttributes($this->database->getFields());
         $this->data['current_url'] = $_SERVER['REQUEST_URI'];
+        $this->data['add_attribute_placeholder'] = $this->language->get('add_attribute_placeholder');
         $this->getter();
     }
 
@@ -69,7 +86,6 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
         $languages = $this->settings->getValueByKey('languages');
         $language_id = $this->database->getAssocRequest("select language_id from oc_language where name = '{$languages}' ");
         $language_id = (($language_id)[0])['language_id'];
-        $this->log->log($language_id, "language_id");
         $attributes_not_formatted = $this->database->getAssocRequest("
             select oc_attribute_description.name, oc_itdaat_dictionary.oc_attribute_value, oc_attribute_description.attribute_id from oc_itdaat_dictionary 
             inner join oc_attribute_description
@@ -86,13 +102,6 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
             $row['value'] = $attribute['oc_attribute_value'];
             $attributes[] = $row;
         }
-        $this->log->log("select oc_attribute_description.name, oc_itdaat_dictionary.oc_attribute_value, oc_attribute_description.attribute_id from oc_itdaat_dictionary 
-        inner join oc_attribute_description
-        on oc_itdaat_dictionary.oc_attribute_id = oc_attribute_description.attribute_id and oc_attribute_description.language_id = oc_itdaat_dictionary.language_id
-        where oc_itdaat_dictionary.itdaat_attribute_id is null and oc_itdaat_dictionary.itdaat_attribute_value_id is null and 
-        oc_itdaat_dictionary.oc_attribute_id = (select MIN(oc_itdaat_dictionary.oc_attribute_id)  from oc_itdaat_dictionary where oc_itdaat_dictionary.itdaat_attribute_id is null and oc_itdaat_dictionary.itdaat_attribute_value_id is null and oc_itdaat_dictionary.language_id = {$language_id})
-        and oc_itdaat_dictionary.language_id = {$language_id}
-        ORDER BY oc_itdaat_dictionary.oc_attribute_id ASC", "attributes to set");
         return $attributes;
     }
     
@@ -109,7 +118,8 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
         $query = "
             SELECT
             oc_itdaat_attribute_name.name,
-            oc_itdaat_attribute_value.value
+            oc_itdaat_attribute_value.value,
+            oc_itdaat_attribute_name.itdaat_attribute_id
             from
             oc_itdaat_attribute
             left join oc_itdaat_attribute_name on oc_itdaat_attribute.id = oc_itdaat_attribute_name.itdaat_attribute_id
@@ -117,15 +127,14 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
             where oc_itdaat_attribute_name.language_id = '$language_id' and oc_itdaat_attribute.id = 
         "; 
         $itdaat_attributes = $db->getAssocRequest("SELECT id from oc_itdaat_attribute");
-        $this->log->log($itdaat_attributes, "attributes");
         $res = [];
         $rows = [];
         foreach ($itdaat_attributes as $key => $attr){
             $rows[$key] = $db->getAssocRequest($query . $attr['id'] . " limit 100");
-            $this->log->log($query . $attr['id'] . " limit 100");
             $r = [];
             foreach ($rows[$key] as &$row){
                 $r['name'] = $row['name']; 
+                $r['id'] = $row['id'];
                 if(isset($r['value'])){
                     $r['value'] = $r['value'] . ', ' . $row['value'];
                 } else {
@@ -136,7 +145,6 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
                 $res[] = $r;
             }
         }
-        $this->log->log($res);
         return $res;
     }
 }

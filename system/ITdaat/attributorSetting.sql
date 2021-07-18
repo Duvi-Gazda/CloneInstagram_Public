@@ -119,7 +119,8 @@ begin
             insert into oc_itdaat_attribute_dictionary (attribute_id,itdaat_attribute_id) values (@attribute_id, @itdaat_attribute_id);
         end if;
 
-        set NEW.text = @value, NEW.attribute_id = @attribute_id;
+        set NEW.text = @value;
+        set NEW.attribute_id = @attribute_id;
     end if;
 
 end; //
