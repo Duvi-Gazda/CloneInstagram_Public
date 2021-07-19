@@ -12,7 +12,7 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
         $this->load->model('extension/module/itdaat_attributer');
         $this->addItdaatAttribute();
         $this->editItdaatAttribute();
-        // $this->connectItdaatAttributerDictionary();
+        $this->connectItdaatAttributerDictionary();
         $this->generateViewData();
         $this->module();
     }
@@ -38,6 +38,7 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
                 $this->setDefaultOutput('extension/module/itdaat_attributer/itdaat_attributer_edit_attributer');
             }
             if($action[0] == 'connect_itdaat_attribute'){
+                $this->document->addScript('view/javascript/itdaat/attributer/conectAttribute.js');
                 $this->setDefaultOutput('extension/module/itdaat_attributer/itdaat_attributer_connect_itdaat_attribute');
             }
         } else{
@@ -72,8 +73,7 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
         $attribute_id = null;
         if(!isset($_POST['action'])){
             $action = explode("|", $_POST['action']);
-            if($action[0] == 'edit_itdaat_attribute'){
-                $this->setDefaultOutput('extension/module/itdaat_attributer/itdaat_attributer_edit_attributer');
+            if($action[0] == 'connect_itdaat_attribute'){
                 $attribute_id = $action[1];
             }
         }
@@ -85,7 +85,6 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
         if(!isset($_POST['action'])){
             $action = explode("|", $_POST['action']);
             if($action[0] == 'edit_itdaat_attribute'){
-                $this->setDefaultOutput('extension/module/itdaat_attributer/itdaat_attributer_edit_attributer');
                 $attribute_id = $action[1];
             }
         }

@@ -56,12 +56,17 @@
 								<div class="col-sm-2">
 									<h3>{{itdaat_oc_attribute_name}}</h3>
 								</div>
-								<div class="col-sm-9 overflow-auto itdaat-container itdaat-container-overflow">
+								<div class="col-sm-10 overflow-auto itdaat-container itdaat-container-overflow">
 									{% for itdaat_oc_attribute_value in itdaat_oc_attribute_values %}
-										<div class="list-group">
-											<input type="checkbox" name="{{itdaat_oc_attribute_value.value}}" value="{{itdaat_oc_attribute_value.value}}" id="{{itdaat_oc_attribute_value.value}}"/>
-											<label class="list-group-item" for="{{itdaat_oc_attribute_value.value}}">&nbsp;{{itdaat_oc_attribute_value.value}}</label>
+										<div class="list-group col-sm-12">
+											<input type="checkbox"  name="{{itdaat_oc_attribute_value.value}}" value="{{itdaat_oc_attribute_value.value}}" id="{{itdaat_oc_attribute_value.value}}" onClick="addSelect(this.id)"/>
+											<label class="list-group-item" for="{{itdaat_oc_attribute_value.value}}">{{itdaat_oc_attribute_value.value}}</label>
 										</div>
+                                        <div class="col-sm-3 hidden text-center" id="{{itdaat_oc_attribute_value.value}}_select">
+                                            <select name="attribute_action" class="form-control" style="width:100%;">
+                                                <option value="none">None</option>
+                                            </select>
+                                        </div>
 									{% endfor %}
 								</div>
 							</div>
@@ -72,38 +77,8 @@
 								<h3>New Attributes</h3>
 								<br>
 							</div>
-							<div class="col-sm-12" style="margin-bottom:30px">
-								<div class="col-sm-11">
-									<div class="input-group">
-										<input type="text" class="form-control" placeholder="Search" id="txtSearch"/>
-										<div class="input-group-btn">
-											<button class="btn btn-primary" type="submit" name="search" value="search">
-												<i class="fa fa-search"></i>
-											</button>
-										</div>
-									</div>
-								</div>
-								<div class="col-sm-1">
-									<button class="btn btn-primary" type="submit" name="action" value="new_itdaat_attribute">
-										<i class="fa fa-plus" aria-hidden="true"></i>
-									</button>
-								</div>
-							</div>
-							<div
-								class="col-sm-12 itdaat-container-overflow">
-								{# TODO SEARCH IN New attributes #}
-								{% for itdaat_attribute in itdaat_attributes %}
-									<div class="col-sm-12">
-										<button  type="submit" name="action" value="connect_itdaat_attribute|" style="all: unset; width: 100%;"  class="btn btn-primary btn-lg btn-block">
-											<div class="list-group">
-												<a class="list-group-item ">
-													<h4 class="list-group-item-heading">{{itdaat_attribute.name}}</h4>
-													<p class="list-group-item-text">{{itdaat_attribute.value}}</p>
-												</a>
-											</div>
-										</button>
-									</div>
-								{% endfor %}
+							<div class="col-sm-12 itdaat-container-overflow">
+
 							</div>
 						</div>
 					</div>
