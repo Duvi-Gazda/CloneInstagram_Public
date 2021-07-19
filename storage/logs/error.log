@@ -9346,3 +9346,7 @@
 2021-07-18 22:31:21 - PHP Notice:  Array to string conversion in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 100
 2021-07-18 22:31:21 - PHP Notice:  Undefined variable: Array in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 100
 2021-07-18 22:31:21 - PHP Notice:  Undefined index: name in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 74
+2021-07-19 0:12:34 - PHP Notice:  Undefined variable: moduleCode in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/model/extension/module/itdaat_attributer.php on line 7
+2021-07-19 0:12:34 - PHP Notice:  Undefined variable: moduleCode in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/model/extension/module/itdaat_attributer.php on line 7
+2021-07-19 0:12:40 - PHP Notice:  Undefined variable: moduleCode in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/model/extension/module/itdaat_attributer.php on line 7
+2021-07-19 0:12:40 - PHP Notice:  Undefined variable: moduleCode in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/model/extension/module/itdaat_attributer.php on line 7
