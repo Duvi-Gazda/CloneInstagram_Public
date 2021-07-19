@@ -4,7 +4,7 @@ require_once (DIR_SYSTEM . '/engine/itdaat_model.php');
 class ModelExtensionModuleItdaatAttributer extends ModelItDaat {
     public function __construct(){
         $this->moduleCode = 'attributer';
-        $this->run($moduleCode);
+        $this->run($$this->moduleCode);
     }
     public function getAttributeToSet(){
         $languages = $this->settings->getValueByKey('languages');
