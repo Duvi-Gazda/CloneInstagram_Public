@@ -9,6 +9,9 @@
 				<a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default">
 					<i class="fa fa-reply"></i>
 				</a>
+                <a href="{{ back_url }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default">
+					<i class="fa fa-home"></i>
+				</a>
 			</div>
 			<h1>{{ heading_title }}</h1>
 			<ul class="breadcrumb">
@@ -50,13 +53,13 @@
 							</div>
 							<div
 								class="col-sm-12">
-								<div class="col-sm-3">
+								<div class="col-sm-2">
 									<h3>{{itdaat_oc_attribute_name}}</h3>
 								</div>
 								<div class="col-sm-9 overflow-auto itdaat-container itdaat-container-overflow">
 									{% for itdaat_oc_attribute_value in itdaat_oc_attribute_values %}
 										<div class="list-group">
-											<input disabled type="checkbox" name="{{itdaat_oc_attribute_value.value}}" value="{{itdaat_oc_attribute_value.value}}" id="{{itdaat_oc_attribute_value.value}}"/>
+											<input type="checkbox" name="{{itdaat_oc_attribute_value.value}}" value="{{itdaat_oc_attribute_value.value}}" id="{{itdaat_oc_attribute_value.value}}"/>
 											<label class="list-group-item" for="{{itdaat_oc_attribute_value.value}}">&nbsp;{{itdaat_oc_attribute_value.value}}</label>
 										</div>
 									{% endfor %}

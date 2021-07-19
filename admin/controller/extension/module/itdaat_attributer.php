@@ -4,7 +4,7 @@ require_once (DIR_SYSTEM . '/engine/itdaat_controller.php');
 require_once (DIR_SYSTEM . '/ITdaat/itdaat_attributer.php');
 
 class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
-    const MODULE_LINK  = 'extension/module/itdaat_attributer/itdaat_attributer';
+    const MODULE_LINK  = 'extension/module/itdaat_attributer';
     public function index(){
         $this->moduleCode = 'attributer';
         $this->moduleFilePath = DIR_SYSTEM.'/ITdaat/itdaat_attributer.php';
@@ -12,6 +12,7 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
         $this->load->model('extension/module/itdaat_attributer');
         $this->addItdaatAttribute();
         $this->editItdaatAttribute();
+        // $this->connectItdaatAttributerDictionary();
         $this->generateViewData();
         $this->module();
     }
@@ -25,6 +26,7 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
 
     private function getter(){
         if(isset($_POST['action'])){
+            $this->data['back_url'] = $_SERVER['REQUEST_URI'];
             $this->data['itdaat_attributes_type'] = $_POST['action'];
             switch($this->data['itdaat_attributes_type']){
                 case 'new_itdaat_attribute': 
@@ -67,7 +69,15 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
     }
 
     private function connectItdaatAttributerDictionary(){
-
+        $attribute_id = null;
+        if(!isset($_POST['action'])){
+            $action = explode("|", $_POST['action']);
+            if($action[0] == 'edit_itdaat_attribute'){
+                $this->setDefaultOutput('extension/module/itdaat_attributer/itdaat_attributer_edit_attributer');
+                $attribute_id = $action[1];
+            }
+        }
+        if($attribute_id == null){  return;  }
     }
 
     private function editItdaatAttribute(){
