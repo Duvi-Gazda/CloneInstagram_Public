@@ -65,7 +65,7 @@
 						<div class="col-sm-12 overflow-auto itdaat-container itdaat-container-overflow">
 							{% for itdaat_oc_attribute_value in itdaat_oc_attribute_values %}
 								<div class="list-group">
-									<input type="checkbox" name="itdaat_oc_attributes[]" value="z{{itdaat_oc_attribute_value.value}}" id="{{itdaat_oc_attribute_value.value}}"/>
+									<input type="checkbox" name="itdaat_oc_attributes[{{itdaat_oc_attribute_value.id}}]" value="{{itdaat_oc_attribute_value.value}}" id="{{itdaat_oc_attribute_value.value}}"/>
 									<label class="list-group-item" for="{{itdaat_oc_attribute_value.value}}">&nbsp;{{itdaat_oc_attribute_value.value}}</label>
 								</div>
 							{% endfor %}

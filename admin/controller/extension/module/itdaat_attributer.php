@@ -9,7 +9,7 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
         $this->moduleFilePath = DIR_SYSTEM.'/ITdaat/itdaat_attributer.php';
         $this->run(self::MODULE_LINK,'extension/module');
         $this->load->model('extension/module/itdaat_attributer');
-        $this->addItdaat_Attribute();
+        $this->addItdaatAttribute();
         $this->generateViewData();
         $this->module();
     }
@@ -38,7 +38,7 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
         }
     }
 
-    private function addItdaat_Attribute (){
+    private function addItdaatAttribute (){
         
         if(!isset($_POST['itdaat_attributes_name'])){
             return [];
@@ -50,9 +50,15 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
             $itdaat_attributes = null;
         } 
         
+        $this->log->log($itdaat_attributes,'itdaat__attributes');
         $itdaat_attributes_name = $_POST['itdaat_attributes_name'];
-        $this->model_extension_module_itdaat_attributer->addItdaat_Attribute($itdaat_attributes_name,$itdaat_attributes);
-        
+        $itdaat_attr_id = $this->model_extension_module_itdaat_attributer->addItdaatAttribute($itdaat_attributes_name,$itdaat_attributes);
+        $languages = $this->settings->getValueByKey('languages');
+        $language_id = $this->database->getAssocRequest("select language_id from oc_language where name = '{$languages}' ");
+        $language_id = (($language_id)[0])['language_id'];
+        foreach ($itdaat_attributes as $key => $value) {
+            $this->model_extension_module_itdaat_attributer->addItdaatAttributeValue($language_id,$itdaat_attr_id, $value);
+        }
 
     }
 
