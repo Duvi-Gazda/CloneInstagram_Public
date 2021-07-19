@@ -1,142 +1,39 @@
-/////////////////////////////////LANGUAGE/////////////////////////////////
-[2021-07-18 23:55:01] INFO: array(2) {
-  [0]=>
-  array(2) {
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(14) "Русский"
-  }
-  [1]=>
-  array(2) {
-    ["language_id"]=>
-    string(1) "5"
-    ["name"]=>
-    string(20) "Українська"
-  }
-}
+[2021-07-19 12:19:57] INFO: string(100) "insert into oc_itdaat_attribute_name (itdaat_attribute_id, language_id, name) values (21,5,'david');"
 
-[2021-07-18 23:55:01] INFO: array(2) {
+[2021-07-19 12:19:57] INFO: string(100) "insert into oc_itdaat_attribute_name (itdaat_attribute_id, language_id, name) values (21,6,'gazda');"
+
+[2021-07-19 12:19:35] INFO: string(98) "insert into oc_itdaat_attribute_name (itdaat_attribute_id, language_id, name) values (20,5,david);"
+
+[2021-07-19 12:19:35] INFO: string(98) "insert into oc_itdaat_attribute_name (itdaat_attribute_id, language_id, name) values (20,6,gazda);"
+
+[2021-07-19 12:16:10] INFO: string(114) "insert into oc_itdaat_attribute_name (itdaat_attribute_id, language_id, name) values  
+            (18,5,'david');"
+
+[2021-07-19 12:16:10] INFO: string(114) "insert into oc_itdaat_attribute_name (itdaat_attribute_id, language_id, name) values  
+            (18,6,'gazda');"
+
+[2021-07-19 12:14:05] INFO: string(114) "insert into oc_itdaat_attribute_name (itdaat_attribute_id, language_id, name) values  
+            (17,5,'david');"
+
+[2021-07-19 12:14:05] INFO: string(114) "insert into oc_itdaat_attribute_name (itdaat_attribute_id, language_id, name) values  
+            (17,6,'gazda');"
+
+[2021-07-19 12:12:38] INFO: string(118) "insert into oc_itdaat_attribute_name (itdaat_attribute_id, language_id, name) values  
+            (16,5,'Ukrainian');"
+
+[2021-07-19 12:12:38] INFO: string(116) "insert into oc_itdaat_attribute_name (itdaat_attribute_id, language_id, name) values  
+            (16,6,'Russian');"
+
+[2021-07-19 12:11:59] INFO: string(116) "insert into oc_itdaat_attribute_name (itdaat_attribute_id, language_id, name) values  
+            (15,5,Ukrainian);"
+
+[2021-07-19 12:11:59] INFO: string(114) "insert into oc_itdaat_attribute_name (itdaat_attribute_id, language_id, name) values  
+            (15,6,Russian);"
+
+[2021-07-19 12:10:54] INFO: array(2) {
   [6]=>
-  string(2) "da"
+  string(7) "Russian"
   [5]=>
-  string(2) "df"
+  string(9) "Ukrainian"
 }
-
-/////////////////////////////////LANGUAGE/////////////////////////////////
-[2021-07-18 23:54:54] INFO: array(2) {
-  [0]=>
-  array(2) {
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(14) "Русский"
-  }
-  [1]=>
-  array(2) {
-    ["language_id"]=>
-    string(1) "5"
-    ["name"]=>
-    string(20) "Українська"
-  }
-}
-
-/////////////////////////////////LANGUAGE/////////////////////////////////
-[2021-07-18 23:54:51] INFO: array(2) {
-  [0]=>
-  array(2) {
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(14) "Русский"
-  }
-  [1]=>
-  array(2) {
-    ["language_id"]=>
-    string(1) "5"
-    ["name"]=>
-    string(20) "Українська"
-  }
-}
-
-/////////////////////////////////LANGUAGE/////////////////////////////////
-[2021-07-18 23:54:39] INFO: array(2) {
-  [0]=>
-  array(2) {
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(14) "Русский"
-  }
-  [1]=>
-  array(2) {
-    ["language_id"]=>
-    string(1) "5"
-    ["name"]=>
-    string(20) "Українська"
-  }
-}
-
-/////////////////////////////////LANGUAGE/////////////////////////////////
-[2021-07-18 23:54:36] INFO: array(2) {
-  [0]=>
-  array(2) {
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(14) "Русский"
-  }
-  [1]=>
-  array(2) {
-    ["language_id"]=>
-    string(1) "5"
-    ["name"]=>
-    string(20) "Українська"
-  }
-}
-
-/////////////////////////////////LANGUAGE/////////////////////////////////
-[2021-07-18 23:54:34] INFO: array(2) {
-  [0]=>
-  array(2) {
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(14) "Русский"
-  }
-  [1]=>
-  array(2) {
-    ["language_id"]=>
-    string(1) "5"
-    ["name"]=>
-    string(20) "Українська"
-  }
-}
-
-[2021-07-18 23:54:34] INFO: array(2) {
-  [0]=>
-  string(3) "dav"
-  [1]=>
-  string(2) "dd"
-}
-
-[2021-07-18 23:53:49] INFO: array(2) {
-  [0]=>
-  string(3) "dav"
-  [1]=>
-  string(2) "dd"
-}
-
-[2021-07-18 23:53:20] INFO: array(2) {
-  ["Русский"]=>
-  string(5) "david"
-  ["Українська"]=>
-  string(2) "da"
-}
-
-[2021-07-18 23:52:37] INFO: string(5) "gavno"
-
-[2021-07-18 23:52:32] INFO: string(5) "gavno"
-
-[2021-07-18 23:52:30] INFO: string(5) "gavno"
 

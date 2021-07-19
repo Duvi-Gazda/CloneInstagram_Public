@@ -39,17 +39,19 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
     }
 
     private function addItdaat_Attribute (){
-        if(!isset($_POST['itdaat_oc_attributes'] )){
-            return [];
-        }        
-
-        if(!isset($_POST['attribute_name'])){
+        
+        if(!isset($_POST['itdaat_attributes_name'])){
             return [];
         }
-        
-        $itdaat_attributes = $_POST['itdaat_oc_attributes'];
-        $itdaat_attribute_name = $_POST['attribute_name'];
 
+        if(isset($_POST['itdaat_oc_attributes'])){
+            $itdaat_attributes = $_POST['itdaat_oc_attributes'];
+        }else{
+            $itdaat_attributes = null;
+        } 
+        
+        $itdaat_attributes_name = $_POST['itdaat_attributes_name'];
+        $this->model_extension_module_itdaat_attributer->addItdaat_Attribute($itdaat_attributes_name,$itdaat_attributes);
         
 
     }

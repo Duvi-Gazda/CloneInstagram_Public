@@ -4,8 +4,21 @@ require_once (DIR_SYSTEM . '/engine/itdaat_model.php');
 class ModelExtensionModuleItdaatAttributer extends ModelItDaat {
     public function __construct(){
         $this->moduleCode = 'attributer';
-        $this->run($$this->moduleCode);
+        $this->run($this->moduleCode);
     }
+
+    public function addItdaat_Attribute($itdaat_attributes_name){
+        $this->database->setRequest("insert into oc_itdaat_attribute () values ();");
+        $this->database->getAssocRequest("select max(id) as id from oc_itdaat_attribute;");
+        $attr_id = ($this->database->getKeyToValue_Field())['id'];
+        // $this->log->log($itdaat_attributes_name);
+        foreach($itdaat_attributes_name as $language_id =>$attribute_name){
+            $this->database->setRequest("insert into oc_itdaat_attribute_name (itdaat_attribute_id, language_id, name) values ({$attr_id},{$language_id},'{$attribute_name}');");
+            $this->log->log("insert into oc_itdaat_attribute_name (itdaat_attribute_id, language_id, name) values ({$attr_id},{$language_id},'{$attribute_name}');");
+        }
+    }
+
+
     public function getAttributeToSet(){
         $languages = $this->settings->getValueByKey('languages');
         $language_id = $this->database->getAssocRequest("select language_id from oc_language where name = '{$languages}' ");
