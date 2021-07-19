@@ -1,15 +1,17 @@
 <?php
+
 require_once (DIR_SYSTEM . '/engine/itdaat_controller.php');
 require_once (DIR_SYSTEM . '/ITdaat/itdaat_attributer.php');
 
 class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
-    const MODULE_LINK  = 'extension/module/itdaat_attributer';
+    const MODULE_LINK  = 'extension/module/itdaat_attributer/itdaat_attributer';
     public function index(){
         $this->moduleCode = 'attributer';
         $this->moduleFilePath = DIR_SYSTEM.'/ITdaat/itdaat_attributer.php';
         $this->run(self::MODULE_LINK,'extension/module');
         $this->load->model('extension/module/itdaat_attributer');
         $this->addItdaatAttribute();
+        $this->editItdaatAttribute();
         $this->generateViewData();
         $this->module();
     }
@@ -26,12 +28,15 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
             $this->data['itdaat_attributes_type'] = $_POST['action'];
             switch($this->data['itdaat_attributes_type']){
                 case 'new_itdaat_attribute': 
-                    $this->setDefaultOutput('extension/module/itdaat_attributer_add_itdaat_attribute');
+                    $this->setDefaultOutput('extension/module/itdaat_attributer/itdaat_attributer_add_itdaat_attribute');
                     break;
-                case 'add_new_attribute_add':
-                    // todo get all itdaat attributes and check if they are not are checked. All checked have to be added in the array that will be set in the database
-                    $this->setDefaultOutput('extension/module/itdaat_attributer_add_itdaat_attribute');
-                    break;
+            }
+            $action = explode("|", $_POST['action']);
+            if($action[0] == 'edit_itdaat_attribute'){
+                $this->setDefaultOutput('extension/module/itdaat_attributer/itdaat_attributer_edit_attributer');
+            }
+            if($action[0] == 'connect_itdaat_attribute'){
+                $this->setDefaultOutput('extension/module/itdaat_attributer/itdaat_attributer_connect_itdaat_attribute');
             }
         } else{
             $this->setDefaultOutput(self::MODULE_LINK);
@@ -50,7 +55,6 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
             $itdaat_attributes = null;
         } 
         
-        $this->log->log($itdaat_attributes,'itdaat__attributes');
         $itdaat_attributes_name = $_POST['itdaat_attributes_name'];
         $itdaat_attr_id = $this->model_extension_module_itdaat_attributer->addItdaatAttribute($itdaat_attributes_name,$itdaat_attributes);
         $languages = $this->settings->getValueByKey('languages');
@@ -60,6 +64,23 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
             $this->model_extension_module_itdaat_attributer->addItdaatAttributeValue($language_id,$itdaat_attr_id, $value);
         }
 
+    }
+
+    private function connectItdaatAttributerDictionary(){
+
+    }
+
+    private function editItdaatAttribute(){
+        $attribute_id = null;
+        if(!isset($_POST['action'])){
+            $action = explode("|", $_POST['action']);
+            if($action[0] == 'edit_itdaat_attribute'){
+                $this->setDefaultOutput('extension/module/itdaat_attributer/itdaat_attributer_edit_attributer');
+                $attribute_id = $action[1];
+            }
+        }
+        if($attribute_id == null){  return;  }
+        
     }
 
     private function generateViewData(){

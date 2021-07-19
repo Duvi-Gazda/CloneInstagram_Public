@@ -7,6 +7,7 @@ class ModelExtensionModuleItdaatAttributer extends ModelItDaat {
         $this->run($this->moduleCode);
     }
 
+
     public function addItdaatAttribute($itdaat_attributes_name){
         $this->database->setRequest("insert into oc_itdaat_attribute () values ();");
         $this->database->getAssocRequest("select max(id) as id from oc_itdaat_attribute;");
@@ -18,7 +19,7 @@ class ModelExtensionModuleItdaatAttributer extends ModelItDaat {
     }
 
     public function addItdaatAttributeValue($language_id, $itdaat_attribute_id, $value){
-        $this->database->setRequest("insert into oc_itdaat_attribute_value (language_id, itdaat_attribute_id, value) values ({$language_id}, {$itdaat_attribute_id}, '{$value}')");
+        $this->database->setRequest("insert into oc_itdaat_attribute_value (language_id, itdaat_attribute_id, value) values ({$language_id}, {$itdaat_attribute_id}, '{$value}');");
         $this->database->getAssocRequest("select max(id) as id from oc_itdaat_attribute_value;");
         $attr_value_id = ($this->database->getKeyToValue_Field())['id'];
         return $attr_value_id;

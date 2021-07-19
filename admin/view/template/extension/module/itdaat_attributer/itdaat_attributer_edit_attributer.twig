@@ -37,13 +37,11 @@
 			<div class="panel-body">
 				<form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-module" class="form-horizontal">
 					{{itdaatInputs}}
-					{# </form> #}
 				</div>
 			</div>
 			<div class="panel panel-default" id="panel-more-space">
 				<div
 					class="panel-body">
-					{# <form action="{{ action }}" method="post" enctype="multipart/form-data" id="form-module" class="form-horizontal"> #}
 					<div class="col-sm-12">
 						<div class="col-sm-6">
 							<div class="col-sm-12 text-center">
@@ -52,11 +50,9 @@
 							</div>
 							<div
 								class="col-sm-12">
-								{# heading #}
 								<div class="col-sm-3">
 									<h3>{{itdaat_oc_attribute_name}}</h3>
 								</div>
-								{# all values #}
 								<div class="col-sm-9 overflow-auto itdaat-container itdaat-container-overflow">
 									{% for itdaat_oc_attribute_value in itdaat_oc_attribute_values %}
 										<div class="list-group">
@@ -73,23 +69,23 @@
 								<h3>New Attributes</h3>
 								<br>
 							</div>
-              <div class="col-sm-12" style="margin-bottom:30px">
-                	<div class="col-sm-11">
-								<div class="input-group">
-									<input type="text" class="form-control" placeholder="Search" id="txtSearch"/>
-									<div class="input-group-btn">
-										<button class="btn btn-primary" type="submit" name="search" value="search">
-											<i class="fa fa-search"></i>
-										</button>
+							<div class="col-sm-12" style="margin-bottom:30px">
+								<div class="col-sm-11">
+									<div class="input-group">
+										<input type="text" class="form-control" placeholder="Search" id="txtSearch"/>
+										<div class="input-group-btn">
+											<button class="btn btn-primary" type="submit" name="search" value="search">
+												<i class="fa fa-search"></i>
+											</button>
+										</div>
 									</div>
 								</div>
+								<div class="col-sm-1">
+									<button class="btn btn-primary" type="submit" name="action" value="new_itdaat_attribute">
+										<i class="fa fa-plus" aria-hidden="true"></i>
+									</button>
+								</div>
 							</div>
-							<div class="col-sm-1">
-								<button class="btn btn-primary" type="submit" name="action" value="new_itdaat_attribute">
-									<i class="fa fa-plus" aria-hidden="true"></i>
-								</button>
-							</div>
-              </div>
 							<div
 								class="col-sm-12 itdaat-container-overflow">
 								{# TODO SEARCH IN New attributes #}
