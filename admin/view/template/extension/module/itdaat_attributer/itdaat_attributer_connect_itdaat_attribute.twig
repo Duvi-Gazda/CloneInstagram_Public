@@ -3,7 +3,7 @@
 	<div class="page-header">
 		<div class="container-fluid">
 			<div class="pull-right">
-				<button type="submit" form="form-module" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary">
+				<button type="submit" form="form-module" data-toggle="tooltip" name="action" value="connected_itdaat_attribute|{{itdaat_attribute_id}}"  title="{{ button_save }}" class="btn btn-primary">
 					<i class="fa fa-save"></i>
 				</button>
 				<a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default">
@@ -66,6 +66,9 @@
                                             <select id="{{itdaat_oc_attribute_value.id}}" name="attribute_action[{{itdaat_oc_attribute_value.id}}]" class="form-control" style="width:100%;">
                                                 <option value="no" id="no">{{no}}</option>
                                                 <option value="new" id="new">{{new}}</option>
+                                                {% for itdaat_attribute_value in itdaat_attribute_values %}
+                                                    <option value="{{itdaat_attribute_value.id}}" id="select_{{itdaat_attribute_value.value}}">{{itdaat_attribute_value.value}}</option>
+                                                {% endfor %}
                                             </select>
                                         </div>
 									{% endfor %}
@@ -75,11 +78,16 @@
 
 						<div class="col-sm-6" style="border-left: 1px solid black;">
 							<div class="col-sm-12 text-center">
-								<h3>New Attributes</h3>
+								<h3>{{itdaat_attribute_name}}</h3>
 								<br>
 							</div>
 							<div class="col-sm-12 itdaat-container-overflow">
-
+                                {% for itdaat_attribute_value in itdaat_attribute_values %}
+                                    <div class="list-group">
+											<input disabled type="checkbox" name="{{itdaat_attribute_value.value}}" value="{{itdaat_attribute_value.value}}" id="itdaat_{{itdaat_attribute_value.value}}"/>
+											<label class="list-group-item" for="itdaat_{{itdaat_attribute_value.value}}">&nbsp;{{itdaat_attribute_value.value}}</label>
+										</div>
+                                {% endfor %}
 							</div>
 						</div>
 					</div>

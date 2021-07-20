@@ -25,11 +25,27 @@ class ModelExtensionModuleItdaatAttributer extends ModelItDaat {
         return $attr_value_id;
     }
 
-    public function setOcAttributeToDictionary($attr_id, $language_id, $attr_value, $itdaat_attribute_id, $itdaat_attribute_value_id){
 
+    public function getItdaatAttributeName($attr_id, $language_id) {
+        return ($this->database->getAssocRequest("
+            select name from oc_itdaat_attribute_name
+            where oc_itdaat_attribute_name.language_id = {$language_id} and oc_itdaat_attribute_name.itdaat_attribute_id = {$attr_id}
+        "))[0]['name'];
+    }
+
+    public function getItdaatAttributeByID($attr_id, $language_id){
+        return $this->database->getAssocRequest("
+            select oc_itdaat_attribute_value.value, oc_itdaat_attribute_value.id from oc_itdaat_attribute_name
+                left join oc_itdaat_attribute_value
+                    on oc_itdaat_attribute_name.language_id = oc_itdaat_attribute_value.language_id and oc_itdaat_attribute_name.itdaat_attribute_id = oc_itdaat_attribute_value.itdaat_attribute_id
+            where oc_itdaat_attribute_name.language_id = {$language_id} and oc_itdaat_attribute_name.itdaat_attribute_id = {$attr_id}
+         ");
+    }
+
+    public function setOcAttributeToDictionary($attr_id, $language_id, $attr_value, $itdaat_attribute_id, $itdaat_attribute_value_id){
         $this->database->setRequest("
             update oc_itdaat_dictionary set itdaat_attribute_id = {$itdaat_attribute_id}, itdaat_attribute_value_id = {$itdaat_attribute_value_id}
-            where language_id = {$language_id} and oc_attribute_id = {$attr_id} and  oc_attribute_value = {$attr_value};
+            where language_id = {$language_id} and oc_attribute_id = {$attr_id} and  oc_attribute_value = '{$attr_value}';
         ");
     }
 
@@ -86,7 +102,7 @@ class ModelExtensionModuleItdaatAttributer extends ModelItDaat {
             $r = [];
             foreach ($rows[$key] as &$row){
                 $r['name'] = $row['name']; 
-                $r['id'] = $row['id'];
+                $r['id'] = $row['itdaat_attribute_id'];
                 if(isset($r['value'])){
                     $r['value'] = $r['value'] . ', ' . $row['value'];
                 } else {

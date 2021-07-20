@@ -12,7 +12,6 @@ function addSelect(element_id){
 }
 $(document).ready(function(){
     $('input[type="checkbox"]').each(function(){
-        document.getElementById(element_id + "_select").children["0"].value = "no";
         $(this).prop('checked', false);
     });
 });

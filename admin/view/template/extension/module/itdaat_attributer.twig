@@ -91,7 +91,7 @@
 								{# TODO SEARCH IN New attributes #}
 								{% for itdaat_attribute in itdaat_attributes %}
 									<div class="col-sm-12">
-										<button  type="submit" name="action" value="connect_itdaat_attribute|" style="all: unset; width: 100%;"  class="btn btn-primary btn-lg btn-block">
+										<button  type="submit" name="action" value="connect_itdaat_attribute|{{itdaat_attribute.id}}" style="all: unset; width: 100%;"  class="btn btn-primary btn-lg btn-block">
 											<div class="list-group">
 												<a class="list-group-item ">
 													<h4 class="list-group-item-heading">{{itdaat_attribute.name}}</h4>

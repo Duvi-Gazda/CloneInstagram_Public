@@ -13,6 +13,7 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
         $this->addItdaatAttribute();
         $this->editItdaatAttribute();
         $this->connectItdaatAttributerDictionary();
+        $this->connectedToItdaatAttribute();
         $this->generateViewData();
         $this->module();
     }
@@ -42,6 +43,8 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
                 $this->data['no'] = $this->language->get('select_none');
                 $this->data['new'] = $this->language->get('select_new');
                 $this->setDefaultOutput('extension/module/itdaat_attributer/itdaat_attributer_connect_itdaat_attribute');
+            } else{
+                $this->setDefaultOutput(self::MODULE_LINK);
             }
         } else{
             $this->setDefaultOutput(self::MODULE_LINK);
@@ -72,22 +75,55 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
     }
 
     private function connectItdaatAttributerDictionary(){
-        $attribute_id = null;
-        if(!isset($_POST['action'])){
+        if(isset($_POST['action'])){
             $action = explode("|", $_POST['action']);
             if($action[0] == 'connect_itdaat_attribute'){
                 $attribute_id = $action[1];
+                $languages = $this->settings->getValueByKey('languages');
+                $language_id = $this->database->getAssocRequest("select language_id from oc_language where name = '{$languages}' ");
+                $language_id = (($language_id)[0])['language_id'];
+                $itdaat_attribute = $this->model_extension_module_itdaat_attributer->getItdaatAttributeByID($attribute_id, $language_id);
+                $this->data['itdaat_attribute_id'] = $attribute_id;
+                $this->data['itdaat_attribute_name'] = $this->model_extension_module_itdaat_attributer->getItdaatAttributeName($attribute_id, $language_id);
+                $this->data['itdaat_attribute_values'] = $itdaat_attribute;
             }
         }
-        if($attribute_id == null){  return;  }
+    }
+
+    private function connectedToItdaatAttribute(){
+        if(!isset($_POST['action'])){
+            return;
+        }
+        $action = explode("|", $_POST['action']);
+        if ($action[0] == 'connected_itdaat_attribute') {
+            $attributes = $_POST['attribute_action'];
+            // $this->log->log($_POST);
+            foreach($attributes as $id => $value){
+                if($value == 'no') continue;
+                $itdaat_attr_id = $action[1];
+                $attribute = explode("|", $id, 3);
+                $language_id = $attribute[0];
+                $oc_attribute_id = $attribute[1];
+                $oc_attribute_value = $attribute[2];
+                if($value == 'new'){
+                    $value = $this->model_extension_module_itdaat_attributer->addItdaatAttributeValue($language_id,$itdaat_attr_id,$oc_attribute_value);
+                }
+                $this->model_extension_module_itdaat_attributer->setOcAttributeToDictionary($oc_attribute_id, $language_id,$oc_attribute_value, $itdaat_attr_id, $value);
+            }
+        }
     }
 
     private function editItdaatAttribute(){
         $attribute_id = null;
-        if(!isset($_POST['action'])){
+        if(isset($_POST['action'])){
             $action = explode("|", $_POST['action']);
             if($action[0] == 'edit_itdaat_attribute'){
                 $attribute_id = $action[1];
+                $languages = $this->settings->getValueByKey('languages');
+                $language_id = $this->database->getAssocRequest("select language_id from oc_language where name = '{$languages}' ");
+                $language_id = (($language_id)[0])['language_id'];
+                $itdaat_attribute = $this->model_extension_module_itdaat_attributer->getItdaatAttributeByID($attribute_id, $language_id);
+                $this->log->log($itdaat_attribute);
             }
         }
         if($attribute_id == null){  return;  }
