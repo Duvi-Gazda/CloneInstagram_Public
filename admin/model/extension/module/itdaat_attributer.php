@@ -51,7 +51,7 @@ class ModelExtensionModuleItdaatAttributer extends ModelItDaat {
         foreach ($attributes_not_formatted as $attribute){
             $attributes['name'] = $attribute['name'];
             $row['value'] = $attribute['oc_attribute_value'];
-            $row['id'] = $attribute['language_id'] . ' and ' . $attribute['oc_attribute_id'] . '' . $attribute['oc_attribute_value'];
+            $row['id'] = $attribute['language_id'] . '|' . $attribute['oc_attribute_id'] . '|' . $attribute['oc_attribute_value'];
             $attributes[] = $row;
         }
         return $attributes;

@@ -39,6 +39,8 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat {
             }
             if($action[0] == 'connect_itdaat_attribute'){
                 $this->document->addScript('view/javascript/itdaat/attributer/conectAttribute.js');
+                $this->data['no'] = $this->language->get('select_none');
+                $this->data['new'] = $this->language->get('select_new');
                 $this->setDefaultOutput('extension/module/itdaat_attributer/itdaat_attributer_connect_itdaat_attribute');
             }
         } else{

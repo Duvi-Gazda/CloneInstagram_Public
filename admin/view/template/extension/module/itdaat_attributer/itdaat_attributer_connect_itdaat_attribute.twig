@@ -63,8 +63,9 @@
 											<label class="list-group-item" for="{{itdaat_oc_attribute_value.value}}">{{itdaat_oc_attribute_value.value}}</label>
 										</div>
                                         <div class="col-sm-3 hidden text-center" id="{{itdaat_oc_attribute_value.value}}_select">
-                                            <select name="attribute_action" class="form-control" style="width:100%;">
-                                                <option value="none">None</option>
+                                            <select id="{{itdaat_oc_attribute_value.id}}" name="attribute_action[{{itdaat_oc_attribute_value.id}}]" class="form-control" style="width:100%;">
+                                                <option value="no" id="no">{{no}}</option>
+                                                <option value="new" id="new">{{new}}</option>
                                             </select>
                                         </div>
 									{% endfor %}
