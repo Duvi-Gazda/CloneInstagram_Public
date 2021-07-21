@@ -33,6 +33,15 @@ class ModelExtensionModuleItdaatAttributer extends ModelItDaat {
         "))[0]['name'];
     }
 
+    public function deleteItdaatAttributeValue($attr_val_id, $language_id){
+        $this->database->setRequest("
+            delete from oc_itdaat_attribute_value where language_id = {$language_id} and id = {$attr_val_id};
+        ");
+        $this->database->setRequest("
+            update oc_itdaat_dictionary set itdaat_attribute_value_id = null, itdaat_attribute_id = null where itdaat_attribute_value_id = {$attr_val_id}
+        ");
+    }
+
     public function getItdaatAttributeByID($attr_id, $language_id){
         return $this->database->getAssocRequest("
             select oc_itdaat_attribute_value.value, oc_itdaat_attribute_value.id from oc_itdaat_attribute_name

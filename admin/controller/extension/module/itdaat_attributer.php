@@ -64,7 +64,19 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat
             return;
         }
         $action = explode("|", $_POST['action']);
-        if ($action[0] == 'connect_itdaat_attribute') {
+        if ($action[0] == 'connect_itdaat_attribute' || $action[0] == 'delete_itdaat_attribute_value') {
+            $languages = $this->settings->getValueByKey('languages');
+            $language_id = $this->database->getAssocRequest("select language_id from oc_language where name = '{$languages}' ");
+            $language_id = (($language_id)[0])['language_id'];
+
+            if($action[0] == 'delete_itdaat_attribute_value'){
+                if(isset($action[2])){
+                    $attribute_value_id = $action[2];
+                    $this->model_extension_module_itdaat_attributer->deleteItdaatAttributeValue($attribute_value_id,$language_id);
+                }
+            }
+
+
             $this->data['back_url'] = $_SERVER['REQUEST_URI'];
             $this->document->addScript('view/javascript/itdaat/attributer/conectAttribute.js');
             $this->data['no'] = $this->language->get('select_none');
@@ -73,14 +85,14 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat
 
 
             $attribute_id = $action[1];
-            $languages = $this->settings->getValueByKey('languages');
-            $language_id = $this->database->getAssocRequest("select language_id from oc_language where name = '{$languages}' ");
-            $language_id = (($language_id)[0])['language_id'];
             $itdaat_attribute = $this->model_extension_module_itdaat_attributer->getItdaatAttributeByID($attribute_id, $language_id);
             $this->data['itdaat_attribute_id'] = $attribute_id;
             $this->data['itdaat_attribute_name'] = $this->model_extension_module_itdaat_attributer->getItdaatAttributeName($attribute_id, $language_id);
             $this->data['itdaat_attribute_values'] = $itdaat_attribute;
         }
+
+        // if($action[0] == '')
+
     }
 
     private function connectedToItdaatAttribute()

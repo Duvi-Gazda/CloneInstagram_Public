@@ -83,10 +83,18 @@
 							</div>
 							<div class="col-sm-12 itdaat-container-overflow">
                                 {% for itdaat_attribute_value in itdaat_attribute_values %}
-                                    <div class="list-group">
+                                    <div class="list-group col-sm-10">
 											<input disabled type="checkbox" name="{{itdaat_attribute_value.value}}" value="{{itdaat_attribute_value.value}}" id="itdaat_{{itdaat_attribute_value.value}}"/>
 											<label class="list-group-item" for="itdaat_{{itdaat_attribute_value.value}}">&nbsp;{{itdaat_attribute_value.value}}</label>
-										</div>
+									</div>
+									<div class="container col-sm-2">
+										<button class="btn btn-danger" type="submit" name="action" value="delete_itdaat_attribute_value|{{itdaat_attribute_id}}|{{itdaat_attribute_value.id}}">
+											<i class="fa fa-trash" aria-hidden="true"></i>
+										</button>
+										<button class="btn btn-primary" type="submit" name="action" value="change_itdaat_attribute|{{itdaat_attribute_id}}|{{itdaat_attribute_value.id}}">
+											<i class="fa fa-pencil" aria-hidden="true"></i>
+										</button>
+									</div>
                                 {% endfor %}
 							</div>
 						</div>
