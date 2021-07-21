@@ -14174,3 +14174,74 @@
 2021-07-21 14:26:45 - PHP Notice:  Trying to access array offset on value of type null in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/model/extension/module/itdaat_attributer.php on line 61
 2021-07-21 14:26:45 - PHP Notice:  Undefined index: name in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 172
 2021-07-21 14:33:13 - PHP Notice:  Undefined index: name in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 172
+2021-07-21 14:39:25 - PHP Notice:  Undefined index: itdaat_attributes_name in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 46
+2021-07-21 14:39:25 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/model/extension/module/itdaat_attributer.php on line 15
+2021-07-21 14:39:25 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 51
+2021-07-21 14:39:29 - PHP Notice:  Undefined index: itdaat_attributes_name in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 46
+2021-07-21 14:39:29 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/model/extension/module/itdaat_attributer.php on line 15
+2021-07-21 14:39:29 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 51
+2021-07-21 14:40:00 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 51
+2021-07-21 14:40:26 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 54
+2021-07-21 19:28:38 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 111
+2021-07-21 19:28:38 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 19:28:42 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 111
+2021-07-21 19:28:42 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 19:29:29 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 111
+2021-07-21 19:29:29 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 19:29:53 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 111
+2021-07-21 19:29:53 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 19:30:04 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 111
+2021-07-21 19:30:04 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 19:30:57 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 111
+2021-07-21 19:30:57 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 19:31:29 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 110
+2021-07-21 19:31:29 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 111
+2021-07-21 19:31:29 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 19:35:14 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 110
+2021-07-21 19:35:14 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 111
+2021-07-21 19:35:14 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 19:35:27 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 110
+2021-07-21 19:35:27 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 111
+2021-07-21 19:35:27 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 19:35:47 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 111
+2021-07-21 19:35:47 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 19:35:52 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 111
+2021-07-21 19:35:52 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 19:36:01 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 111
+2021-07-21 19:36:01 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 19:36:14 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 19:36:14 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 113
+2021-07-21 19:37:20 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 19:37:20 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 113
+2021-07-21 19:37:51 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 19:37:51 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 113
+2021-07-21 19:38:54 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 19:38:54 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 113
+2021-07-21 19:39:17 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 19:39:17 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 113
+2021-07-21 19:39:24 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 19:39:24 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 113
+2021-07-21 19:39:42 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 19:39:42 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 113
+2021-07-21 19:55:54 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 19:55:54 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 113
+2021-07-21 19:56:15 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 19:56:15 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 113
+2021-07-21 19:57:02 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 19:57:02 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 113
+2021-07-21 19:57:09 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 19:57:09 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 113
+2021-07-21 19:59:04 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 19:59:04 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 113
+2021-07-21 19:59:10 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 19:59:10 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 113
+2021-07-21 19:59:40 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 19:59:40 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 113
+2021-07-21 20:02:43 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 20:02:43 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 113
+2021-07-21 20:03:08 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 20:03:08 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 113
+2021-07-21 20:03:17 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 20:03:17 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 113
+2021-07-21 20:04:20 - PHP Notice:  Undefined index: itdaat_attribute_values in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 112
+2021-07-21 20:04:20 - PHP Warning:  Invalid argument supplied for foreach() in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 113

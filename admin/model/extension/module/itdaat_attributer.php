@@ -58,6 +58,12 @@ class ModelExtensionModuleItdaatAttributer extends ModelItDaat {
         ");
     }
 
+    public function updateItdaatAttributeValue($attr_val_id, $attr_value){
+        $this->database->setRequest("
+            update oc_itdaat_attribute_value set value = '{$attr_value}' where id = {$attr_val_id};
+        ");
+    }
+
     public function getAttributeToSet(){
         $languages = $this->settings->getValueByKey('languages');
         $language_id = $this->database->getAssocRequest("select language_id from oc_language where name = '{$languages}' ");

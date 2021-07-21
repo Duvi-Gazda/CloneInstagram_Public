@@ -1,96 +1,15 @@
-[2021-07-20 13:58:57] INFO: string(189) "
-        update oc_itdaat_dictionary set itdaat_attribute_id = 37, itdaat_attribute_value_id = 20
-        where language_id = 6 and oc_attribute_id = 1 and  oc_attribute_value = Blue ;
-    "
-
-[2021-07-20 13:58:13] INFO: string(189) "
-        update oc_itdaat_dictionary set itdaat_attribute_id = 37, itdaat_attribute_value_id = 19
-        where language_id = 6 and oc_attribute_id = 1 and  oc_attribute_value = Blue ;
-    "
-
-[2021-07-20 13:58:04] INFO: array(3) {
-  [0]=>
-  string(1) "6"
-  [1]=>
-  string(1) "1"
-  [2]=>
-  string(5) "Blue "
-}
-
-[2021-07-20 13:57:54] INFO: array(2) {
-  [0]=>
-  string(1) "6"
-  [1]=>
-  string(7) "1|Blue "
-}
-
-[2021-07-20 13:56:47] INFO: string(190) "
-        update oc_itdaat_dictionary set itdaat_attribute_id = 37, itdaat_attribute_value_id = 18
-        where language_id = 6 and oc_attribute_id = 1|Blue  and  oc_attribute_value = ;
-    "
-
-[2021-07-20 13:48:14] INFO: string(190) "
-        update oc_itdaat_dictionary set itdaat_attribute_id = 37, itdaat_attribute_value_id = new
-        where language_id = 6 and oc_attribute_id = 1|Red  and  oc_attribute_value = ;
-    "
-
-[2021-07-20 13:48:14] INFO: string(192) "
-        update oc_itdaat_dictionary set itdaat_attribute_id = 37, itdaat_attribute_value_id = new
-        where language_id = 6 and oc_attribute_id = 1|Green  and  oc_attribute_value = ;
-    "
-
-[2021-07-20 13:48:14] INFO: string(192) "
-        update oc_itdaat_dictionary set itdaat_attribute_id = 37, itdaat_attribute_value_id = new
-        where language_id = 6 and oc_attribute_id = 1|Brown  and  oc_attribute_value = ;
-    "
-
-[2021-07-20 13:48:14] INFO: string(191) "
-        update oc_itdaat_dictionary set itdaat_attribute_id = 37, itdaat_attribute_value_id = new
-        where language_id = 6 and oc_attribute_id = 1|Blue  and  oc_attribute_value = ;
-    "
-
-[2021-07-20 13:45:38] INFO: array(5) {
+[2021-07-21 20:21:10] INFO: array(5) {
   ["action"]=>
-  string(29) "connected_itdaat_attribute|37"
+  string(28) "connected_itdaat_attribute|4"
   ["enabled"]=>
   string(1) "0"
   ["languages"]=>
   string(14) "Русский"
   ["attribute_action"]=>
-  array(318) {
+  array(302) {
     ["6|1|(Выберите нужный цвет) "]=>
     string(2) "no"
-    ["6|1|Blue "]=>
-    string(2) "no"
-    ["6|1|Brown "]=>
-    string(2) "12"
-    ["6|1|Green "]=>
-    string(2) "no"
-    ["6|1|Red "]=>
-    string(2) "no"
-    ["6|1|Smile "]=>
-    string(2) "no"
-    ["6|1|White "]=>
-    string(2) "no"
-    ["6|1|Yellow "]=>
-    string(2) "no"
-    ["6|1|Арт нуво "]=>
-    string(2) "no"
-    ["6|1|Ассорти "]=>
-    string(2) "no"
-    ["6|1|Бамбук "]=>
-    string(2) "no"
-    ["6|1|Беж "]=>
-    string(2) "no"
-    ["6|1|бежево-коричневый "]=>
-    string(2) "no"
-    ["6|1|Бежевые "]=>
-    string(2) "no"
-    ["6|1|Бежевый "]=>
-    string(2) "no"
     ["6|1|Бежевый с белым "]=>
-    string(2) "no"
-    ["6|1|Бежевый с зеленым "]=>
     string(2) "no"
     ["6|1|Бежевый с золотистым "]=>
     string(2) "no"
@@ -187,8 +106,6 @@
     ["6|1|белый с сиреневым "]=>
     string(2) "no"
     ["6|1|белый с узором "]=>
-    string(2) "no"
-    ["6|1|Белый с фиолетовым "]=>
     string(2) "no"
     ["6|1|Белый с цветами "]=>
     string(2) "no"
@@ -695,53 +612,39 @@
     ["6|1|Ярко-оранжевый "]=>
     string(2) "no"
   }
-  ["Brown_"]=>
-  string(6) "Brown "
+  ["itdaat_attribute_values"]=>
+  array(2) {
+    [18]=>
+    string(15) "Бежевый "
+    [19]=>
+    string(33) "Бежевый с зеленым "
+  }
 }
 
-[2021-07-20 13:33:25] INFO: array(4) {
+[2021-07-21 20:21:02] INFO: array(3) {
+  ["enabled"]=>
+  string(1) "0"
+  ["languages"]=>
+  string(14) "Русский"
   ["action"]=>
-  string(26) "connected_itdaat_attribute"
+  string(26) "connect_itdaat_attribute|4"
+}
+
+[2021-07-21 20:21:00] INFO: array(6) {
+  ["action"]=>
+  string(28) "connected_itdaat_attribute|4"
   ["enabled"]=>
   string(1) "0"
   ["languages"]=>
   string(14) "Русский"
   ["attribute_action"]=>
-  array(318) {
+  array(303) {
     ["6|1|(Выберите нужный цвет) "]=>
-    string(2) "no"
-    ["6|1|Blue "]=>
-    string(2) "no"
-    ["6|1|Brown "]=>
-    string(2) "no"
-    ["6|1|Green "]=>
-    string(2) "no"
-    ["6|1|Red "]=>
-    string(2) "no"
-    ["6|1|Smile "]=>
-    string(2) "no"
-    ["6|1|White "]=>
-    string(2) "no"
-    ["6|1|Yellow "]=>
-    string(2) "no"
-    ["6|1|Арт нуво "]=>
-    string(2) "no"
-    ["6|1|Ассорти "]=>
-    string(2) "no"
-    ["6|1|Бамбук "]=>
-    string(2) "no"
-    ["6|1|Беж "]=>
-    string(2) "no"
-    ["6|1|бежево-коричневый "]=>
-    string(2) "no"
-    ["6|1|Бежевые "]=>
-    string(2) "no"
-    ["6|1|Бежевый "]=>
     string(2) "no"
     ["6|1|Бежевый с белым "]=>
     string(2) "no"
     ["6|1|Бежевый с зеленым "]=>
-    string(2) "no"
+    string(3) "new"
     ["6|1|Бежевый с золотистым "]=>
     string(2) "no"
     ["6|1|Бежевый с коричневым "]=>
@@ -837,8 +740,6 @@
     ["6|1|белый с сиреневым "]=>
     string(2) "no"
     ["6|1|белый с узором "]=>
-    string(2) "no"
-    ["6|1|Белый с фиолетовым "]=>
     string(2) "no"
     ["6|1|Белый с цветами "]=>
     string(2) "no"
@@ -1345,2039 +1246,2107 @@
     ["6|1|Ярко-оранжевый "]=>
     string(2) "no"
   }
-}
-
-[2021-07-20 13:31:44] INFO: array(4) {
-  ["action"]=>
-  string(26) "connected_itdaat_attribute"
-  ["enabled"]=>
-  string(1) "0"
-  ["languages"]=>
-  string(14) "Русский"
-  ["attribute_action"]=>
-  array(318) {
-    ["6|1|(Выберите нужный цвет) "]=>
-    string(2) "no"
-    ["6|1|Blue "]=>
-    string(2) "no"
-    ["6|1|Brown "]=>
-    string(2) "no"
-    ["6|1|Green "]=>
-    string(2) "no"
-    ["6|1|Red "]=>
-    string(2) "no"
-    ["6|1|Smile "]=>
-    string(2) "no"
-    ["6|1|White "]=>
-    string(2) "no"
-    ["6|1|Yellow "]=>
-    string(2) "no"
-    ["6|1|Арт нуво "]=>
-    string(2) "no"
-    ["6|1|Ассорти "]=>
-    string(2) "no"
-    ["6|1|Бамбук "]=>
-    string(2) "no"
-    ["6|1|Беж "]=>
-    string(2) "no"
-    ["6|1|бежево-коричневый "]=>
-    string(2) "no"
-    ["6|1|Бежевые "]=>
-    string(2) "no"
-    ["6|1|Бежевый "]=>
-    string(2) "no"
-    ["6|1|Бежевый с белым "]=>
-    string(2) "no"
-    ["6|1|Бежевый с зеленым "]=>
-    string(2) "no"
-    ["6|1|Бежевый с золотистым "]=>
-    string(2) "no"
-    ["6|1|Бежевый с коричневым "]=>
-    string(2) "no"
-    ["6|1|Бежевый с красным "]=>
-    string(2) "no"
-    ["6|1|Бежевый с розовым "]=>
-    string(2) "no"
-    ["6|1|бежевый с серым "]=>
-    string(2) "no"
-    ["6|1|Бежевый с фиолетовым "]=>
-    string(2) "no"
-    ["6|1|бежевый,голубой "]=>
-    string(2) "no"
-    ["6|1|бежевый,коричневый "]=>
-    string(2) "no"
-    ["6|1|Безцветные "]=>
-    string(2) "no"
-    ["6|1|Белая "]=>
-    string(2) "no"
-    ["6|1|белая глянцевая "]=>
-    string(2) "no"
-    ["6|1|Белая с цветами "]=>
-    string(2) "no"
-    ["6|1|белая, голубая, розовая, фиолетовая, зеленая "]=>
-    string(2) "no"
-    ["6|1|Бело-голубой "]=>
-    string(2) "no"
-    ["6|1|Бело-розовый "]=>
-    string(2) "no"
-    ["6|1|бело-салатовый "]=>
-    string(2) "no"
-    ["6|1|бело-серебреный "]=>
-    string(2) "no"
-    ["6|1|Белый "]=>
-    string(2) "no"
-    ["6|1|белый  золото "]=>
-    string(2) "no"
-    ["6|1|Белый  серебро "]=>
-    string(2) "no"
-    ["6|1|Белый / Розовый "]=>
-    string(2) "no"
-    ["6|1|белый глянцевый "]=>
-    string(2) "no"
-    ["6|1|белый и черный "]=>
-    string(2) "no"
-    ["6|1|белый розовый/оранжевый/голубой/зеленый "]=>
-    string(2) "no"
-    ["6|1|белый с бежевым "]=>
-    string(2) "no"
-    ["6|1|Белый с бирюзовым "]=>
-    string(2) "no"
-    ["6|1|Белый с бордовым "]=>
-    string(2) "no"
-    ["6|1|Белый с голубым "]=>
-    string(2) "no"
-    ["6|1|Белый с декором "]=>
-    string(2) "no"
-    ["6|1|Белый с желтым "]=>
-    string(2) "no"
-    ["6|1|Белый с зеленым "]=>
-    string(2) "no"
-    ["6|1|Белый с золотистым "]=>
-    string(2) "no"
-    ["6|1|Белый с золотом "]=>
-    string(2) "no"
-    ["6|1|Белый с золотым "]=>
-    string(2) "no"
-    ["6|1|Белый с золотым узором "]=>
-    string(2) "no"
-    ["6|1|Белый с коричневым "]=>
-    string(2) "no"
-    ["6|1|Белый с красным "]=>
-    string(2) "no"
-    ["6|1|Белый с мятным "]=>
-    string(2) "no"
-    ["6|1|Белый с оранжевым "]=>
-    string(2) "no"
-    ["6|1|Белый с прозрачным "]=>
-    string(2) "no"
-    ["6|1|белый с ресунком "]=>
-    string(2) "no"
-    ["6|1|Белый с рисунком "]=>
-    string(2) "no"
-    ["6|1|Белый с розовым "]=>
-    string(2) "no"
-    ["6|1|Белый с серебристым "]=>
-    string(2) "no"
-    ["6|1|Белый с серым "]=>
-    string(2) "no"
-    ["6|1|Белый с синим "]=>
-    string(2) "no"
-    ["6|1|белый с сиреневым "]=>
-    string(2) "no"
-    ["6|1|белый с узором "]=>
-    string(2) "no"
-    ["6|1|Белый с фиолетовым "]=>
-    string(2) "no"
-    ["6|1|Белый с цветами "]=>
-    string(2) "no"
-    ["6|1|Белый с черным "]=>
-    string(2) "no"
-    ["6|1|белый, зеленый, голубой "]=>
-    string(2) "no"
-    ["6|1|белый, розовый, синий "]=>
-    string(2) "no"
-    ["6|1|Белый/Зеленый "]=>
-    string(2) "no"
-    ["6|1|Белый/Красный "]=>
-    string(2) "no"
-    ["6|1|Белый/Синий "]=>
-    string(2) "no"
-    ["6|1|Белыйголубой "]=>
-    string(2) "no"
-    ["6|1|Белыйоранжевый "]=>
-    string(2) "no"
-    ["6|1|Бирюза "]=>
-    string(2) "no"
-    ["6|1|Бирюзовый "]=>
-    string(2) "no"
-    ["6|1|бирюзовый, серый, розовый "]=>
-    string(2) "no"
-    ["6|1|Бордо "]=>
-    string(2) "no"
-    ["6|1|Бордовый "]=>
-    string(2) "no"
-    ["6|1|Бронзовый "]=>
-    string(2) "no"
-    ["6|1|Бургунди "]=>
-    string(2) "no"
-    ["6|1|в асортименте "]=>
-    string(2) "no"
-    ["6|1|в ассортименте "]=>
-    string(2) "no"
-    ["6|1|в ассортименте. "]=>
-    string(2) "no"
-    ["6|1|в комплектезеленый синий оранжевый красный "]=>
-    string(2) "no"
-    ["6|1|Весна "]=>
-    string(2) "no"
-    ["6|1|Вишневый "]=>
-    string(2) "no"
-    ["6|1|Голобуй "]=>
-    string(2) "no"
-    ["6|1|Голубая "]=>
-    string(2) "no"
-    ["6|1|Голубой "]=>
-    string(2) "no"
-    ["6|1|Голубой с рисунком "]=>
-    string(2) "no"
-    ["6|1|Голубой тиффани "]=>
-    string(2) "no"
-    ["6|1|голубой, зеленый "]=>
-    string(2) "no"
-    ["6|1|Голубой, Зеленый, Красный, Фиолетовый "]=>
-    string(2) "no"
-    ["6|1|голубой, салатовый, желтый "]=>
-    string(2) "no"
-    ["6|1|горчичный, синий, серый (оливковый), бежевый "]=>
-    string(2) "no"
-    ["6|1|графит "]=>
-    string(2) "no"
-    ["6|1|Графитовый "]=>
-    string(2) "no"
-    ["6|1|Дерево "]=>
-    string(2) "no"
-    ["6|1|Деревянный "]=>
-    string(2) "no"
-    ["6|1|дымчастый "]=>
-    string(2) "no"
-    ["6|1|Дымчатый "]=>
-    string(2) "no"
-    ["6|1|Жёлто-зеленый "]=>
-    string(2) "no"
-    ["6|1|Желтый "]=>
-    string(2) "no"
-    ["6|1|Желтый с красным "]=>
-    string(2) "no"
-    ["6|1|Желтый с оранжевым "]=>
-    string(2) "no"
-    ["6|1|жемчужный "]=>
-    string(2) "no"
-    ["6|1|Зеленая "]=>
-    string(2) "no"
-    ["6|1|Зеленый "]=>
-    string(2) "no"
-    ["6|1|Зеленый / Белый "]=>
-    string(2) "no"
-    ["6|1|Зеленый бамбук "]=>
-    string(2) "no"
-    ["6|1|Зеленый с рисунком "]=>
-    string(2) "no"
-    ["6|1|зеленый, белый "]=>
-    string(2) "no"
-    ["6|1|зеленый, синий, красный "]=>
-    string(2) "no"
-    ["6|1|Зеленый/Белый "]=>
-    string(2) "no"
-    ["6|1|Золотистая "]=>
-    string(2) "no"
-    ["6|1|Золотисто-розовый "]=>
-    string(2) "no"
-    ["6|1|Золотистый "]=>
-    string(2) "no"
-    ["6|1|Золото "]=>
-    string(2) "no"
-    ["6|1|Золотой "]=>
-    string(2) "no"
-    ["6|1|Золотой завиток "]=>
-    string(2) "no"
-    ["6|1|Изумрудный "]=>
-    string(2) "no"
-    ["6|1|Коралловый "]=>
-    string(2) "no"
-    ["6|1|Кориневый "]=>
-    string(2) "no"
-    ["6|1|Коричнвый "]=>
-    string(2) "no"
-    ["6|1|Коричневый "]=>
-    string(2) "no"
-    ["6|1|Коричневый (1) "]=>
-    string(2) "no"
-    ["6|1|коричневый (шоколадный) "]=>
-    string(2) "no"
-    ["6|1|Кофе "]=>
-    string(2) "no"
-    ["6|1|кофейный "]=>
-    string(2) "no"
-    ["6|1|Красная "]=>
-    string(2) "no"
-    ["6|1|Красно-белый "]=>
-    string(2) "no"
-    ["6|1|Красное и Черное "]=>
-    string(2) "no"
-    ["6|1|Красный "]=>
-    string(2) "no"
-    ["6|1|Красный - Черный "]=>
-    string(2) "no"
-    ["6|1|красный в горох "]=>
-    string(2) "no"
-    ["6|1|Красный мак "]=>
-    string(2) "no"
-    ["6|1|Красный с бежевым "]=>
-    string(2) "no"
-    ["6|1|Красный с белым "]=>
-    string(2) "no"
-    ["6|1|Красный с золотом "]=>
-    string(2) "no"
-    ["6|1|Красный с рисунком "]=>
-    string(2) "no"
-    ["6|1|Красный с розовым "]=>
-    string(2) "no"
-    ["6|1|Красный с фиолетовым "]=>
-    string(2) "no"
-    ["6|1|Красный с черным "]=>
-    string(2) "no"
-    ["6|1|красный, оранжевый, желтый, бежевый "]=>
-    string(2) "no"
-    ["6|1|красный/черный "]=>
-    string(2) "no"
-    ["6|1|Кремовый "]=>
-    string(2) "no"
-    ["6|1|Лаванда "]=>
-    string(2) "no"
-    ["6|1|Лиловый "]=>
-    string(2) "no"
-    ["6|1|Медный "]=>
-    string(2) "no"
-    ["6|1|ментоловый "]=>
-    string(2) "no"
-    ["6|1|металик "]=>
-    string(2) "no"
-    ["6|1|металический "]=>
-    string(2) "no"
-    ["6|1|Металл "]=>
-    string(2) "no"
-    ["6|1|Металлик "]=>
-    string(2) "no"
-    ["6|1|Металлический "]=>
-    string(2) "no"
-    ["6|1|металллический "]=>
-    string(2) "no"
-    ["6|1|метталический "]=>
-    string(2) "no"
-    ["6|1|Микс "]=>
-    string(2) "no"
-    ["6|1|Молочный "]=>
-    string(2) "no"
-    ["6|1|мраморный "]=>
-    string(2) "no"
-    ["6|1|мятный "]=>
-    string(2) "no"
-    ["6|1|на любой вкус (уточняйте) "]=>
-    string(2) "no"
-    ["6|1|нежно лиловый, нежно розовый "]=>
-    string(2) "no"
-    ["6|1|Нежно-розовый "]=>
-    string(2) "no"
-    ["6|1|Нержавеющая сталь "]=>
-    string(2) "no"
-    ["6|1|Новый год "]=>
-    string(2) "no"
-    ["6|1|Оливковый "]=>
-    string(2) "no"
-    ["6|1|Оранежвый "]=>
-    string(2) "no"
-    ["6|1|Оранж "]=>
-    string(2) "no"
-    ["6|1|Оранжевая "]=>
-    string(2) "no"
-    ["6|1|Оранжевый "]=>
-    string(2) "no"
-    ["6|1|оранжевый и белый "]=>
-    string(2) "no"
-    ["6|1|Оранжевый с зеленым "]=>
-    string(2) "no"
-    ["6|1|Оранжевый с золотистым "]=>
-    string(2) "no"
-    ["6|1|Оранжевый с красным "]=>
-    string(2) "no"
-    ["6|1|Оранжевый с рисунком "]=>
-    string(2) "no"
-    ["6|1|оранжевый, белый "]=>
-    string(2) "no"
-    ["6|1|оранжевый, голубой, салатовый "]=>
-    string(2) "no"
-    ["6|1|оранжевый, салатовый, серый "]=>
-    string(2) "no"
-    ["6|1|Орнамент "]=>
-    string(2) "no"
-    ["6|1|основабелый "]=>
-    string(2) "no"
-    ["6|1|основабелый,печатьцветная "]=>
-    string(2) "no"
-    ["6|1|Персиковый "]=>
-    string(2) "no"
-    ["6|1|Песочный "]=>
-    string(2) "no"
-    ["6|1|Прозрачная "]=>
-    string(2) "no"
-    ["6|1|прозрачний "]=>
-    string(2) "no"
-    ["6|1|Прозрачно-вишневый "]=>
-    string(2) "no"
-    ["6|1|прозрачно-оранжевый "]=>
-    string(2) "no"
-    ["6|1|Прозрачный "]=>
-    string(2) "no"
-    ["6|1|прозрачный ,розовый "]=>
-    string(2) "no"
-    ["6|1|Прозрачный / Стальной "]=>
-    string(2) "no"
-    ["6|1|Прозрачный / Стальной  "]=>
-    string(2) "no"
-    ["6|1|Прозрачный с голубым "]=>
-    string(2) "no"
-    ["6|1|Прозрачный с деревом "]=>
-    string(2) "no"
-    ["6|1|прозрачный с желтым "]=>
-    string(2) "no"
-    ["6|1|Прозрачный с золотым "]=>
-    string(2) "no"
-    ["6|1|прозрачный с красным "]=>
-    string(2) "no"
-    ["6|1|прозрачный с оранжевым "]=>
-    string(2) "no"
-    ["6|1|Прозрачный с рисунком "]=>
-    string(2) "no"
-    ["6|1|Прозрачный с розовым "]=>
-    string(2) "no"
-    ["6|1|Прозрачный с синим "]=>
-    string(2) "no"
-    ["6|1|Прозрачный с фиолетовым "]=>
-    string(2) "no"
-    ["6|1|прозрачный с черной крышкой "]=>
-    string(2) "no"
-    ["6|1|Прозрачный с черным "]=>
-    string(2) "no"
-    ["6|1|прозрачный, зеленый "]=>
-    string(2) "no"
-    ["6|1|прозрачный, синий "]=>
-    string(2) "no"
-    ["6|1|прозрачный,голубой "]=>
-    string(2) "no"
-    ["6|1|прозрачный,желтый "]=>
-    string(2) "no"
-    ["6|1|прозрачный/светло-коричневый "]=>
-    string(2) "no"
-    ["6|1|Пудра "]=>
-    string(2) "no"
-    ["6|1|Разноцвет "]=>
-    string(2) "no"
-    ["6|1|Разноцветный "]=>
-    string(2) "no"
-    ["6|1|Разные цвета "]=>
-    string(2) "no"
-    ["6|1|Розовая "]=>
-    string(2) "no"
-    ["6|1|Розово-золотой "]=>
-    string(2) "no"
-    ["6|1|Розовое золото "]=>
-    string(2) "no"
-    ["6|1|Розовый "]=>
-    string(2) "no"
-    ["6|1|Розовый / Желтый / Зеленый / Коричневый "]=>
-    string(2) "no"
-    ["6|1|Розовый / Оранжевый / Фиолетовый / Синий "]=>
-    string(2) "no"
-    ["6|1|Розовый с бежевым "]=>
-    string(2) "no"
-    ["6|1|Розовый с белым "]=>
-    string(2) "no"
-    ["6|1|Розовый с голубым "]=>
-    string(2) "no"
-    ["6|1|Розовый с золотистым "]=>
-    string(2) "no"
-    ["6|1|Розовый с рисунком "]=>
-    string(2) "no"
-    ["6|1|Розовый с салатовым "]=>
-    string(2) "no"
-    ["6|1|Розовый с темно-розовым "]=>
-    string(2) "no"
-    ["6|1|розовый, голубой "]=>
-    string(2) "no"
-    ["6|1|розовый, голубой, желтый "]=>
-    string(2) "no"
-    ["6|1|розовый, голубой, зеленый "]=>
-    string(2) "no"
-    ["6|1|Розовый, красный, синий, черный "]=>
-    string(2) "no"
-    ["6|1|Сакура "]=>
-    string(2) "no"
-    ["6|1|Салатовая "]=>
-    string(2) "no"
-    ["6|1|Салатовый "]=>
-    string(2) "no"
-    ["6|1|Салатовый с бежевым "]=>
-    string(2) "no"
-    ["6|1|Салатовый с белым "]=>
-    string(2) "no"
-    ["6|1|Салатовый с зеленым "]=>
-    string(2) "no"
-    ["6|1|Салатовый с красным "]=>
-    string(2) "no"
-    ["6|1|Салатовый с светло-салатовым "]=>
-    string(2) "no"
-    ["6|1|Светло-коричневый "]=>
-    string(2) "no"
-    ["6|1|Светло-розовый "]=>
-    string(2) "no"
-    ["6|1|Светло-розовый с розовым "]=>
-    string(2) "no"
-    ["6|1|светло-розовый; голубой "]=>
-    string(2) "no"
-    ["6|1|Светло-салатовый с желтым "]=>
-    string(2) "no"
-    ["6|1|Светло-салатовый с салатовым "]=>
-    string(2) "no"
-    ["6|1|Светло-фиолетовый "]=>
-    string(2) "no"
-    ["6|1|Серая "]=>
-    string(2) "no"
-    ["6|1|Серебристрый "]=>
-    string(2) "no"
-    ["6|1|Серебристый "]=>
-    string(2) "no"
-    ["6|1|серебристый, красный "]=>
-    string(2) "no"
-    ["6|1|серебро "]=>
-    string(2) "no"
-    ["6|1|серебряный "]=>
-    string(2) "no"
-    ["6|1|серо-голубой "]=>
-    string(2) "no"
-    ["6|1|серо-синий, зеленый "]=>
-    string(2) "no"
-    ["6|1|Серый "]=>
-    string(2) "no"
-    ["6|1|Серый с белым "]=>
-    string(2) "no"
-    ["6|1|серый с коричневым "]=>
-    string(2) "no"
-    ["6|1|серый с розовым "]=>
-    string(2) "no"
-    ["6|1|Серый, Коричневый "]=>
-    string(2) "no"
-    ["6|1|Синий "]=>
-    string(2) "no"
-    ["6|1|Синий с белым "]=>
-    string(2) "no"
-    ["6|1|Синий с рисунком "]=>
-    string(2) "no"
-    ["6|1|синий с серым "]=>
-    string(2) "no"
-    ["6|1|Сиреневый "]=>
-    string(2) "no"
-    ["6|1|Солнечный день "]=>
-    string(2) "no"
-    ["6|1|Сталь "]=>
-    string(2) "no"
-    ["6|1|Стальной "]=>
-    string(2) "no"
-    ["6|1|Стальной с золотом "]=>
-    string(2) "no"
-    ["6|1|Стальной с коричневым "]=>
-    string(2) "no"
-    ["6|1|Стальной с красным "]=>
-    string(2) "no"
-    ["6|1|Стальной с прозрачным "]=>
-    string(2) "no"
-    ["6|1|Стальной с фиолетовым "]=>
-    string(2) "no"
-    ["6|1|Стальной с черным "]=>
-    string(2) "no"
-    ["6|1|Темно синий "]=>
-    string(2) "no"
-    ["6|1|Темно-желтый "]=>
-    string(2) "no"
-    ["6|1|темно-коричневый "]=>
-    string(2) "no"
-    ["6|1|Темно-оранжевый "]=>
-    string(2) "no"
-    ["6|1|темно-серая "]=>
-    string(2) "no"
-    ["6|1|Темно-серебряный "]=>
-    string(2) "no"
-    ["6|1|Темно-серый "]=>
-    string(2) "no"
-    ["6|1|Темно-синий "]=>
-    string(2) "no"
-    ["6|1|теракотовый "]=>
-    string(2) "no"
-    ["6|1|Терракотовый "]=>
-    string(2) "no"
-    ["6|1|Фиоелтовый "]=>
-    string(2) "no"
-    ["6|1|Фиолетовый "]=>
-    string(2) "no"
-    ["6|1|Фиолетовый (1) "]=>
-    string(2) "no"
-    ["6|1|Фиолетовый с светло-фиолетовым "]=>
-    string(2) "no"
-    ["6|1|хром "]=>
-    string(2) "no"
-    ["6|1|цветной "]=>
-    string(2) "no"
-    ["6|1|Черная "]=>
-    string(2) "no"
-    ["6|1|черно-серебренный "]=>
-    string(2) "no"
-    ["6|1|черно-синий "]=>
-    string(2) "no"
-    ["6|1|Черный "]=>
-    string(2) "no"
-    ["6|1|Черный (1) "]=>
-    string(2) "no"
-    ["6|1|Черный - Красный "]=>
-    string(2) "no"
-    ["6|1|черный и белый "]=>
-    string(2) "no"
-    ["6|1|Черный с бежевым "]=>
-    string(2) "no"
-    ["6|1|Черный с белым "]=>
-    string(2) "no"
-    ["6|1|черный с голубым "]=>
-    string(2) "no"
-    ["6|1|черный с желтым "]=>
-    string(2) "no"
-    ["6|1|Черный с золотом "]=>
-    string(2) "no"
-    ["6|1|Черный с красным "]=>
-    string(2) "no"
-    ["6|1|черный с пальмами "]=>
-    string(2) "no"
-    ["6|1|Черный с рисунком "]=>
-    string(2) "no"
-    ["6|1|Черный с синим "]=>
-    string(2) "no"
-    ["6|1|Черный с стальным "]=>
-    string(2) "no"
-    ["6|1|черный с узором "]=>
-    string(2) "no"
-    ["6|1|Черный, Салатовый, Голубой, Розовый "]=>
-    string(2) "no"
-    ["6|1|черный, серебристый "]=>
-    string(2) "no"
-    ["6|1|черный-белый "]=>
-    string(2) "no"
-    ["6|1|черный/белый "]=>
-    string(2) "no"
-    ["6|1|Черный/Оранжевый "]=>
-    string(2) "no"
-    ["6|1|Черныйбелый "]=>
-    string(2) "no"
-    ["6|1|Шоколадный "]=>
-    string(2) "no"
-    ["6|1|электрик "]=>
-    string(2) "no"
-    ["6|1|ягодный "]=>
-    string(2) "no"
-    ["6|1|Ярко-оранжевый "]=>
-    string(2) "no"
-  }
-}
-
-[2021-07-20 13:14:24] INFO: array(13) {
-  [0]=>
-  array(5) {
-    ["id"]=>
-    string(1) "5"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(7) "Yellow "
-  }
-  [1]=>
-  array(5) {
-    ["id"]=>
-    string(1) "6"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(16) "Арт нуво "
-  }
-  [2]=>
-  array(5) {
-    ["id"]=>
-    string(1) "7"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(15) "Ассорти "
-  }
-  [3]=>
-  array(5) {
-    ["id"]=>
-    string(1) "8"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(13) "Бамбук "
-  }
-  [4]=>
-  array(5) {
-    ["id"]=>
-    string(1) "9"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(7) "Беж "
-  }
-  [5]=>
-  array(5) {
-    ["id"]=>
-    string(2) "10"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(34) "бежево-коричневый "
-  }
-  [6]=>
-  array(5) {
-    ["id"]=>
-    string(2) "11"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(15) "Бежевые "
-  }
-  [7]=>
-  array(5) {
-    ["id"]=>
-    string(2) "12"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(15) "Бежевый "
-  }
-  [8]=>
-  array(5) {
-    ["id"]=>
-    string(2) "13"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(29) "Бежевый с белым "
-  }
-  [9]=>
-  array(5) {
-    ["id"]=>
-    string(2) "14"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(33) "Бежевый с зеленым "
-  }
-  [10]=>
-  array(5) {
-    ["id"]=>
-    string(2) "15"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(39) "Бежевый с золотистым "
-  }
-  [11]=>
-  array(5) {
-    ["id"]=>
-    string(2) "16"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(39) "Бежевый с коричневым "
-  }
-  [12]=>
-  array(5) {
-    ["id"]=>
-    string(2) "17"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(33) "Бежевый с красным "
-  }
-}
-
-[2021-07-20 13:13:48] INFO: array(13) {
-  [0]=>
-  array(5) {
-    ["id"]=>
-    string(1) "5"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(7) "Yellow "
-  }
-  [1]=>
-  array(5) {
-    ["id"]=>
-    string(1) "6"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(16) "Арт нуво "
-  }
-  [2]=>
-  array(5) {
-    ["id"]=>
-    string(1) "7"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(15) "Ассорти "
-  }
-  [3]=>
-  array(5) {
-    ["id"]=>
-    string(1) "8"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(13) "Бамбук "
-  }
-  [4]=>
-  array(5) {
-    ["id"]=>
-    string(1) "9"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(7) "Беж "
-  }
-  [5]=>
-  array(5) {
-    ["id"]=>
-    string(2) "10"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(34) "бежево-коричневый "
-  }
-  [6]=>
-  array(5) {
-    ["id"]=>
-    string(2) "11"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(15) "Бежевые "
-  }
-  [7]=>
-  array(5) {
-    ["id"]=>
-    string(2) "12"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(15) "Бежевый "
-  }
-  [8]=>
-  array(5) {
-    ["id"]=>
-    string(2) "13"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(29) "Бежевый с белым "
-  }
-  [9]=>
-  array(5) {
-    ["id"]=>
-    string(2) "14"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(33) "Бежевый с зеленым "
-  }
-  [10]=>
-  array(5) {
-    ["id"]=>
-    string(2) "15"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(39) "Бежевый с золотистым "
-  }
-  [11]=>
-  array(5) {
-    ["id"]=>
-    string(2) "16"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(39) "Бежевый с коричневым "
-  }
-  [12]=>
-  array(5) {
-    ["id"]=>
-    string(2) "17"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(33) "Бежевый с красным "
-  }
-}
-
-[2021-07-20 13:13:28] INFO: array(13) {
-  [0]=>
-  array(5) {
-    ["id"]=>
-    string(1) "5"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(7) "Yellow "
-  }
-  [1]=>
-  array(5) {
-    ["id"]=>
-    string(1) "6"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(16) "Арт нуво "
-  }
-  [2]=>
-  array(5) {
-    ["id"]=>
-    string(1) "7"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(15) "Ассорти "
-  }
-  [3]=>
-  array(5) {
-    ["id"]=>
-    string(1) "8"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(13) "Бамбук "
-  }
-  [4]=>
-  array(5) {
-    ["id"]=>
-    string(1) "9"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(7) "Беж "
-  }
-  [5]=>
-  array(5) {
-    ["id"]=>
-    string(2) "10"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(34) "бежево-коричневый "
-  }
-  [6]=>
-  array(5) {
-    ["id"]=>
-    string(2) "11"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(15) "Бежевые "
-  }
-  [7]=>
-  array(5) {
-    ["id"]=>
-    string(2) "12"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(15) "Бежевый "
-  }
-  [8]=>
-  array(5) {
-    ["id"]=>
-    string(2) "13"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(29) "Бежевый с белым "
-  }
-  [9]=>
-  array(5) {
-    ["id"]=>
-    string(2) "14"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(33) "Бежевый с зеленым "
-  }
-  [10]=>
-  array(5) {
-    ["id"]=>
-    string(2) "15"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(39) "Бежевый с золотистым "
-  }
-  [11]=>
-  array(5) {
-    ["id"]=>
-    string(2) "16"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(39) "Бежевый с коричневым "
-  }
-  [12]=>
-  array(5) {
-    ["id"]=>
-    string(2) "17"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(33) "Бежевый с красным "
-  }
-}
-
-[2021-07-20 13:12:56] INFO: array(13) {
-  [0]=>
-  array(5) {
-    ["id"]=>
-    string(1) "5"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(7) "Yellow "
-  }
-  [1]=>
-  array(5) {
-    ["id"]=>
-    string(1) "6"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(16) "Арт нуво "
-  }
-  [2]=>
-  array(5) {
-    ["id"]=>
-    string(1) "7"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(15) "Ассорти "
-  }
-  [3]=>
-  array(5) {
-    ["id"]=>
-    string(1) "8"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(13) "Бамбук "
-  }
-  [4]=>
-  array(5) {
-    ["id"]=>
-    string(1) "9"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(7) "Беж "
-  }
-  [5]=>
-  array(5) {
-    ["id"]=>
-    string(2) "10"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(34) "бежево-коричневый "
-  }
-  [6]=>
-  array(5) {
-    ["id"]=>
-    string(2) "11"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(15) "Бежевые "
-  }
-  [7]=>
-  array(5) {
-    ["id"]=>
-    string(2) "12"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(15) "Бежевый "
-  }
-  [8]=>
-  array(5) {
-    ["id"]=>
-    string(2) "13"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(29) "Бежевый с белым "
-  }
-  [9]=>
-  array(5) {
-    ["id"]=>
-    string(2) "14"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(33) "Бежевый с зеленым "
-  }
-  [10]=>
-  array(5) {
-    ["id"]=>
-    string(2) "15"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(39) "Бежевый с золотистым "
-  }
-  [11]=>
-  array(5) {
-    ["id"]=>
-    string(2) "16"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(39) "Бежевый с коричневым "
-  }
-  [12]=>
-  array(5) {
-    ["id"]=>
-    string(2) "17"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(33) "Бежевый с красным "
-  }
-}
-
-[2021-07-20 13:09:27] INFO: string(13) "russioan text"
-
-[2021-07-20 13:09:07] INFO: array(1) {
-  [0]=>
+  ["Бежевый_с_зеленым_"]=>
+  string(33) "Бежевый с зеленым "
+  ["itdaat_attribute_values"]=>
   array(1) {
-    ["name"]=>
-    string(13) "russioan text"
+    [18]=>
+    string(17) "eqБежевый "
   }
 }
 
-[2021-07-20 13:08:50] INFO: array(13) {
-  [0]=>
-  array(5) {
-    ["id"]=>
-    string(1) "5"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(7) "Yellow "
+[2021-07-21 20:20:50] INFO: array(3) {
+  ["enabled"]=>
+  string(1) "0"
+  ["languages"]=>
+  string(14) "Русский"
+  ["action"]=>
+  string(26) "connect_itdaat_attribute|4"
+}
+
+[2021-07-21 20:20:49] INFO: array(6) {
+  ["action"]=>
+  string(28) "connected_itdaat_attribute|4"
+  ["enabled"]=>
+  string(1) "0"
+  ["languages"]=>
+  string(14) "Русский"
+  ["attribute_action"]=>
+  array(304) {
+    ["6|1|(Выберите нужный цвет) "]=>
+    string(2) "no"
+    ["6|1|Бежевый "]=>
+    string(3) "new"
+    ["6|1|Бежевый с белым "]=>
+    string(2) "no"
+    ["6|1|Бежевый с зеленым "]=>
+    string(2) "no"
+    ["6|1|Бежевый с золотистым "]=>
+    string(2) "no"
+    ["6|1|Бежевый с коричневым "]=>
+    string(2) "no"
+    ["6|1|Бежевый с красным "]=>
+    string(2) "no"
+    ["6|1|Бежевый с розовым "]=>
+    string(2) "no"
+    ["6|1|бежевый с серым "]=>
+    string(2) "no"
+    ["6|1|Бежевый с фиолетовым "]=>
+    string(2) "no"
+    ["6|1|бежевый,голубой "]=>
+    string(2) "no"
+    ["6|1|бежевый,коричневый "]=>
+    string(2) "no"
+    ["6|1|Безцветные "]=>
+    string(2) "no"
+    ["6|1|Белая "]=>
+    string(2) "no"
+    ["6|1|белая глянцевая "]=>
+    string(2) "no"
+    ["6|1|Белая с цветами "]=>
+    string(2) "no"
+    ["6|1|белая, голубая, розовая, фиолетовая, зеленая "]=>
+    string(2) "no"
+    ["6|1|Бело-голубой "]=>
+    string(2) "no"
+    ["6|1|Бело-розовый "]=>
+    string(2) "no"
+    ["6|1|бело-салатовый "]=>
+    string(2) "no"
+    ["6|1|бело-серебреный "]=>
+    string(2) "no"
+    ["6|1|Белый "]=>
+    string(2) "no"
+    ["6|1|белый  золото "]=>
+    string(2) "no"
+    ["6|1|Белый  серебро "]=>
+    string(2) "no"
+    ["6|1|Белый / Розовый "]=>
+    string(2) "no"
+    ["6|1|белый глянцевый "]=>
+    string(2) "no"
+    ["6|1|белый и черный "]=>
+    string(2) "no"
+    ["6|1|белый розовый/оранжевый/голубой/зеленый "]=>
+    string(2) "no"
+    ["6|1|белый с бежевым "]=>
+    string(2) "no"
+    ["6|1|Белый с бирюзовым "]=>
+    string(2) "no"
+    ["6|1|Белый с бордовым "]=>
+    string(2) "no"
+    ["6|1|Белый с голубым "]=>
+    string(2) "no"
+    ["6|1|Белый с декором "]=>
+    string(2) "no"
+    ["6|1|Белый с желтым "]=>
+    string(2) "no"
+    ["6|1|Белый с зеленым "]=>
+    string(2) "no"
+    ["6|1|Белый с золотистым "]=>
+    string(2) "no"
+    ["6|1|Белый с золотом "]=>
+    string(2) "no"
+    ["6|1|Белый с золотым "]=>
+    string(2) "no"
+    ["6|1|Белый с золотым узором "]=>
+    string(2) "no"
+    ["6|1|Белый с коричневым "]=>
+    string(2) "no"
+    ["6|1|Белый с красным "]=>
+    string(2) "no"
+    ["6|1|Белый с мятным "]=>
+    string(2) "no"
+    ["6|1|Белый с оранжевым "]=>
+    string(2) "no"
+    ["6|1|Белый с прозрачным "]=>
+    string(2) "no"
+    ["6|1|белый с ресунком "]=>
+    string(2) "no"
+    ["6|1|Белый с рисунком "]=>
+    string(2) "no"
+    ["6|1|Белый с розовым "]=>
+    string(2) "no"
+    ["6|1|Белый с серебристым "]=>
+    string(2) "no"
+    ["6|1|Белый с серым "]=>
+    string(2) "no"
+    ["6|1|Белый с синим "]=>
+    string(2) "no"
+    ["6|1|белый с сиреневым "]=>
+    string(2) "no"
+    ["6|1|белый с узором "]=>
+    string(2) "no"
+    ["6|1|Белый с цветами "]=>
+    string(2) "no"
+    ["6|1|Белый с черным "]=>
+    string(2) "no"
+    ["6|1|белый, зеленый, голубой "]=>
+    string(2) "no"
+    ["6|1|белый, розовый, синий "]=>
+    string(2) "no"
+    ["6|1|Белый/Зеленый "]=>
+    string(2) "no"
+    ["6|1|Белый/Красный "]=>
+    string(2) "no"
+    ["6|1|Белый/Синий "]=>
+    string(2) "no"
+    ["6|1|Белыйголубой "]=>
+    string(2) "no"
+    ["6|1|Белыйоранжевый "]=>
+    string(2) "no"
+    ["6|1|Бирюза "]=>
+    string(2) "no"
+    ["6|1|Бирюзовый "]=>
+    string(2) "no"
+    ["6|1|бирюзовый, серый, розовый "]=>
+    string(2) "no"
+    ["6|1|Бордо "]=>
+    string(2) "no"
+    ["6|1|Бордовый "]=>
+    string(2) "no"
+    ["6|1|Бронзовый "]=>
+    string(2) "no"
+    ["6|1|Бургунди "]=>
+    string(2) "no"
+    ["6|1|в асортименте "]=>
+    string(2) "no"
+    ["6|1|в ассортименте "]=>
+    string(2) "no"
+    ["6|1|в ассортименте. "]=>
+    string(2) "no"
+    ["6|1|в комплектезеленый синий оранжевый красный "]=>
+    string(2) "no"
+    ["6|1|Весна "]=>
+    string(2) "no"
+    ["6|1|Вишневый "]=>
+    string(2) "no"
+    ["6|1|Голобуй "]=>
+    string(2) "no"
+    ["6|1|Голубая "]=>
+    string(2) "no"
+    ["6|1|Голубой "]=>
+    string(2) "no"
+    ["6|1|Голубой с рисунком "]=>
+    string(2) "no"
+    ["6|1|Голубой тиффани "]=>
+    string(2) "no"
+    ["6|1|голубой, зеленый "]=>
+    string(2) "no"
+    ["6|1|Голубой, Зеленый, Красный, Фиолетовый "]=>
+    string(2) "no"
+    ["6|1|голубой, салатовый, желтый "]=>
+    string(2) "no"
+    ["6|1|горчичный, синий, серый (оливковый), бежевый "]=>
+    string(2) "no"
+    ["6|1|графит "]=>
+    string(2) "no"
+    ["6|1|Графитовый "]=>
+    string(2) "no"
+    ["6|1|Дерево "]=>
+    string(2) "no"
+    ["6|1|Деревянный "]=>
+    string(2) "no"
+    ["6|1|дымчастый "]=>
+    string(2) "no"
+    ["6|1|Дымчатый "]=>
+    string(2) "no"
+    ["6|1|Жёлто-зеленый "]=>
+    string(2) "no"
+    ["6|1|Желтый "]=>
+    string(2) "no"
+    ["6|1|Желтый с красным "]=>
+    string(2) "no"
+    ["6|1|Желтый с оранжевым "]=>
+    string(2) "no"
+    ["6|1|жемчужный "]=>
+    string(2) "no"
+    ["6|1|Зеленая "]=>
+    string(2) "no"
+    ["6|1|Зеленый "]=>
+    string(2) "no"
+    ["6|1|Зеленый / Белый "]=>
+    string(2) "no"
+    ["6|1|Зеленый бамбук "]=>
+    string(2) "no"
+    ["6|1|Зеленый с рисунком "]=>
+    string(2) "no"
+    ["6|1|зеленый, белый "]=>
+    string(2) "no"
+    ["6|1|зеленый, синий, красный "]=>
+    string(2) "no"
+    ["6|1|Зеленый/Белый "]=>
+    string(2) "no"
+    ["6|1|Золотистая "]=>
+    string(2) "no"
+    ["6|1|Золотисто-розовый "]=>
+    string(2) "no"
+    ["6|1|Золотистый "]=>
+    string(2) "no"
+    ["6|1|Золото "]=>
+    string(2) "no"
+    ["6|1|Золотой "]=>
+    string(2) "no"
+    ["6|1|Золотой завиток "]=>
+    string(2) "no"
+    ["6|1|Изумрудный "]=>
+    string(2) "no"
+    ["6|1|Коралловый "]=>
+    string(2) "no"
+    ["6|1|Кориневый "]=>
+    string(2) "no"
+    ["6|1|Коричнвый "]=>
+    string(2) "no"
+    ["6|1|Коричневый "]=>
+    string(2) "no"
+    ["6|1|Коричневый (1) "]=>
+    string(2) "no"
+    ["6|1|коричневый (шоколадный) "]=>
+    string(2) "no"
+    ["6|1|Кофе "]=>
+    string(2) "no"
+    ["6|1|кофейный "]=>
+    string(2) "no"
+    ["6|1|Красная "]=>
+    string(2) "no"
+    ["6|1|Красно-белый "]=>
+    string(2) "no"
+    ["6|1|Красное и Черное "]=>
+    string(2) "no"
+    ["6|1|Красный "]=>
+    string(2) "no"
+    ["6|1|Красный - Черный "]=>
+    string(2) "no"
+    ["6|1|красный в горох "]=>
+    string(2) "no"
+    ["6|1|Красный мак "]=>
+    string(2) "no"
+    ["6|1|Красный с бежевым "]=>
+    string(2) "no"
+    ["6|1|Красный с белым "]=>
+    string(2) "no"
+    ["6|1|Красный с золотом "]=>
+    string(2) "no"
+    ["6|1|Красный с рисунком "]=>
+    string(2) "no"
+    ["6|1|Красный с розовым "]=>
+    string(2) "no"
+    ["6|1|Красный с фиолетовым "]=>
+    string(2) "no"
+    ["6|1|Красный с черным "]=>
+    string(2) "no"
+    ["6|1|красный, оранжевый, желтый, бежевый "]=>
+    string(2) "no"
+    ["6|1|красный/черный "]=>
+    string(2) "no"
+    ["6|1|Кремовый "]=>
+    string(2) "no"
+    ["6|1|Лаванда "]=>
+    string(2) "no"
+    ["6|1|Лиловый "]=>
+    string(2) "no"
+    ["6|1|Медный "]=>
+    string(2) "no"
+    ["6|1|ментоловый "]=>
+    string(2) "no"
+    ["6|1|металик "]=>
+    string(2) "no"
+    ["6|1|металический "]=>
+    string(2) "no"
+    ["6|1|Металл "]=>
+    string(2) "no"
+    ["6|1|Металлик "]=>
+    string(2) "no"
+    ["6|1|Металлический "]=>
+    string(2) "no"
+    ["6|1|металллический "]=>
+    string(2) "no"
+    ["6|1|метталический "]=>
+    string(2) "no"
+    ["6|1|Микс "]=>
+    string(2) "no"
+    ["6|1|Молочный "]=>
+    string(2) "no"
+    ["6|1|мраморный "]=>
+    string(2) "no"
+    ["6|1|мятный "]=>
+    string(2) "no"
+    ["6|1|на любой вкус (уточняйте) "]=>
+    string(2) "no"
+    ["6|1|нежно лиловый, нежно розовый "]=>
+    string(2) "no"
+    ["6|1|Нежно-розовый "]=>
+    string(2) "no"
+    ["6|1|Нержавеющая сталь "]=>
+    string(2) "no"
+    ["6|1|Новый год "]=>
+    string(2) "no"
+    ["6|1|Оливковый "]=>
+    string(2) "no"
+    ["6|1|Оранежвый "]=>
+    string(2) "no"
+    ["6|1|Оранж "]=>
+    string(2) "no"
+    ["6|1|Оранжевая "]=>
+    string(2) "no"
+    ["6|1|Оранжевый "]=>
+    string(2) "no"
+    ["6|1|оранжевый и белый "]=>
+    string(2) "no"
+    ["6|1|Оранжевый с зеленым "]=>
+    string(2) "no"
+    ["6|1|Оранжевый с золотистым "]=>
+    string(2) "no"
+    ["6|1|Оранжевый с красным "]=>
+    string(2) "no"
+    ["6|1|Оранжевый с рисунком "]=>
+    string(2) "no"
+    ["6|1|оранжевый, белый "]=>
+    string(2) "no"
+    ["6|1|оранжевый, голубой, салатовый "]=>
+    string(2) "no"
+    ["6|1|оранжевый, салатовый, серый "]=>
+    string(2) "no"
+    ["6|1|Орнамент "]=>
+    string(2) "no"
+    ["6|1|основабелый "]=>
+    string(2) "no"
+    ["6|1|основабелый,печатьцветная "]=>
+    string(2) "no"
+    ["6|1|Персиковый "]=>
+    string(2) "no"
+    ["6|1|Песочный "]=>
+    string(2) "no"
+    ["6|1|Прозрачная "]=>
+    string(2) "no"
+    ["6|1|прозрачний "]=>
+    string(2) "no"
+    ["6|1|Прозрачно-вишневый "]=>
+    string(2) "no"
+    ["6|1|прозрачно-оранжевый "]=>
+    string(2) "no"
+    ["6|1|Прозрачный "]=>
+    string(2) "no"
+    ["6|1|прозрачный ,розовый "]=>
+    string(2) "no"
+    ["6|1|Прозрачный / Стальной "]=>
+    string(2) "no"
+    ["6|1|Прозрачный / Стальной  "]=>
+    string(2) "no"
+    ["6|1|Прозрачный с голубым "]=>
+    string(2) "no"
+    ["6|1|Прозрачный с деревом "]=>
+    string(2) "no"
+    ["6|1|прозрачный с желтым "]=>
+    string(2) "no"
+    ["6|1|Прозрачный с золотым "]=>
+    string(2) "no"
+    ["6|1|прозрачный с красным "]=>
+    string(2) "no"
+    ["6|1|прозрачный с оранжевым "]=>
+    string(2) "no"
+    ["6|1|Прозрачный с рисунком "]=>
+    string(2) "no"
+    ["6|1|Прозрачный с розовым "]=>
+    string(2) "no"
+    ["6|1|Прозрачный с синим "]=>
+    string(2) "no"
+    ["6|1|Прозрачный с фиолетовым "]=>
+    string(2) "no"
+    ["6|1|прозрачный с черной крышкой "]=>
+    string(2) "no"
+    ["6|1|Прозрачный с черным "]=>
+    string(2) "no"
+    ["6|1|прозрачный, зеленый "]=>
+    string(2) "no"
+    ["6|1|прозрачный, синий "]=>
+    string(2) "no"
+    ["6|1|прозрачный,голубой "]=>
+    string(2) "no"
+    ["6|1|прозрачный,желтый "]=>
+    string(2) "no"
+    ["6|1|прозрачный/светло-коричневый "]=>
+    string(2) "no"
+    ["6|1|Пудра "]=>
+    string(2) "no"
+    ["6|1|Разноцвет "]=>
+    string(2) "no"
+    ["6|1|Разноцветный "]=>
+    string(2) "no"
+    ["6|1|Разные цвета "]=>
+    string(2) "no"
+    ["6|1|Розовая "]=>
+    string(2) "no"
+    ["6|1|Розово-золотой "]=>
+    string(2) "no"
+    ["6|1|Розовое золото "]=>
+    string(2) "no"
+    ["6|1|Розовый "]=>
+    string(2) "no"
+    ["6|1|Розовый / Желтый / Зеленый / Коричневый "]=>
+    string(2) "no"
+    ["6|1|Розовый / Оранжевый / Фиолетовый / Синий "]=>
+    string(2) "no"
+    ["6|1|Розовый с бежевым "]=>
+    string(2) "no"
+    ["6|1|Розовый с белым "]=>
+    string(2) "no"
+    ["6|1|Розовый с голубым "]=>
+    string(2) "no"
+    ["6|1|Розовый с золотистым "]=>
+    string(2) "no"
+    ["6|1|Розовый с рисунком "]=>
+    string(2) "no"
+    ["6|1|Розовый с салатовым "]=>
+    string(2) "no"
+    ["6|1|Розовый с темно-розовым "]=>
+    string(2) "no"
+    ["6|1|розовый, голубой "]=>
+    string(2) "no"
+    ["6|1|розовый, голубой, желтый "]=>
+    string(2) "no"
+    ["6|1|розовый, голубой, зеленый "]=>
+    string(2) "no"
+    ["6|1|Розовый, красный, синий, черный "]=>
+    string(2) "no"
+    ["6|1|Сакура "]=>
+    string(2) "no"
+    ["6|1|Салатовая "]=>
+    string(2) "no"
+    ["6|1|Салатовый "]=>
+    string(2) "no"
+    ["6|1|Салатовый с бежевым "]=>
+    string(2) "no"
+    ["6|1|Салатовый с белым "]=>
+    string(2) "no"
+    ["6|1|Салатовый с зеленым "]=>
+    string(2) "no"
+    ["6|1|Салатовый с красным "]=>
+    string(2) "no"
+    ["6|1|Салатовый с светло-салатовым "]=>
+    string(2) "no"
+    ["6|1|Светло-коричневый "]=>
+    string(2) "no"
+    ["6|1|Светло-розовый "]=>
+    string(2) "no"
+    ["6|1|Светло-розовый с розовым "]=>
+    string(2) "no"
+    ["6|1|светло-розовый; голубой "]=>
+    string(2) "no"
+    ["6|1|Светло-салатовый с желтым "]=>
+    string(2) "no"
+    ["6|1|Светло-салатовый с салатовым "]=>
+    string(2) "no"
+    ["6|1|Светло-фиолетовый "]=>
+    string(2) "no"
+    ["6|1|Серая "]=>
+    string(2) "no"
+    ["6|1|Серебристрый "]=>
+    string(2) "no"
+    ["6|1|Серебристый "]=>
+    string(2) "no"
+    ["6|1|серебристый, красный "]=>
+    string(2) "no"
+    ["6|1|серебро "]=>
+    string(2) "no"
+    ["6|1|серебряный "]=>
+    string(2) "no"
+    ["6|1|серо-голубой "]=>
+    string(2) "no"
+    ["6|1|серо-синий, зеленый "]=>
+    string(2) "no"
+    ["6|1|Серый "]=>
+    string(2) "no"
+    ["6|1|Серый с белым "]=>
+    string(2) "no"
+    ["6|1|серый с коричневым "]=>
+    string(2) "no"
+    ["6|1|серый с розовым "]=>
+    string(2) "no"
+    ["6|1|Серый, Коричневый "]=>
+    string(2) "no"
+    ["6|1|Синий "]=>
+    string(2) "no"
+    ["6|1|Синий с белым "]=>
+    string(2) "no"
+    ["6|1|Синий с рисунком "]=>
+    string(2) "no"
+    ["6|1|синий с серым "]=>
+    string(2) "no"
+    ["6|1|Сиреневый "]=>
+    string(2) "no"
+    ["6|1|Солнечный день "]=>
+    string(2) "no"
+    ["6|1|Сталь "]=>
+    string(2) "no"
+    ["6|1|Стальной "]=>
+    string(2) "no"
+    ["6|1|Стальной с золотом "]=>
+    string(2) "no"
+    ["6|1|Стальной с коричневым "]=>
+    string(2) "no"
+    ["6|1|Стальной с красным "]=>
+    string(2) "no"
+    ["6|1|Стальной с прозрачным "]=>
+    string(2) "no"
+    ["6|1|Стальной с фиолетовым "]=>
+    string(2) "no"
+    ["6|1|Стальной с черным "]=>
+    string(2) "no"
+    ["6|1|Темно синий "]=>
+    string(2) "no"
+    ["6|1|Темно-желтый "]=>
+    string(2) "no"
+    ["6|1|темно-коричневый "]=>
+    string(2) "no"
+    ["6|1|Темно-оранжевый "]=>
+    string(2) "no"
+    ["6|1|темно-серая "]=>
+    string(2) "no"
+    ["6|1|Темно-серебряный "]=>
+    string(2) "no"
+    ["6|1|Темно-серый "]=>
+    string(2) "no"
+    ["6|1|Темно-синий "]=>
+    string(2) "no"
+    ["6|1|теракотовый "]=>
+    string(2) "no"
+    ["6|1|Терракотовый "]=>
+    string(2) "no"
+    ["6|1|Фиоелтовый "]=>
+    string(2) "no"
+    ["6|1|Фиолетовый "]=>
+    string(2) "no"
+    ["6|1|Фиолетовый (1) "]=>
+    string(2) "no"
+    ["6|1|Фиолетовый с светло-фиолетовым "]=>
+    string(2) "no"
+    ["6|1|хром "]=>
+    string(2) "no"
+    ["6|1|цветной "]=>
+    string(2) "no"
+    ["6|1|Черная "]=>
+    string(2) "no"
+    ["6|1|черно-серебренный "]=>
+    string(2) "no"
+    ["6|1|черно-синий "]=>
+    string(2) "no"
+    ["6|1|Черный "]=>
+    string(2) "no"
+    ["6|1|Черный (1) "]=>
+    string(2) "no"
+    ["6|1|Черный - Красный "]=>
+    string(2) "no"
+    ["6|1|черный и белый "]=>
+    string(2) "no"
+    ["6|1|Черный с бежевым "]=>
+    string(2) "no"
+    ["6|1|Черный с белым "]=>
+    string(2) "no"
+    ["6|1|черный с голубым "]=>
+    string(2) "no"
+    ["6|1|черный с желтым "]=>
+    string(2) "no"
+    ["6|1|Черный с золотом "]=>
+    string(2) "no"
+    ["6|1|Черный с красным "]=>
+    string(2) "no"
+    ["6|1|черный с пальмами "]=>
+    string(2) "no"
+    ["6|1|Черный с рисунком "]=>
+    string(2) "no"
+    ["6|1|Черный с синим "]=>
+    string(2) "no"
+    ["6|1|Черный с стальным "]=>
+    string(2) "no"
+    ["6|1|черный с узором "]=>
+    string(2) "no"
+    ["6|1|Черный, Салатовый, Голубой, Розовый "]=>
+    string(2) "no"
+    ["6|1|черный, серебристый "]=>
+    string(2) "no"
+    ["6|1|черный-белый "]=>
+    string(2) "no"
+    ["6|1|черный/белый "]=>
+    string(2) "no"
+    ["6|1|Черный/Оранжевый "]=>
+    string(2) "no"
+    ["6|1|Черныйбелый "]=>
+    string(2) "no"
+    ["6|1|Шоколадный "]=>
+    string(2) "no"
+    ["6|1|электрик "]=>
+    string(2) "no"
+    ["6|1|ягодный "]=>
+    string(2) "no"
+    ["6|1|Ярко-оранжевый "]=>
+    string(2) "no"
   }
-  [1]=>
-  array(5) {
-    ["id"]=>
-    string(1) "6"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(16) "Арт нуво "
-  }
-  [2]=>
-  array(5) {
-    ["id"]=>
-    string(1) "7"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(15) "Ассорти "
-  }
-  [3]=>
-  array(5) {
-    ["id"]=>
-    string(1) "8"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(13) "Бамбук "
-  }
-  [4]=>
-  array(5) {
-    ["id"]=>
-    string(1) "9"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(7) "Беж "
-  }
-  [5]=>
-  array(5) {
-    ["id"]=>
-    string(2) "10"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(34) "бежево-коричневый "
-  }
-  [6]=>
-  array(5) {
-    ["id"]=>
-    string(2) "11"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(15) "Бежевые "
-  }
-  [7]=>
-  array(5) {
-    ["id"]=>
-    string(2) "12"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(15) "Бежевый "
-  }
-  [8]=>
-  array(5) {
-    ["id"]=>
-    string(2) "13"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(29) "Бежевый с белым "
-  }
-  [9]=>
-  array(5) {
-    ["id"]=>
-    string(2) "14"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(33) "Бежевый с зеленым "
-  }
-  [10]=>
-  array(5) {
-    ["id"]=>
-    string(2) "15"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(39) "Бежевый с золотистым "
-  }
-  [11]=>
-  array(5) {
-    ["id"]=>
-    string(2) "16"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(39) "Бежевый с коричневым "
-  }
-  [12]=>
-  array(5) {
-    ["id"]=>
-    string(2) "17"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(33) "Бежевый с красным "
+  ["Бежевый_"]=>
+  string(15) "Бежевый "
+  ["itdaat_attribute_values"]=>
+  array(1) {
+    [0]=>
+    string(0) ""
   }
 }
 
-[2021-07-20 13:08:32] INFO: array(13) {
-  [0]=>
-  array(5) {
-    ["id"]=>
-    string(1) "5"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
+[2021-07-21 20:20:44] INFO: array(3) {
+  ["enabled"]=>
+  string(1) "0"
+  ["languages"]=>
+  string(14) "Русский"
+  ["action"]=>
+  string(26) "connect_itdaat_attribute|4"
+}
+
+[2021-07-21 20:20:41] INFO: array(3) {
+  ["enabled"]=>
+  string(1) "0"
+  ["languages"]=>
+  string(14) "Русский"
+  ["action"]=>
+  string(26) "connect_itdaat_attribute|1"
+}
+
+[2021-07-21 20:19:54] INFO: array(3) {
+  ["enabled"]=>
+  string(1) "0"
+  ["languages"]=>
+  string(14) "Русский"
+  ["action"]=>
+  string(26) "connect_itdaat_attribute|1"
+}
+
+[2021-07-21 20:19:29] INFO: array(3) {
+  ["enabled"]=>
+  string(1) "0"
+  ["languages"]=>
+  string(14) "Русский"
+  ["action"]=>
+  string(20) "new_itdaat_attribute"
+}
+
+[2021-07-21 20:18:56] INFO: string(148) "
+        update oc_itdaat_attribute_value set value = 'Белый с фиолетовым ' where language_id = 6 and itdaat_attribute_id = 17;
+    "
+
+[2021-07-21 20:18:56] INFO: string(128) "
+        update oc_itdaat_attribute_value set value = 'Бежевые ' where language_id = 6 and itdaat_attribute_id = 15;
+    "
+
+[2021-07-21 20:18:56] INFO: string(147) "
+        update oc_itdaat_attribute_value set value = 'бежево-коричневый ' where language_id = 6 and itdaat_attribute_id = 14;
+    "
+
+[2021-07-21 20:18:56] INFO: string(120) "
+        update oc_itdaat_attribute_value set value = 'Беж ' where language_id = 6 and itdaat_attribute_id = 13;
+    "
+
+[2021-07-21 20:18:56] INFO: string(126) "
+        update oc_itdaat_attribute_value set value = 'Бамбук ' where language_id = 6 and itdaat_attribute_id = 12;
+    "
+
+[2021-07-21 20:18:56] INFO: string(128) "
+        update oc_itdaat_attribute_value set value = 'Ассорти ' where language_id = 6 and itdaat_attribute_id = 11;
+    "
+
+[2021-07-21 20:18:56] INFO: string(129) "
+        update oc_itdaat_attribute_value set value = 'Арт нуво ' where language_id = 6 and itdaat_attribute_id = 10;
+    "
+
+[2021-07-21 20:18:56] INFO: string(119) "
+        update oc_itdaat_attribute_value set value = 'Yellow ' where language_id = 6 and itdaat_attribute_id = 9;
+    "
+
+[2021-07-21 20:18:56] INFO: string(118) "
+        update oc_itdaat_attribute_value set value = 'White ' where language_id = 6 and itdaat_attribute_id = 6;
+    "
+
+[2021-07-21 20:18:56] INFO: string(118) "
+        update oc_itdaat_attribute_value set value = 'Smile ' where language_id = 6 and itdaat_attribute_id = 5;
+    "
+
+[2021-07-21 20:18:56] INFO: string(116) "
+        update oc_itdaat_attribute_value set value = 'Red ' where language_id = 6 and itdaat_attribute_id = 4;
+    "
+
+[2021-07-21 20:18:56] INFO: string(118) "
+        update oc_itdaat_attribute_value set value = 'Green ' where language_id = 6 and itdaat_attribute_id = 3;
+    "
+
+[2021-07-21 20:18:56] INFO: string(118) "
+        update oc_itdaat_attribute_value set value = 'Brown ' where language_id = 6 and itdaat_attribute_id = 2;
+    "
+
+[2021-07-21 20:18:56] INFO: string(119) "
+        update oc_itdaat_attribute_value set value = 'ddBlue ' where language_id = 6 and itdaat_attribute_id = 1;
+    "
+
+[2021-07-21 20:18:56] INFO: array(5) {
+  ["action"]=>
+  string(28) "connected_itdaat_attribute|1"
+  ["enabled"]=>
+  string(1) "0"
+  ["languages"]=>
+  string(14) "Русский"
+  ["attribute_action"]=>
+  array(304) {
+    ["6|1|(Выберите нужный цвет) "]=>
+    string(2) "no"
+    ["6|1|Бежевый "]=>
+    string(2) "no"
+    ["6|1|Бежевый с белым "]=>
+    string(2) "no"
+    ["6|1|Бежевый с зеленым "]=>
+    string(2) "no"
+    ["6|1|Бежевый с золотистым "]=>
+    string(2) "no"
+    ["6|1|Бежевый с коричневым "]=>
+    string(2) "no"
+    ["6|1|Бежевый с красным "]=>
+    string(2) "no"
+    ["6|1|Бежевый с розовым "]=>
+    string(2) "no"
+    ["6|1|бежевый с серым "]=>
+    string(2) "no"
+    ["6|1|Бежевый с фиолетовым "]=>
+    string(2) "no"
+    ["6|1|бежевый,голубой "]=>
+    string(2) "no"
+    ["6|1|бежевый,коричневый "]=>
+    string(2) "no"
+    ["6|1|Безцветные "]=>
+    string(2) "no"
+    ["6|1|Белая "]=>
+    string(2) "no"
+    ["6|1|белая глянцевая "]=>
+    string(2) "no"
+    ["6|1|Белая с цветами "]=>
+    string(2) "no"
+    ["6|1|белая, голубая, розовая, фиолетовая, зеленая "]=>
+    string(2) "no"
+    ["6|1|Бело-голубой "]=>
+    string(2) "no"
+    ["6|1|Бело-розовый "]=>
+    string(2) "no"
+    ["6|1|бело-салатовый "]=>
+    string(2) "no"
+    ["6|1|бело-серебреный "]=>
+    string(2) "no"
+    ["6|1|Белый "]=>
+    string(2) "no"
+    ["6|1|белый  золото "]=>
+    string(2) "no"
+    ["6|1|Белый  серебро "]=>
+    string(2) "no"
+    ["6|1|Белый / Розовый "]=>
+    string(2) "no"
+    ["6|1|белый глянцевый "]=>
+    string(2) "no"
+    ["6|1|белый и черный "]=>
+    string(2) "no"
+    ["6|1|белый розовый/оранжевый/голубой/зеленый "]=>
+    string(2) "no"
+    ["6|1|белый с бежевым "]=>
+    string(2) "no"
+    ["6|1|Белый с бирюзовым "]=>
+    string(2) "no"
+    ["6|1|Белый с бордовым "]=>
+    string(2) "no"
+    ["6|1|Белый с голубым "]=>
+    string(2) "no"
+    ["6|1|Белый с декором "]=>
+    string(2) "no"
+    ["6|1|Белый с желтым "]=>
+    string(2) "no"
+    ["6|1|Белый с зеленым "]=>
+    string(2) "no"
+    ["6|1|Белый с золотистым "]=>
+    string(2) "no"
+    ["6|1|Белый с золотом "]=>
+    string(2) "no"
+    ["6|1|Белый с золотым "]=>
+    string(2) "no"
+    ["6|1|Белый с золотым узором "]=>
+    string(2) "no"
+    ["6|1|Белый с коричневым "]=>
+    string(2) "no"
+    ["6|1|Белый с красным "]=>
+    string(2) "no"
+    ["6|1|Белый с мятным "]=>
+    string(2) "no"
+    ["6|1|Белый с оранжевым "]=>
+    string(2) "no"
+    ["6|1|Белый с прозрачным "]=>
+    string(2) "no"
+    ["6|1|белый с ресунком "]=>
+    string(2) "no"
+    ["6|1|Белый с рисунком "]=>
+    string(2) "no"
+    ["6|1|Белый с розовым "]=>
+    string(2) "no"
+    ["6|1|Белый с серебристым "]=>
+    string(2) "no"
+    ["6|1|Белый с серым "]=>
+    string(2) "no"
+    ["6|1|Белый с синим "]=>
+    string(2) "no"
+    ["6|1|белый с сиреневым "]=>
+    string(2) "no"
+    ["6|1|белый с узором "]=>
+    string(2) "no"
+    ["6|1|Белый с цветами "]=>
+    string(2) "no"
+    ["6|1|Белый с черным "]=>
+    string(2) "no"
+    ["6|1|белый, зеленый, голубой "]=>
+    string(2) "no"
+    ["6|1|белый, розовый, синий "]=>
+    string(2) "no"
+    ["6|1|Белый/Зеленый "]=>
+    string(2) "no"
+    ["6|1|Белый/Красный "]=>
+    string(2) "no"
+    ["6|1|Белый/Синий "]=>
+    string(2) "no"
+    ["6|1|Белыйголубой "]=>
+    string(2) "no"
+    ["6|1|Белыйоранжевый "]=>
+    string(2) "no"
+    ["6|1|Бирюза "]=>
+    string(2) "no"
+    ["6|1|Бирюзовый "]=>
+    string(2) "no"
+    ["6|1|бирюзовый, серый, розовый "]=>
+    string(2) "no"
+    ["6|1|Бордо "]=>
+    string(2) "no"
+    ["6|1|Бордовый "]=>
+    string(2) "no"
+    ["6|1|Бронзовый "]=>
+    string(2) "no"
+    ["6|1|Бургунди "]=>
+    string(2) "no"
+    ["6|1|в асортименте "]=>
+    string(2) "no"
+    ["6|1|в ассортименте "]=>
+    string(2) "no"
+    ["6|1|в ассортименте. "]=>
+    string(2) "no"
+    ["6|1|в комплектезеленый синий оранжевый красный "]=>
+    string(2) "no"
+    ["6|1|Весна "]=>
+    string(2) "no"
+    ["6|1|Вишневый "]=>
+    string(2) "no"
+    ["6|1|Голобуй "]=>
+    string(2) "no"
+    ["6|1|Голубая "]=>
+    string(2) "no"
+    ["6|1|Голубой "]=>
+    string(2) "no"
+    ["6|1|Голубой с рисунком "]=>
+    string(2) "no"
+    ["6|1|Голубой тиффани "]=>
+    string(2) "no"
+    ["6|1|голубой, зеленый "]=>
+    string(2) "no"
+    ["6|1|Голубой, Зеленый, Красный, Фиолетовый "]=>
+    string(2) "no"
+    ["6|1|голубой, салатовый, желтый "]=>
+    string(2) "no"
+    ["6|1|горчичный, синий, серый (оливковый), бежевый "]=>
+    string(2) "no"
+    ["6|1|графит "]=>
+    string(2) "no"
+    ["6|1|Графитовый "]=>
+    string(2) "no"
+    ["6|1|Дерево "]=>
+    string(2) "no"
+    ["6|1|Деревянный "]=>
+    string(2) "no"
+    ["6|1|дымчастый "]=>
+    string(2) "no"
+    ["6|1|Дымчатый "]=>
+    string(2) "no"
+    ["6|1|Жёлто-зеленый "]=>
+    string(2) "no"
+    ["6|1|Желтый "]=>
+    string(2) "no"
+    ["6|1|Желтый с красным "]=>
+    string(2) "no"
+    ["6|1|Желтый с оранжевым "]=>
+    string(2) "no"
+    ["6|1|жемчужный "]=>
+    string(2) "no"
+    ["6|1|Зеленая "]=>
+    string(2) "no"
+    ["6|1|Зеленый "]=>
+    string(2) "no"
+    ["6|1|Зеленый / Белый "]=>
+    string(2) "no"
+    ["6|1|Зеленый бамбук "]=>
+    string(2) "no"
+    ["6|1|Зеленый с рисунком "]=>
+    string(2) "no"
+    ["6|1|зеленый, белый "]=>
+    string(2) "no"
+    ["6|1|зеленый, синий, красный "]=>
+    string(2) "no"
+    ["6|1|Зеленый/Белый "]=>
+    string(2) "no"
+    ["6|1|Золотистая "]=>
+    string(2) "no"
+    ["6|1|Золотисто-розовый "]=>
+    string(2) "no"
+    ["6|1|Золотистый "]=>
+    string(2) "no"
+    ["6|1|Золото "]=>
+    string(2) "no"
+    ["6|1|Золотой "]=>
+    string(2) "no"
+    ["6|1|Золотой завиток "]=>
+    string(2) "no"
+    ["6|1|Изумрудный "]=>
+    string(2) "no"
+    ["6|1|Коралловый "]=>
+    string(2) "no"
+    ["6|1|Кориневый "]=>
+    string(2) "no"
+    ["6|1|Коричнвый "]=>
+    string(2) "no"
+    ["6|1|Коричневый "]=>
+    string(2) "no"
+    ["6|1|Коричневый (1) "]=>
+    string(2) "no"
+    ["6|1|коричневый (шоколадный) "]=>
+    string(2) "no"
+    ["6|1|Кофе "]=>
+    string(2) "no"
+    ["6|1|кофейный "]=>
+    string(2) "no"
+    ["6|1|Красная "]=>
+    string(2) "no"
+    ["6|1|Красно-белый "]=>
+    string(2) "no"
+    ["6|1|Красное и Черное "]=>
+    string(2) "no"
+    ["6|1|Красный "]=>
+    string(2) "no"
+    ["6|1|Красный - Черный "]=>
+    string(2) "no"
+    ["6|1|красный в горох "]=>
+    string(2) "no"
+    ["6|1|Красный мак "]=>
+    string(2) "no"
+    ["6|1|Красный с бежевым "]=>
+    string(2) "no"
+    ["6|1|Красный с белым "]=>
+    string(2) "no"
+    ["6|1|Красный с золотом "]=>
+    string(2) "no"
+    ["6|1|Красный с рисунком "]=>
+    string(2) "no"
+    ["6|1|Красный с розовым "]=>
+    string(2) "no"
+    ["6|1|Красный с фиолетовым "]=>
+    string(2) "no"
+    ["6|1|Красный с черным "]=>
+    string(2) "no"
+    ["6|1|красный, оранжевый, желтый, бежевый "]=>
+    string(2) "no"
+    ["6|1|красный/черный "]=>
+    string(2) "no"
+    ["6|1|Кремовый "]=>
+    string(2) "no"
+    ["6|1|Лаванда "]=>
+    string(2) "no"
+    ["6|1|Лиловый "]=>
+    string(2) "no"
+    ["6|1|Медный "]=>
+    string(2) "no"
+    ["6|1|ментоловый "]=>
+    string(2) "no"
+    ["6|1|металик "]=>
+    string(2) "no"
+    ["6|1|металический "]=>
+    string(2) "no"
+    ["6|1|Металл "]=>
+    string(2) "no"
+    ["6|1|Металлик "]=>
+    string(2) "no"
+    ["6|1|Металлический "]=>
+    string(2) "no"
+    ["6|1|металллический "]=>
+    string(2) "no"
+    ["6|1|метталический "]=>
+    string(2) "no"
+    ["6|1|Микс "]=>
+    string(2) "no"
+    ["6|1|Молочный "]=>
+    string(2) "no"
+    ["6|1|мраморный "]=>
+    string(2) "no"
+    ["6|1|мятный "]=>
+    string(2) "no"
+    ["6|1|на любой вкус (уточняйте) "]=>
+    string(2) "no"
+    ["6|1|нежно лиловый, нежно розовый "]=>
+    string(2) "no"
+    ["6|1|Нежно-розовый "]=>
+    string(2) "no"
+    ["6|1|Нержавеющая сталь "]=>
+    string(2) "no"
+    ["6|1|Новый год "]=>
+    string(2) "no"
+    ["6|1|Оливковый "]=>
+    string(2) "no"
+    ["6|1|Оранежвый "]=>
+    string(2) "no"
+    ["6|1|Оранж "]=>
+    string(2) "no"
+    ["6|1|Оранжевая "]=>
+    string(2) "no"
+    ["6|1|Оранжевый "]=>
+    string(2) "no"
+    ["6|1|оранжевый и белый "]=>
+    string(2) "no"
+    ["6|1|Оранжевый с зеленым "]=>
+    string(2) "no"
+    ["6|1|Оранжевый с золотистым "]=>
+    string(2) "no"
+    ["6|1|Оранжевый с красным "]=>
+    string(2) "no"
+    ["6|1|Оранжевый с рисунком "]=>
+    string(2) "no"
+    ["6|1|оранжевый, белый "]=>
+    string(2) "no"
+    ["6|1|оранжевый, голубой, салатовый "]=>
+    string(2) "no"
+    ["6|1|оранжевый, салатовый, серый "]=>
+    string(2) "no"
+    ["6|1|Орнамент "]=>
+    string(2) "no"
+    ["6|1|основабелый "]=>
+    string(2) "no"
+    ["6|1|основабелый,печатьцветная "]=>
+    string(2) "no"
+    ["6|1|Персиковый "]=>
+    string(2) "no"
+    ["6|1|Песочный "]=>
+    string(2) "no"
+    ["6|1|Прозрачная "]=>
+    string(2) "no"
+    ["6|1|прозрачний "]=>
+    string(2) "no"
+    ["6|1|Прозрачно-вишневый "]=>
+    string(2) "no"
+    ["6|1|прозрачно-оранжевый "]=>
+    string(2) "no"
+    ["6|1|Прозрачный "]=>
+    string(2) "no"
+    ["6|1|прозрачный ,розовый "]=>
+    string(2) "no"
+    ["6|1|Прозрачный / Стальной "]=>
+    string(2) "no"
+    ["6|1|Прозрачный / Стальной  "]=>
+    string(2) "no"
+    ["6|1|Прозрачный с голубым "]=>
+    string(2) "no"
+    ["6|1|Прозрачный с деревом "]=>
+    string(2) "no"
+    ["6|1|прозрачный с желтым "]=>
+    string(2) "no"
+    ["6|1|Прозрачный с золотым "]=>
+    string(2) "no"
+    ["6|1|прозрачный с красным "]=>
+    string(2) "no"
+    ["6|1|прозрачный с оранжевым "]=>
+    string(2) "no"
+    ["6|1|Прозрачный с рисунком "]=>
+    string(2) "no"
+    ["6|1|Прозрачный с розовым "]=>
+    string(2) "no"
+    ["6|1|Прозрачный с синим "]=>
+    string(2) "no"
+    ["6|1|Прозрачный с фиолетовым "]=>
+    string(2) "no"
+    ["6|1|прозрачный с черной крышкой "]=>
+    string(2) "no"
+    ["6|1|Прозрачный с черным "]=>
+    string(2) "no"
+    ["6|1|прозрачный, зеленый "]=>
+    string(2) "no"
+    ["6|1|прозрачный, синий "]=>
+    string(2) "no"
+    ["6|1|прозрачный,голубой "]=>
+    string(2) "no"
+    ["6|1|прозрачный,желтый "]=>
+    string(2) "no"
+    ["6|1|прозрачный/светло-коричневый "]=>
+    string(2) "no"
+    ["6|1|Пудра "]=>
+    string(2) "no"
+    ["6|1|Разноцвет "]=>
+    string(2) "no"
+    ["6|1|Разноцветный "]=>
+    string(2) "no"
+    ["6|1|Разные цвета "]=>
+    string(2) "no"
+    ["6|1|Розовая "]=>
+    string(2) "no"
+    ["6|1|Розово-золотой "]=>
+    string(2) "no"
+    ["6|1|Розовое золото "]=>
+    string(2) "no"
+    ["6|1|Розовый "]=>
+    string(2) "no"
+    ["6|1|Розовый / Желтый / Зеленый / Коричневый "]=>
+    string(2) "no"
+    ["6|1|Розовый / Оранжевый / Фиолетовый / Синий "]=>
+    string(2) "no"
+    ["6|1|Розовый с бежевым "]=>
+    string(2) "no"
+    ["6|1|Розовый с белым "]=>
+    string(2) "no"
+    ["6|1|Розовый с голубым "]=>
+    string(2) "no"
+    ["6|1|Розовый с золотистым "]=>
+    string(2) "no"
+    ["6|1|Розовый с рисунком "]=>
+    string(2) "no"
+    ["6|1|Розовый с салатовым "]=>
+    string(2) "no"
+    ["6|1|Розовый с темно-розовым "]=>
+    string(2) "no"
+    ["6|1|розовый, голубой "]=>
+    string(2) "no"
+    ["6|1|розовый, голубой, желтый "]=>
+    string(2) "no"
+    ["6|1|розовый, голубой, зеленый "]=>
+    string(2) "no"
+    ["6|1|Розовый, красный, синий, черный "]=>
+    string(2) "no"
+    ["6|1|Сакура "]=>
+    string(2) "no"
+    ["6|1|Салатовая "]=>
+    string(2) "no"
+    ["6|1|Салатовый "]=>
+    string(2) "no"
+    ["6|1|Салатовый с бежевым "]=>
+    string(2) "no"
+    ["6|1|Салатовый с белым "]=>
+    string(2) "no"
+    ["6|1|Салатовый с зеленым "]=>
+    string(2) "no"
+    ["6|1|Салатовый с красным "]=>
+    string(2) "no"
+    ["6|1|Салатовый с светло-салатовым "]=>
+    string(2) "no"
+    ["6|1|Светло-коричневый "]=>
+    string(2) "no"
+    ["6|1|Светло-розовый "]=>
+    string(2) "no"
+    ["6|1|Светло-розовый с розовым "]=>
+    string(2) "no"
+    ["6|1|светло-розовый; голубой "]=>
+    string(2) "no"
+    ["6|1|Светло-салатовый с желтым "]=>
+    string(2) "no"
+    ["6|1|Светло-салатовый с салатовым "]=>
+    string(2) "no"
+    ["6|1|Светло-фиолетовый "]=>
+    string(2) "no"
+    ["6|1|Серая "]=>
+    string(2) "no"
+    ["6|1|Серебристрый "]=>
+    string(2) "no"
+    ["6|1|Серебристый "]=>
+    string(2) "no"
+    ["6|1|серебристый, красный "]=>
+    string(2) "no"
+    ["6|1|серебро "]=>
+    string(2) "no"
+    ["6|1|серебряный "]=>
+    string(2) "no"
+    ["6|1|серо-голубой "]=>
+    string(2) "no"
+    ["6|1|серо-синий, зеленый "]=>
+    string(2) "no"
+    ["6|1|Серый "]=>
+    string(2) "no"
+    ["6|1|Серый с белым "]=>
+    string(2) "no"
+    ["6|1|серый с коричневым "]=>
+    string(2) "no"
+    ["6|1|серый с розовым "]=>
+    string(2) "no"
+    ["6|1|Серый, Коричневый "]=>
+    string(2) "no"
+    ["6|1|Синий "]=>
+    string(2) "no"
+    ["6|1|Синий с белым "]=>
+    string(2) "no"
+    ["6|1|Синий с рисунком "]=>
+    string(2) "no"
+    ["6|1|синий с серым "]=>
+    string(2) "no"
+    ["6|1|Сиреневый "]=>
+    string(2) "no"
+    ["6|1|Солнечный день "]=>
+    string(2) "no"
+    ["6|1|Сталь "]=>
+    string(2) "no"
+    ["6|1|Стальной "]=>
+    string(2) "no"
+    ["6|1|Стальной с золотом "]=>
+    string(2) "no"
+    ["6|1|Стальной с коричневым "]=>
+    string(2) "no"
+    ["6|1|Стальной с красным "]=>
+    string(2) "no"
+    ["6|1|Стальной с прозрачным "]=>
+    string(2) "no"
+    ["6|1|Стальной с фиолетовым "]=>
+    string(2) "no"
+    ["6|1|Стальной с черным "]=>
+    string(2) "no"
+    ["6|1|Темно синий "]=>
+    string(2) "no"
+    ["6|1|Темно-желтый "]=>
+    string(2) "no"
+    ["6|1|темно-коричневый "]=>
+    string(2) "no"
+    ["6|1|Темно-оранжевый "]=>
+    string(2) "no"
+    ["6|1|темно-серая "]=>
+    string(2) "no"
+    ["6|1|Темно-серебряный "]=>
+    string(2) "no"
+    ["6|1|Темно-серый "]=>
+    string(2) "no"
+    ["6|1|Темно-синий "]=>
+    string(2) "no"
+    ["6|1|теракотовый "]=>
+    string(2) "no"
+    ["6|1|Терракотовый "]=>
+    string(2) "no"
+    ["6|1|Фиоелтовый "]=>
+    string(2) "no"
+    ["6|1|Фиолетовый "]=>
+    string(2) "no"
+    ["6|1|Фиолетовый (1) "]=>
+    string(2) "no"
+    ["6|1|Фиолетовый с светло-фиолетовым "]=>
+    string(2) "no"
+    ["6|1|хром "]=>
+    string(2) "no"
+    ["6|1|цветной "]=>
+    string(2) "no"
+    ["6|1|Черная "]=>
+    string(2) "no"
+    ["6|1|черно-серебренный "]=>
+    string(2) "no"
+    ["6|1|черно-синий "]=>
+    string(2) "no"
+    ["6|1|Черный "]=>
+    string(2) "no"
+    ["6|1|Черный (1) "]=>
+    string(2) "no"
+    ["6|1|Черный - Красный "]=>
+    string(2) "no"
+    ["6|1|черный и белый "]=>
+    string(2) "no"
+    ["6|1|Черный с бежевым "]=>
+    string(2) "no"
+    ["6|1|Черный с белым "]=>
+    string(2) "no"
+    ["6|1|черный с голубым "]=>
+    string(2) "no"
+    ["6|1|черный с желтым "]=>
+    string(2) "no"
+    ["6|1|Черный с золотом "]=>
+    string(2) "no"
+    ["6|1|Черный с красным "]=>
+    string(2) "no"
+    ["6|1|черный с пальмами "]=>
+    string(2) "no"
+    ["6|1|Черный с рисунком "]=>
+    string(2) "no"
+    ["6|1|Черный с синим "]=>
+    string(2) "no"
+    ["6|1|Черный с стальным "]=>
+    string(2) "no"
+    ["6|1|черный с узором "]=>
+    string(2) "no"
+    ["6|1|Черный, Салатовый, Голубой, Розовый "]=>
+    string(2) "no"
+    ["6|1|черный, серебристый "]=>
+    string(2) "no"
+    ["6|1|черный-белый "]=>
+    string(2) "no"
+    ["6|1|черный/белый "]=>
+    string(2) "no"
+    ["6|1|Черный/Оранжевый "]=>
+    string(2) "no"
+    ["6|1|Черныйбелый "]=>
+    string(2) "no"
+    ["6|1|Шоколадный "]=>
+    string(2) "no"
+    ["6|1|электрик "]=>
+    string(2) "no"
+    ["6|1|ягодный "]=>
+    string(2) "no"
+    ["6|1|Ярко-оранжевый "]=>
+    string(2) "no"
+  }
+  ["itdaat_attribute_values"]=>
+  array(14) {
+    [1]=>
+    string(7) "ddBlue "
+    [2]=>
+    string(6) "Brown "
+    [3]=>
+    string(6) "Green "
+    [4]=>
+    string(4) "Red "
+    [5]=>
+    string(6) "Smile "
+    [6]=>
+    string(6) "White "
+    [9]=>
     string(7) "Yellow "
-  }
-  [1]=>
-  array(5) {
-    ["id"]=>
-    string(1) "6"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
+    [10]=>
     string(16) "Арт нуво "
-  }
-  [2]=>
-  array(5) {
-    ["id"]=>
-    string(1) "7"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
+    [11]=>
     string(15) "Ассорти "
-  }
-  [3]=>
-  array(5) {
-    ["id"]=>
-    string(1) "8"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
+    [12]=>
     string(13) "Бамбук "
-  }
-  [4]=>
-  array(5) {
-    ["id"]=>
-    string(1) "9"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
+    [13]=>
     string(7) "Беж "
-  }
-  [5]=>
-  array(5) {
-    ["id"]=>
-    string(2) "10"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
+    [14]=>
     string(34) "бежево-коричневый "
-  }
-  [6]=>
-  array(5) {
-    ["id"]=>
-    string(2) "11"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
+    [15]=>
     string(15) "Бежевые "
-  }
-  [7]=>
-  array(5) {
-    ["id"]=>
-    string(2) "12"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(15) "Бежевый "
-  }
-  [8]=>
-  array(5) {
-    ["id"]=>
-    string(2) "13"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(29) "Бежевый с белым "
-  }
-  [9]=>
-  array(5) {
-    ["id"]=>
-    string(2) "14"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(33) "Бежевый с зеленым "
-  }
-  [10]=>
-  array(5) {
-    ["id"]=>
-    string(2) "15"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(39) "Бежевый с золотистым "
-  }
-  [11]=>
-  array(5) {
-    ["id"]=>
-    string(2) "16"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(39) "Бежевый с коричневым "
-  }
-  [12]=>
-  array(5) {
-    ["id"]=>
-    string(2) "17"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(33) "Бежевый с красным "
+    [17]=>
+    string(35) "Белый с фиолетовым "
   }
 }
 
-[2021-07-20 13:08:15] INFO: array(13) {
-  [0]=>
-  array(5) {
-    ["id"]=>
-    string(1) "5"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
+[2021-07-21 20:18:33] INFO: string(146) "
+        update oc_itdaat_attribute_value set value = Белый с фиолетовым  where language_id = 6 and itdaat_attribute_id = 17;
+    "
+
+[2021-07-21 20:18:33] INFO: string(126) "
+        update oc_itdaat_attribute_value set value = Бежевые  where language_id = 6 and itdaat_attribute_id = 15;
+    "
+
+[2021-07-21 20:18:33] INFO: string(145) "
+        update oc_itdaat_attribute_value set value = бежево-коричневый  where language_id = 6 and itdaat_attribute_id = 14;
+    "
+
+[2021-07-21 20:18:33] INFO: string(118) "
+        update oc_itdaat_attribute_value set value = Беж  where language_id = 6 and itdaat_attribute_id = 13;
+    "
+
+[2021-07-21 20:18:33] INFO: string(124) "
+        update oc_itdaat_attribute_value set value = Бамбук  where language_id = 6 and itdaat_attribute_id = 12;
+    "
+
+[2021-07-21 20:18:33] INFO: string(126) "
+        update oc_itdaat_attribute_value set value = Ассорти  where language_id = 6 and itdaat_attribute_id = 11;
+    "
+
+[2021-07-21 20:18:33] INFO: string(127) "
+        update oc_itdaat_attribute_value set value = Арт нуво  where language_id = 6 and itdaat_attribute_id = 10;
+    "
+
+[2021-07-21 20:18:33] INFO: string(117) "
+        update oc_itdaat_attribute_value set value = Yellow  where language_id = 6 and itdaat_attribute_id = 9;
+    "
+
+[2021-07-21 20:18:33] INFO: string(116) "
+        update oc_itdaat_attribute_value set value = White  where language_id = 6 and itdaat_attribute_id = 6;
+    "
+
+[2021-07-21 20:18:33] INFO: string(116) "
+        update oc_itdaat_attribute_value set value = Smile  where language_id = 6 and itdaat_attribute_id = 5;
+    "
+
+[2021-07-21 20:18:33] INFO: string(114) "
+        update oc_itdaat_attribute_value set value = Red  where language_id = 6 and itdaat_attribute_id = 4;
+    "
+
+[2021-07-21 20:18:33] INFO: string(116) "
+        update oc_itdaat_attribute_value set value = Green  where language_id = 6 and itdaat_attribute_id = 3;
+    "
+
+[2021-07-21 20:18:33] INFO: string(116) "
+        update oc_itdaat_attribute_value set value = Brown  where language_id = 6 and itdaat_attribute_id = 2;
+    "
+
+[2021-07-21 20:18:33] INFO: string(117) "
+        update oc_itdaat_attribute_value set value = ddBlue  where language_id = 6 and itdaat_attribute_id = 1;
+    "
+
+[2021-07-21 20:18:33] INFO: array(5) {
+  ["action"]=>
+  string(28) "connected_itdaat_attribute|1"
+  ["enabled"]=>
+  string(1) "0"
+  ["languages"]=>
+  string(14) "Русский"
+  ["attribute_action"]=>
+  array(304) {
+    ["6|1|(Выберите нужный цвет) "]=>
+    string(2) "no"
+    ["6|1|Бежевый "]=>
+    string(2) "no"
+    ["6|1|Бежевый с белым "]=>
+    string(2) "no"
+    ["6|1|Бежевый с зеленым "]=>
+    string(2) "no"
+    ["6|1|Бежевый с золотистым "]=>
+    string(2) "no"
+    ["6|1|Бежевый с коричневым "]=>
+    string(2) "no"
+    ["6|1|Бежевый с красным "]=>
+    string(2) "no"
+    ["6|1|Бежевый с розовым "]=>
+    string(2) "no"
+    ["6|1|бежевый с серым "]=>
+    string(2) "no"
+    ["6|1|Бежевый с фиолетовым "]=>
+    string(2) "no"
+    ["6|1|бежевый,голубой "]=>
+    string(2) "no"
+    ["6|1|бежевый,коричневый "]=>
+    string(2) "no"
+    ["6|1|Безцветные "]=>
+    string(2) "no"
+    ["6|1|Белая "]=>
+    string(2) "no"
+    ["6|1|белая глянцевая "]=>
+    string(2) "no"
+    ["6|1|Белая с цветами "]=>
+    string(2) "no"
+    ["6|1|белая, голубая, розовая, фиолетовая, зеленая "]=>
+    string(2) "no"
+    ["6|1|Бело-голубой "]=>
+    string(2) "no"
+    ["6|1|Бело-розовый "]=>
+    string(2) "no"
+    ["6|1|бело-салатовый "]=>
+    string(2) "no"
+    ["6|1|бело-серебреный "]=>
+    string(2) "no"
+    ["6|1|Белый "]=>
+    string(2) "no"
+    ["6|1|белый  золото "]=>
+    string(2) "no"
+    ["6|1|Белый  серебро "]=>
+    string(2) "no"
+    ["6|1|Белый / Розовый "]=>
+    string(2) "no"
+    ["6|1|белый глянцевый "]=>
+    string(2) "no"
+    ["6|1|белый и черный "]=>
+    string(2) "no"
+    ["6|1|белый розовый/оранжевый/голубой/зеленый "]=>
+    string(2) "no"
+    ["6|1|белый с бежевым "]=>
+    string(2) "no"
+    ["6|1|Белый с бирюзовым "]=>
+    string(2) "no"
+    ["6|1|Белый с бордовым "]=>
+    string(2) "no"
+    ["6|1|Белый с голубым "]=>
+    string(2) "no"
+    ["6|1|Белый с декором "]=>
+    string(2) "no"
+    ["6|1|Белый с желтым "]=>
+    string(2) "no"
+    ["6|1|Белый с зеленым "]=>
+    string(2) "no"
+    ["6|1|Белый с золотистым "]=>
+    string(2) "no"
+    ["6|1|Белый с золотом "]=>
+    string(2) "no"
+    ["6|1|Белый с золотым "]=>
+    string(2) "no"
+    ["6|1|Белый с золотым узором "]=>
+    string(2) "no"
+    ["6|1|Белый с коричневым "]=>
+    string(2) "no"
+    ["6|1|Белый с красным "]=>
+    string(2) "no"
+    ["6|1|Белый с мятным "]=>
+    string(2) "no"
+    ["6|1|Белый с оранжевым "]=>
+    string(2) "no"
+    ["6|1|Белый с прозрачным "]=>
+    string(2) "no"
+    ["6|1|белый с ресунком "]=>
+    string(2) "no"
+    ["6|1|Белый с рисунком "]=>
+    string(2) "no"
+    ["6|1|Белый с розовым "]=>
+    string(2) "no"
+    ["6|1|Белый с серебристым "]=>
+    string(2) "no"
+    ["6|1|Белый с серым "]=>
+    string(2) "no"
+    ["6|1|Белый с синим "]=>
+    string(2) "no"
+    ["6|1|белый с сиреневым "]=>
+    string(2) "no"
+    ["6|1|белый с узором "]=>
+    string(2) "no"
+    ["6|1|Белый с цветами "]=>
+    string(2) "no"
+    ["6|1|Белый с черным "]=>
+    string(2) "no"
+    ["6|1|белый, зеленый, голубой "]=>
+    string(2) "no"
+    ["6|1|белый, розовый, синий "]=>
+    string(2) "no"
+    ["6|1|Белый/Зеленый "]=>
+    string(2) "no"
+    ["6|1|Белый/Красный "]=>
+    string(2) "no"
+    ["6|1|Белый/Синий "]=>
+    string(2) "no"
+    ["6|1|Белыйголубой "]=>
+    string(2) "no"
+    ["6|1|Белыйоранжевый "]=>
+    string(2) "no"
+    ["6|1|Бирюза "]=>
+    string(2) "no"
+    ["6|1|Бирюзовый "]=>
+    string(2) "no"
+    ["6|1|бирюзовый, серый, розовый "]=>
+    string(2) "no"
+    ["6|1|Бордо "]=>
+    string(2) "no"
+    ["6|1|Бордовый "]=>
+    string(2) "no"
+    ["6|1|Бронзовый "]=>
+    string(2) "no"
+    ["6|1|Бургунди "]=>
+    string(2) "no"
+    ["6|1|в асортименте "]=>
+    string(2) "no"
+    ["6|1|в ассортименте "]=>
+    string(2) "no"
+    ["6|1|в ассортименте. "]=>
+    string(2) "no"
+    ["6|1|в комплектезеленый синий оранжевый красный "]=>
+    string(2) "no"
+    ["6|1|Весна "]=>
+    string(2) "no"
+    ["6|1|Вишневый "]=>
+    string(2) "no"
+    ["6|1|Голобуй "]=>
+    string(2) "no"
+    ["6|1|Голубая "]=>
+    string(2) "no"
+    ["6|1|Голубой "]=>
+    string(2) "no"
+    ["6|1|Голубой с рисунком "]=>
+    string(2) "no"
+    ["6|1|Голубой тиффани "]=>
+    string(2) "no"
+    ["6|1|голубой, зеленый "]=>
+    string(2) "no"
+    ["6|1|Голубой, Зеленый, Красный, Фиолетовый "]=>
+    string(2) "no"
+    ["6|1|голубой, салатовый, желтый "]=>
+    string(2) "no"
+    ["6|1|горчичный, синий, серый (оливковый), бежевый "]=>
+    string(2) "no"
+    ["6|1|графит "]=>
+    string(2) "no"
+    ["6|1|Графитовый "]=>
+    string(2) "no"
+    ["6|1|Дерево "]=>
+    string(2) "no"
+    ["6|1|Деревянный "]=>
+    string(2) "no"
+    ["6|1|дымчастый "]=>
+    string(2) "no"
+    ["6|1|Дымчатый "]=>
+    string(2) "no"
+    ["6|1|Жёлто-зеленый "]=>
+    string(2) "no"
+    ["6|1|Желтый "]=>
+    string(2) "no"
+    ["6|1|Желтый с красным "]=>
+    string(2) "no"
+    ["6|1|Желтый с оранжевым "]=>
+    string(2) "no"
+    ["6|1|жемчужный "]=>
+    string(2) "no"
+    ["6|1|Зеленая "]=>
+    string(2) "no"
+    ["6|1|Зеленый "]=>
+    string(2) "no"
+    ["6|1|Зеленый / Белый "]=>
+    string(2) "no"
+    ["6|1|Зеленый бамбук "]=>
+    string(2) "no"
+    ["6|1|Зеленый с рисунком "]=>
+    string(2) "no"
+    ["6|1|зеленый, белый "]=>
+    string(2) "no"
+    ["6|1|зеленый, синий, красный "]=>
+    string(2) "no"
+    ["6|1|Зеленый/Белый "]=>
+    string(2) "no"
+    ["6|1|Золотистая "]=>
+    string(2) "no"
+    ["6|1|Золотисто-розовый "]=>
+    string(2) "no"
+    ["6|1|Золотистый "]=>
+    string(2) "no"
+    ["6|1|Золото "]=>
+    string(2) "no"
+    ["6|1|Золотой "]=>
+    string(2) "no"
+    ["6|1|Золотой завиток "]=>
+    string(2) "no"
+    ["6|1|Изумрудный "]=>
+    string(2) "no"
+    ["6|1|Коралловый "]=>
+    string(2) "no"
+    ["6|1|Кориневый "]=>
+    string(2) "no"
+    ["6|1|Коричнвый "]=>
+    string(2) "no"
+    ["6|1|Коричневый "]=>
+    string(2) "no"
+    ["6|1|Коричневый (1) "]=>
+    string(2) "no"
+    ["6|1|коричневый (шоколадный) "]=>
+    string(2) "no"
+    ["6|1|Кофе "]=>
+    string(2) "no"
+    ["6|1|кофейный "]=>
+    string(2) "no"
+    ["6|1|Красная "]=>
+    string(2) "no"
+    ["6|1|Красно-белый "]=>
+    string(2) "no"
+    ["6|1|Красное и Черное "]=>
+    string(2) "no"
+    ["6|1|Красный "]=>
+    string(2) "no"
+    ["6|1|Красный - Черный "]=>
+    string(2) "no"
+    ["6|1|красный в горох "]=>
+    string(2) "no"
+    ["6|1|Красный мак "]=>
+    string(2) "no"
+    ["6|1|Красный с бежевым "]=>
+    string(2) "no"
+    ["6|1|Красный с белым "]=>
+    string(2) "no"
+    ["6|1|Красный с золотом "]=>
+    string(2) "no"
+    ["6|1|Красный с рисунком "]=>
+    string(2) "no"
+    ["6|1|Красный с розовым "]=>
+    string(2) "no"
+    ["6|1|Красный с фиолетовым "]=>
+    string(2) "no"
+    ["6|1|Красный с черным "]=>
+    string(2) "no"
+    ["6|1|красный, оранжевый, желтый, бежевый "]=>
+    string(2) "no"
+    ["6|1|красный/черный "]=>
+    string(2) "no"
+    ["6|1|Кремовый "]=>
+    string(2) "no"
+    ["6|1|Лаванда "]=>
+    string(2) "no"
+    ["6|1|Лиловый "]=>
+    string(2) "no"
+    ["6|1|Медный "]=>
+    string(2) "no"
+    ["6|1|ментоловый "]=>
+    string(2) "no"
+    ["6|1|металик "]=>
+    string(2) "no"
+    ["6|1|металический "]=>
+    string(2) "no"
+    ["6|1|Металл "]=>
+    string(2) "no"
+    ["6|1|Металлик "]=>
+    string(2) "no"
+    ["6|1|Металлический "]=>
+    string(2) "no"
+    ["6|1|металллический "]=>
+    string(2) "no"
+    ["6|1|метталический "]=>
+    string(2) "no"
+    ["6|1|Микс "]=>
+    string(2) "no"
+    ["6|1|Молочный "]=>
+    string(2) "no"
+    ["6|1|мраморный "]=>
+    string(2) "no"
+    ["6|1|мятный "]=>
+    string(2) "no"
+    ["6|1|на любой вкус (уточняйте) "]=>
+    string(2) "no"
+    ["6|1|нежно лиловый, нежно розовый "]=>
+    string(2) "no"
+    ["6|1|Нежно-розовый "]=>
+    string(2) "no"
+    ["6|1|Нержавеющая сталь "]=>
+    string(2) "no"
+    ["6|1|Новый год "]=>
+    string(2) "no"
+    ["6|1|Оливковый "]=>
+    string(2) "no"
+    ["6|1|Оранежвый "]=>
+    string(2) "no"
+    ["6|1|Оранж "]=>
+    string(2) "no"
+    ["6|1|Оранжевая "]=>
+    string(2) "no"
+    ["6|1|Оранжевый "]=>
+    string(2) "no"
+    ["6|1|оранжевый и белый "]=>
+    string(2) "no"
+    ["6|1|Оранжевый с зеленым "]=>
+    string(2) "no"
+    ["6|1|Оранжевый с золотистым "]=>
+    string(2) "no"
+    ["6|1|Оранжевый с красным "]=>
+    string(2) "no"
+    ["6|1|Оранжевый с рисунком "]=>
+    string(2) "no"
+    ["6|1|оранжевый, белый "]=>
+    string(2) "no"
+    ["6|1|оранжевый, голубой, салатовый "]=>
+    string(2) "no"
+    ["6|1|оранжевый, салатовый, серый "]=>
+    string(2) "no"
+    ["6|1|Орнамент "]=>
+    string(2) "no"
+    ["6|1|основабелый "]=>
+    string(2) "no"
+    ["6|1|основабелый,печатьцветная "]=>
+    string(2) "no"
+    ["6|1|Персиковый "]=>
+    string(2) "no"
+    ["6|1|Песочный "]=>
+    string(2) "no"
+    ["6|1|Прозрачная "]=>
+    string(2) "no"
+    ["6|1|прозрачний "]=>
+    string(2) "no"
+    ["6|1|Прозрачно-вишневый "]=>
+    string(2) "no"
+    ["6|1|прозрачно-оранжевый "]=>
+    string(2) "no"
+    ["6|1|Прозрачный "]=>
+    string(2) "no"
+    ["6|1|прозрачный ,розовый "]=>
+    string(2) "no"
+    ["6|1|Прозрачный / Стальной "]=>
+    string(2) "no"
+    ["6|1|Прозрачный / Стальной  "]=>
+    string(2) "no"
+    ["6|1|Прозрачный с голубым "]=>
+    string(2) "no"
+    ["6|1|Прозрачный с деревом "]=>
+    string(2) "no"
+    ["6|1|прозрачный с желтым "]=>
+    string(2) "no"
+    ["6|1|Прозрачный с золотым "]=>
+    string(2) "no"
+    ["6|1|прозрачный с красным "]=>
+    string(2) "no"
+    ["6|1|прозрачный с оранжевым "]=>
+    string(2) "no"
+    ["6|1|Прозрачный с рисунком "]=>
+    string(2) "no"
+    ["6|1|Прозрачный с розовым "]=>
+    string(2) "no"
+    ["6|1|Прозрачный с синим "]=>
+    string(2) "no"
+    ["6|1|Прозрачный с фиолетовым "]=>
+    string(2) "no"
+    ["6|1|прозрачный с черной крышкой "]=>
+    string(2) "no"
+    ["6|1|Прозрачный с черным "]=>
+    string(2) "no"
+    ["6|1|прозрачный, зеленый "]=>
+    string(2) "no"
+    ["6|1|прозрачный, синий "]=>
+    string(2) "no"
+    ["6|1|прозрачный,голубой "]=>
+    string(2) "no"
+    ["6|1|прозрачный,желтый "]=>
+    string(2) "no"
+    ["6|1|прозрачный/светло-коричневый "]=>
+    string(2) "no"
+    ["6|1|Пудра "]=>
+    string(2) "no"
+    ["6|1|Разноцвет "]=>
+    string(2) "no"
+    ["6|1|Разноцветный "]=>
+    string(2) "no"
+    ["6|1|Разные цвета "]=>
+    string(2) "no"
+    ["6|1|Розовая "]=>
+    string(2) "no"
+    ["6|1|Розово-золотой "]=>
+    string(2) "no"
+    ["6|1|Розовое золото "]=>
+    string(2) "no"
+    ["6|1|Розовый "]=>
+    string(2) "no"
+    ["6|1|Розовый / Желтый / Зеленый / Коричневый "]=>
+    string(2) "no"
+    ["6|1|Розовый / Оранжевый / Фиолетовый / Синий "]=>
+    string(2) "no"
+    ["6|1|Розовый с бежевым "]=>
+    string(2) "no"
+    ["6|1|Розовый с белым "]=>
+    string(2) "no"
+    ["6|1|Розовый с голубым "]=>
+    string(2) "no"
+    ["6|1|Розовый с золотистым "]=>
+    string(2) "no"
+    ["6|1|Розовый с рисунком "]=>
+    string(2) "no"
+    ["6|1|Розовый с салатовым "]=>
+    string(2) "no"
+    ["6|1|Розовый с темно-розовым "]=>
+    string(2) "no"
+    ["6|1|розовый, голубой "]=>
+    string(2) "no"
+    ["6|1|розовый, голубой, желтый "]=>
+    string(2) "no"
+    ["6|1|розовый, голубой, зеленый "]=>
+    string(2) "no"
+    ["6|1|Розовый, красный, синий, черный "]=>
+    string(2) "no"
+    ["6|1|Сакура "]=>
+    string(2) "no"
+    ["6|1|Салатовая "]=>
+    string(2) "no"
+    ["6|1|Салатовый "]=>
+    string(2) "no"
+    ["6|1|Салатовый с бежевым "]=>
+    string(2) "no"
+    ["6|1|Салатовый с белым "]=>
+    string(2) "no"
+    ["6|1|Салатовый с зеленым "]=>
+    string(2) "no"
+    ["6|1|Салатовый с красным "]=>
+    string(2) "no"
+    ["6|1|Салатовый с светло-салатовым "]=>
+    string(2) "no"
+    ["6|1|Светло-коричневый "]=>
+    string(2) "no"
+    ["6|1|Светло-розовый "]=>
+    string(2) "no"
+    ["6|1|Светло-розовый с розовым "]=>
+    string(2) "no"
+    ["6|1|светло-розовый; голубой "]=>
+    string(2) "no"
+    ["6|1|Светло-салатовый с желтым "]=>
+    string(2) "no"
+    ["6|1|Светло-салатовый с салатовым "]=>
+    string(2) "no"
+    ["6|1|Светло-фиолетовый "]=>
+    string(2) "no"
+    ["6|1|Серая "]=>
+    string(2) "no"
+    ["6|1|Серебристрый "]=>
+    string(2) "no"
+    ["6|1|Серебристый "]=>
+    string(2) "no"
+    ["6|1|серебристый, красный "]=>
+    string(2) "no"
+    ["6|1|серебро "]=>
+    string(2) "no"
+    ["6|1|серебряный "]=>
+    string(2) "no"
+    ["6|1|серо-голубой "]=>
+    string(2) "no"
+    ["6|1|серо-синий, зеленый "]=>
+    string(2) "no"
+    ["6|1|Серый "]=>
+    string(2) "no"
+    ["6|1|Серый с белым "]=>
+    string(2) "no"
+    ["6|1|серый с коричневым "]=>
+    string(2) "no"
+    ["6|1|серый с розовым "]=>
+    string(2) "no"
+    ["6|1|Серый, Коричневый "]=>
+    string(2) "no"
+    ["6|1|Синий "]=>
+    string(2) "no"
+    ["6|1|Синий с белым "]=>
+    string(2) "no"
+    ["6|1|Синий с рисунком "]=>
+    string(2) "no"
+    ["6|1|синий с серым "]=>
+    string(2) "no"
+    ["6|1|Сиреневый "]=>
+    string(2) "no"
+    ["6|1|Солнечный день "]=>
+    string(2) "no"
+    ["6|1|Сталь "]=>
+    string(2) "no"
+    ["6|1|Стальной "]=>
+    string(2) "no"
+    ["6|1|Стальной с золотом "]=>
+    string(2) "no"
+    ["6|1|Стальной с коричневым "]=>
+    string(2) "no"
+    ["6|1|Стальной с красным "]=>
+    string(2) "no"
+    ["6|1|Стальной с прозрачным "]=>
+    string(2) "no"
+    ["6|1|Стальной с фиолетовым "]=>
+    string(2) "no"
+    ["6|1|Стальной с черным "]=>
+    string(2) "no"
+    ["6|1|Темно синий "]=>
+    string(2) "no"
+    ["6|1|Темно-желтый "]=>
+    string(2) "no"
+    ["6|1|темно-коричневый "]=>
+    string(2) "no"
+    ["6|1|Темно-оранжевый "]=>
+    string(2) "no"
+    ["6|1|темно-серая "]=>
+    string(2) "no"
+    ["6|1|Темно-серебряный "]=>
+    string(2) "no"
+    ["6|1|Темно-серый "]=>
+    string(2) "no"
+    ["6|1|Темно-синий "]=>
+    string(2) "no"
+    ["6|1|теракотовый "]=>
+    string(2) "no"
+    ["6|1|Терракотовый "]=>
+    string(2) "no"
+    ["6|1|Фиоелтовый "]=>
+    string(2) "no"
+    ["6|1|Фиолетовый "]=>
+    string(2) "no"
+    ["6|1|Фиолетовый (1) "]=>
+    string(2) "no"
+    ["6|1|Фиолетовый с светло-фиолетовым "]=>
+    string(2) "no"
+    ["6|1|хром "]=>
+    string(2) "no"
+    ["6|1|цветной "]=>
+    string(2) "no"
+    ["6|1|Черная "]=>
+    string(2) "no"
+    ["6|1|черно-серебренный "]=>
+    string(2) "no"
+    ["6|1|черно-синий "]=>
+    string(2) "no"
+    ["6|1|Черный "]=>
+    string(2) "no"
+    ["6|1|Черный (1) "]=>
+    string(2) "no"
+    ["6|1|Черный - Красный "]=>
+    string(2) "no"
+    ["6|1|черный и белый "]=>
+    string(2) "no"
+    ["6|1|Черный с бежевым "]=>
+    string(2) "no"
+    ["6|1|Черный с белым "]=>
+    string(2) "no"
+    ["6|1|черный с голубым "]=>
+    string(2) "no"
+    ["6|1|черный с желтым "]=>
+    string(2) "no"
+    ["6|1|Черный с золотом "]=>
+    string(2) "no"
+    ["6|1|Черный с красным "]=>
+    string(2) "no"
+    ["6|1|черный с пальмами "]=>
+    string(2) "no"
+    ["6|1|Черный с рисунком "]=>
+    string(2) "no"
+    ["6|1|Черный с синим "]=>
+    string(2) "no"
+    ["6|1|Черный с стальным "]=>
+    string(2) "no"
+    ["6|1|черный с узором "]=>
+    string(2) "no"
+    ["6|1|Черный, Салатовый, Голубой, Розовый "]=>
+    string(2) "no"
+    ["6|1|черный, серебристый "]=>
+    string(2) "no"
+    ["6|1|черный-белый "]=>
+    string(2) "no"
+    ["6|1|черный/белый "]=>
+    string(2) "no"
+    ["6|1|Черный/Оранжевый "]=>
+    string(2) "no"
+    ["6|1|Черныйбелый "]=>
+    string(2) "no"
+    ["6|1|Шоколадный "]=>
+    string(2) "no"
+    ["6|1|электрик "]=>
+    string(2) "no"
+    ["6|1|ягодный "]=>
+    string(2) "no"
+    ["6|1|Ярко-оранжевый "]=>
+    string(2) "no"
+  }
+  ["itdaat_attribute_values"]=>
+  array(14) {
+    [1]=>
+    string(7) "ddBlue "
+    [2]=>
+    string(6) "Brown "
+    [3]=>
+    string(6) "Green "
+    [4]=>
+    string(4) "Red "
+    [5]=>
+    string(6) "Smile "
+    [6]=>
+    string(6) "White "
+    [9]=>
     string(7) "Yellow "
-  }
-  [1]=>
-  array(5) {
-    ["id"]=>
-    string(1) "6"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
+    [10]=>
     string(16) "Арт нуво "
-  }
-  [2]=>
-  array(5) {
-    ["id"]=>
-    string(1) "7"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
+    [11]=>
     string(15) "Ассорти "
-  }
-  [3]=>
-  array(5) {
-    ["id"]=>
-    string(1) "8"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
+    [12]=>
     string(13) "Бамбук "
-  }
-  [4]=>
-  array(5) {
-    ["id"]=>
-    string(1) "9"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
+    [13]=>
     string(7) "Беж "
-  }
-  [5]=>
-  array(5) {
-    ["id"]=>
-    string(2) "10"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
+    [14]=>
     string(34) "бежево-коричневый "
-  }
-  [6]=>
-  array(5) {
-    ["id"]=>
-    string(2) "11"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
+    [15]=>
     string(15) "Бежевые "
-  }
-  [7]=>
-  array(5) {
-    ["id"]=>
-    string(2) "12"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(15) "Бежевый "
-  }
-  [8]=>
-  array(5) {
-    ["id"]=>
-    string(2) "13"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(29) "Бежевый с белым "
-  }
-  [9]=>
-  array(5) {
-    ["id"]=>
-    string(2) "14"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(33) "Бежевый с зеленым "
-  }
-  [10]=>
-  array(5) {
-    ["id"]=>
-    string(2) "15"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(39) "Бежевый с золотистым "
-  }
-  [11]=>
-  array(5) {
-    ["id"]=>
-    string(2) "16"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(39) "Бежевый с коричневым "
-  }
-  [12]=>
-  array(5) {
-    ["id"]=>
-    string(2) "17"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(33) "Бежевый с красным "
+    [17]=>
+    string(35) "Белый с фиолетовым "
   }
 }
 
-[2021-07-20 13:02:35] INFO: array(13) {
-  [0]=>
-  array(5) {
-    ["id"]=>
-    string(1) "5"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(7) "Yellow "
-  }
-  [1]=>
-  array(5) {
-    ["id"]=>
-    string(1) "6"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(16) "Арт нуво "
-  }
-  [2]=>
-  array(5) {
-    ["id"]=>
-    string(1) "7"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(15) "Ассорти "
-  }
-  [3]=>
-  array(5) {
-    ["id"]=>
-    string(1) "8"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(13) "Бамбук "
-  }
-  [4]=>
-  array(5) {
-    ["id"]=>
-    string(1) "9"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(7) "Беж "
-  }
-  [5]=>
-  array(5) {
-    ["id"]=>
-    string(2) "10"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(34) "бежево-коричневый "
-  }
-  [6]=>
-  array(5) {
-    ["id"]=>
-    string(2) "11"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(15) "Бежевые "
-  }
-  [7]=>
-  array(5) {
-    ["id"]=>
-    string(2) "12"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(15) "Бежевый "
-  }
-  [8]=>
-  array(5) {
-    ["id"]=>
-    string(2) "13"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(29) "Бежевый с белым "
-  }
-  [9]=>
-  array(5) {
-    ["id"]=>
-    string(2) "14"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(33) "Бежевый с зеленым "
-  }
-  [10]=>
-  array(5) {
-    ["id"]=>
-    string(2) "15"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(39) "Бежевый с золотистым "
-  }
-  [11]=>
-  array(5) {
-    ["id"]=>
-    string(2) "16"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(39) "Бежевый с коричневым "
-  }
-  [12]=>
-  array(5) {
-    ["id"]=>
-    string(2) "17"
-    ["itdaat_attribute_id"]=>
-    string(2) "37"
-    ["language_id"]=>
-    string(1) "6"
-    ["name"]=>
-    string(13) "russioan text"
-    ["value"]=>
-    string(33) "Бежевый с красным "
-  }
+[2021-07-21 20:18:27] INFO: array(3) {
+  ["enabled"]=>
+  string(1) "0"
+  ["languages"]=>
+  string(14) "Русский"
+  ["action"]=>
+  string(26) "connect_itdaat_attribute|1"
 }
 

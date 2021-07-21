@@ -10,6 +10,14 @@ function addSelect(element_id){
         document.getElementById(element_id + "_select").children["0"].value = "no";
     }
 }
+function setAttributeWritable(button, textplace){
+    document.getElementById(button).classList.toggle("btn-primary");
+    document.getElementById(button).classList.toggle("btn-success");
+    document.getElementById('itdaat_label_'+textplace).toggleAttribute("contenteditable");
+    document.getElementById('itdaat_label_'+textplace).addEventListener('input', function(){
+        document.getElementById('hidden_'+textplace).value = this.textContent;
+    });
+}
 $(document).ready(function(){
     $('input[type="checkbox"]').each(function(){
         $(this).prop('checked', false);

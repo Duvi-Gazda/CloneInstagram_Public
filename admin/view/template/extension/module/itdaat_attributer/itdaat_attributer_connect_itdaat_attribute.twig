@@ -3,13 +3,13 @@
 	<div class="page-header">
 		<div class="container-fluid">
 			<div class="pull-right">
-				<button type="submit" form="form-module" data-toggle="tooltip" name="action" value="connected_itdaat_attribute|{{itdaat_attribute_id}}"  title="{{ button_save }}" class="btn btn-primary">
+				<button type="submit" form="form-module" data-toggle="tooltip" name="action" value="connected_itdaat_attribute|{{itdaat_attribute_id}}" title="{{ button_save }}" class="btn btn-primary">
 					<i class="fa fa-save"></i>
 				</button>
 				<a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default">
 					<i class="fa fa-reply"></i>
 				</a>
-                <a href="{{ back_url }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default">
+				<a href="{{ back_url }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default">
 					<i class="fa fa-home"></i>
 				</a>
 			</div>
@@ -43,34 +43,32 @@
 				</div>
 			</div>
 			<div class="panel panel-default" id="panel-more-space">
-				<div
-					class="panel-body">
+				<div class="panel-body">
 					<div class="col-sm-12">
 						<div class="col-sm-6">
 							<div class="col-sm-12 text-center">
 								<h3>Attributes</h3>
 								<br>
 							</div>
-							<div
-								class="col-sm-12">
+							<div class="col-sm-12">
 								<div class="col-sm-2">
 									<h3>{{itdaat_oc_attribute_name}}</h3>
 								</div>
 								<div class="col-sm-10 overflow-auto itdaat-container itdaat-container-overflow">
 									{% for itdaat_oc_attribute_value in itdaat_oc_attribute_values %}
 										<div class="list-group col-sm-12">
-											<input type="checkbox"  name="{{itdaat_oc_attribute_value.value}}" value="{{itdaat_oc_attribute_value.value}}" id="{{itdaat_oc_attribute_value.value}}" onClick="addSelect(this.id)"/>
+											<input type="checkbox" name="{{itdaat_oc_attribute_value.value}}" value="{{itdaat_oc_attribute_value.value}}" id="{{itdaat_oc_attribute_value.value}}" onclick="addSelect(this.id)"/>
 											<label class="list-group-item" for="{{itdaat_oc_attribute_value.value}}">{{itdaat_oc_attribute_value.value}}</label>
 										</div>
-                                        <div class="col-sm-3 hidden text-center" id="{{itdaat_oc_attribute_value.value}}_select">
-                                            <select id="{{itdaat_oc_attribute_value.id}}" name="attribute_action[{{itdaat_oc_attribute_value.id}}]" class="form-control" style="width:100%;">
-                                                <option value="no" id="no">{{no}}</option>
-                                                <option value="new" id="new">{{new}}</option>
-                                                {% for itdaat_attribute_value in itdaat_attribute_values %}
-                                                    <option value="{{itdaat_attribute_value.id}}" id="select_{{itdaat_attribute_value.value}}">{{itdaat_attribute_value.value}}</option>
-                                                {% endfor %}
-                                            </select>
-                                        </div>
+										<div class="col-sm-3 hidden text-center" id="{{itdaat_oc_attribute_value.value}}_select">
+											<select id="{{itdaat_oc_attribute_value.id}}" name="attribute_action[{{itdaat_oc_attribute_value.id}}]" class="form-control" style="width:100%;">
+												<option value="no" id="no">{{no}}</option>
+												<option value="new" id="new">{{new}}</option>
+												{% for itdaat_attribute_value in itdaat_attribute_values %}
+													<option value="{{itdaat_attribute_value.id}}" id="select_{{itdaat_attribute_value.value}}">{{itdaat_attribute_value.value}}</option>
+												{% endfor %}
+											</select>
+										</div>
 									{% endfor %}
 								</div>
 							</div>
@@ -82,20 +80,21 @@
 								<br>
 							</div>
 							<div class="col-sm-12 itdaat-container-overflow">
-                                {% for itdaat_attribute_value in itdaat_attribute_values %}
-                                    <div class="list-group col-sm-10">
-											<input disabled type="checkbox" name="{{itdaat_attribute_value.value}}" value="{{itdaat_attribute_value.value}}" id="itdaat_{{itdaat_attribute_value.value}}"/>
-											<label class="list-group-item" for="itdaat_{{itdaat_attribute_value.value}}">&nbsp;{{itdaat_attribute_value.value}}</label>
+								{% for itdaat_attribute_value in itdaat_attribute_values %}
+									<div class="list-group col-sm-10">
+										<input  disabled type="checkbox" name="itdaat_attribute_values[{{itdaat_attribute_value.value}}]" id="itdaat_{{itdaat_attribute_value.value}}"/>
+										<label class="list-group-item" for="itdaat_{{itdaat_attribute_value.value}}" id="itdaat_label_{{itdaat_attribute_value.value}}">{{itdaat_attribute_value.value}}</label>
+										<input  type="hidden" name="itdaat_attribute_values[{{itdaat_attribute_value.id}}]" id="hidden_{{itdaat_attribute_value.value}}" value="{{itdaat_attribute_value.value}}"/>
 									</div>
 									<div class="container col-sm-2">
 										<button class="btn btn-danger" type="submit" name="action" value="delete_itdaat_attribute_value|{{itdaat_attribute_id}}|{{itdaat_attribute_value.id}}">
 											<i class="fa fa-trash" aria-hidden="true"></i>
 										</button>
-										<button class="btn btn-primary" type="submit" name="action" value="change_itdaat_attribute|{{itdaat_attribute_id}}|{{itdaat_attribute_value.id}}">
+										<div class="btn btn-primary" onclick="setAttributeWritable(this.id,'{{itdaat_attribute_value.value}}')" id="itdaat_{{itdaat_attribute_value.id}}">
 											<i class="fa fa-pencil" aria-hidden="true"></i>
-										</button>
+										</div>
 									</div>
-                                {% endfor %}
+								{% endfor %}
 							</div>
 						</div>
 					</div>
