@@ -23,3 +23,47 @@ $(document).ready(function(){
         $(this).prop('checked', false);
     });
 });
+// $("#attribute_search").autocomplete({
+//     // source: function(req, res){
+//     //     $.ajax({
+//     //         url: window.location.href,
+//     //         type:'post',
+//     //         dataType: 'json',
+//     //         data: {
+//     //             attr_name: req.term
+//     //         }, 
+//     //         success: function(res){
+//     //             response(res);
+//     //         }
+//     //     })
+//     // }
+// });
+$( function() {
+    var availableTags = [
+      "ActionScript",
+      "AppleScript",
+      "Asp",
+      "BASIC",
+      "C",
+      "C++",
+      "Clojure",
+      "COBOL",
+      "ColdFusion",
+      "Erlang",
+      "Fortran",
+      "Groovy",
+      "Haskell",
+      "Java",
+      "JavaScript",
+      "Lisp",
+      "Perl",
+      "PHP",
+      "Python",
+      "Ruby",
+      "Scala",
+      "Scheme"
+    ];
+    $( "#attribute_search" ).autocomplete({
+      source: availableTags
+    });
+  } );

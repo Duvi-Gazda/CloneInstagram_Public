@@ -13,7 +13,7 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat
         $this->run(self::MODULE_LINK, 'extension/module');
         $this->load->model('extension/module/itdaat_attributer');
         $this->addItdaatAttribute();
-        $this->editItdaatAttribute();
+        $this->deleteItdaatAttribute();
         $this->connectItdaatAttributerDictionary();
         $this->connectedToItdaatAttribute();
         $this->generateViewData();
@@ -103,7 +103,6 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat
         if (!isset($_POST['action'])) {
             return;
         }
-        $this->log->log($_POST);
         $action = explode("|", $_POST['action']);
         if ($action[0] == 'connected_itdaat_attribute') {
             $this->viewPath = 'extension/module/itdaat_attributer/itdaat_attributer_connect_itdaat_attribute';
@@ -135,22 +134,17 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat
         }
     }
 
-    private function editItdaatAttribute()
+    private function deleteItdaatAttribute()
     {
-        $attribute_id = null;
-        if (isset($_POST['action'])) {
-            $action = explode("|", $_POST['action']);
-            if ($action[0] == 'edit_itdaat_attribute') {
-                $attribute_id = $action[1];
-                $languages = $this->settings->getValueByKey('languages');
-                $language_id = $this->database->getAssocRequest("select language_id from oc_language where name = '{$languages}' ");
-                $language_id = (($language_id)[0])['language_id'];
-                $itdaat_attribute = $this->model_extension_module_itdaat_attributer->getItdaatAttributeByID($attribute_id, $language_id);
-                $this->log->log($itdaat_attribute);
-            }
-        }
-        if ($attribute_id == null) {
-            return;
+       if(!isset($_POST['action'])){
+           return;
+       }
+       $action = explode('|', $_POST['action']);
+        $this->log->log($_POST);
+        if($action[0] == 'delete_itdaat_attribute'){
+            $this->viewPath = self::MODULE_LINK;
+            // die($action[1]);
+            $this->model_extension_module_itdaat_attributer->deleteItdaatAttribute($action[1]);
         }
     }
 

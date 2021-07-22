@@ -1,4 +1,6 @@
 {{header}}
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <div id="content">
 	<div class="page-header">
 		<div class="container-fluid">
@@ -40,16 +42,14 @@
 				</div>
 			</div>
 			<div class="panel panel-default" id="panel-more-space">
-				<div
-					class="panel-body">
+				<div class="panel-body">
 					<div class="col-sm-12">
 						<div class="col-sm-6">
 							<div class="col-sm-12 text-center">
 								<h3>Attributes</h3>
 								<br>
 							</div>
-							<div
-								class="col-sm-12">
+							<div class="col-sm-12">
 								<div class="col-sm-2">
 									<h3>{{itdaat_oc_attribute_name}}</h3>
 								</div>
@@ -72,7 +72,7 @@
 							<div class="col-sm-12" style="margin-bottom:30px">
 								<div class="col-sm-11">
 									<div class="input-group">
-										<input type="text" class="form-control" placeholder="Search" id="txtSearch"/>
+										<input name="attribute_search" class="form-control" placeholder="Search" id="attribute_search"/>
 										<div class="input-group-btn">
 											<button class="btn btn-primary" type="submit" name="search" value="search">
 												<i class="fa fa-search"></i>
@@ -86,19 +86,27 @@
 									</button>
 								</div>
 							</div>
-							<div
-								class="col-sm-12 itdaat-container-overflow">
+							<div class="col-sm-12 itdaat-container-overflow">
 								{% for itdaat_attribute in itdaat_attributes %}
-									<div class="col-sm-12">
-										<button  type="submit" name="action" value="connect_itdaat_attribute|{{itdaat_attribute.id}}" style="all: unset; width: 100%;"  class="btn btn-primary btn-lg btn-block">
-											<div class="list-group">
-												<a class="list-group-item ">
-													<h4 class="list-group-item-heading">{{itdaat_attribute.name}}</h4>
-													<p class="list-group-item-text">{{itdaat_attribute.value}}</p>
-												</a>
-											</div>
-										</button>
+									<div class="col-sm-12" style=" display: flex; justify-content: center; align-items: center;">
+
+										<div class="col-sm-11">
+											<button type="submit" name="action" value="connect_itdaat_attribute|{{itdaat_attribute.id}}" style="all: unset; width: 100%;" class="btn btn-primary btn-lg btn-block">
+												<div class="list-group">
+													<a class="list-group-item ">
+														<h4 class="list-group-item-heading">{{itdaat_attribute.name}}</h4>
+														<p class="list-group-item-text">{{itdaat_attribute.value}}</p>
+													</a>
+												</div>
+											</button>
+										</div>
+										<div class="col-sm-1 container" style=" height: 100%; display:flex;justify-content:center;align-items:center;">
+											<button class="btn btn-danger" type="submit" name="action" value="delete_itdaat_attribute|{{itdaat_attribute.id}}">
+												<i class="fa fa-trash" aria-hidden="true"></i>
+											</button>
+										</div>
 									</div>
+
 								{% endfor %}
 							</div>
 						</div>
