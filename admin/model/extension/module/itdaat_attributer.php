@@ -79,6 +79,25 @@ class ModelExtensionModuleItdaatAttributer extends ModelItDaat {
         ");
     }
 
+    public function syncDictionary(){
+        $this->database->setRequest("
+            delete from oc_product_attribute where attribute_id is null;
+        ");
+        $this->database->setRequest("
+            if (select count(*) from oc_itdaat_product_attribute) > 0 then
+                delete from oc_itdaat_product_attribute2;
+                insert into oc_itdaat_product_attribute2 (attribute_id, language_id, product_id, text)
+            select oc_itdaat_product_attribute.attribute_id, oc_itdaat_product_attribute.language_id, oc_itdaat_product_attribute.product_id, oc_itdaat_product_attribute.text from oc_itdaat_product_attribute;
+    
+            delete  from oc_itdaat_product_attribute;
+            end if;
+        ");
+        $this->database->setRequest("
+            insert into oc_product_attribute (attribute_id,language_id,product_id,text)
+            select oc_itdaat_product_attribute2.attribute_id, oc_itdaat_product_attribute2.language_id, oc_itdaat_product_attribute2.product_id, oc_itdaat_product_attribute2.text from oc_itdaat_product_attribute2;
+        ");
+    }
+
     public function getAttributeToSet(){
         $languages = $this->settings->getValueByKey('languages');
         $language_id = $this->database->getAssocRequest("select language_id from oc_language where name = '{$languages}' ");

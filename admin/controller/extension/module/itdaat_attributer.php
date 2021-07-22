@@ -16,6 +16,7 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat
         $this->deleteItdaatAttribute();
         $this->connectItdaatAttributerDictionary();
         $this->connectedToItdaatAttribute();
+        $this->syncDictionary();
         $this->generateViewData();
         $this->module();
     }
@@ -143,8 +144,17 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat
         $this->log->log($_POST);
         if($action[0] == 'delete_itdaat_attribute'){
             $this->viewPath = self::MODULE_LINK;
-            // die($action[1]);
             $this->model_extension_module_itdaat_attributer->deleteItdaatAttribute($action[1]);
+        }
+    }
+
+    public function syncDictionary(){
+        if(!isset($_POST['action'])){
+            return;
+        }
+        if($_POST['action'] == 'sync'){
+            $this->viewPath = self::MODULE_LINK;
+            $this->model_extension_module_itdaat_attributer->syncDictionary();
         }
     }
 
