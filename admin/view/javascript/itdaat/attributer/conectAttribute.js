@@ -49,7 +49,7 @@ function findAttributeByName(a){
                                 </div>
                             </button>
                         </div>
-                        <div class="col-sm-1 container" style=" display: table-cell;vertical-align: middle">
+                        <div class="col-sm-1 container child" >
                             <button class="btn btn-danger" type="submit" name="action" value="delete_itdaat_attribute|`+ element['id'] + `">
                                 <i class="fa fa-trash" aria-hidden="true"></i>
                             </button>
