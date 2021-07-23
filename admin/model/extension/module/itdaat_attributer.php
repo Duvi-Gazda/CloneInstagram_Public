@@ -92,9 +92,7 @@ class ModelExtensionModuleItdaatAttributer extends ModelItDaat {
                 $res[] = $r;
             }
         }
-        $this->log->log($res);
         return $res;
-        // $this->log->log($res, "dbRes");
     }
 
     public function getItdaatAttributeByID($attr_id, $language_id){

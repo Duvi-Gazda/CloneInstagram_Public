@@ -161,7 +161,6 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat
            return;
        }
        $action = explode('|', $_POST['action']);
-        $this->log->log($_POST);
         if($action[0] == 'delete_itdaat_attribute'){
             $this->viewPath = self::MODULE_LINK;
             $this->model_extension_module_itdaat_attributer->deleteItdaatAttribute($action[1]);
