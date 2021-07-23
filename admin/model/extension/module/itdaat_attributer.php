@@ -57,6 +57,46 @@ class ModelExtensionModuleItdaatAttributer extends ModelItDaat {
         ");
     }
 
+    public function searchItdaatAttributeByName($name,$language_id){
+        $db = new itdaat_database();
+        $languages = $this->settings->getValueByKey('languages');
+        $language_id = $this->database->getAssocRequest("select language_id from oc_language where name = '{$languages}' ");
+        $language_id = (($language_id)[0])['language_id'];
+        $query = "
+            SELECT
+            oc_itdaat_attribute_name.name,
+            oc_itdaat_attribute_value.value,
+            oc_itdaat_attribute_name.itdaat_attribute_id
+            from
+            oc_itdaat_attribute
+            left join oc_itdaat_attribute_name on oc_itdaat_attribute.id = oc_itdaat_attribute_name.itdaat_attribute_id
+            left join oc_itdaat_attribute_value on oc_itdaat_attribute_value.itdaat_attribute_id = oc_itdaat_attribute.id and oc_itdaat_attribute_name.language_id = oc_itdaat_attribute_value.language_id
+            where oc_itdaat_attribute_name.language_id = {$language_id} and oc_itdaat_attribute_name.name like '%{$name}%' and oc_itdaat_attribute.id = 
+        "; 
+        $itdaat_attributes = $db->getAssocRequest("SELECT id from oc_itdaat_attribute");
+        $res = [];
+        $rows = [];
+        foreach ($itdaat_attributes as $key => $attr){
+            $rows[$key] = $db->getAssocRequest($query . $attr['id']);
+            $r = [];
+            foreach ($rows[$key] as &$row){
+                $r['name'] = $row['name']; 
+                $r['id'] = $row['itdaat_attribute_id'];
+                if(isset($r['value'])){
+                    $r['value'] = $r['value'] . ', ' . $row['value'];
+                } else {
+                    $r['value'] = $row['value'];
+                }
+            }
+            if($r != []){
+                $res[] = $r;
+            }
+        }
+        $this->log->log($res);
+        return $res;
+        // $this->log->log($res, "dbRes");
+    }
+
     public function getItdaatAttributeByID($attr_id, $language_id){
         return $this->database->getAssocRequest("
             select oc_itdaat_attribute_value.value, oc_itdaat_attribute_value.id from oc_itdaat_attribute_name

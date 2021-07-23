@@ -12,11 +12,17 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat
         $this->moduleFilePath = DIR_SYSTEM . '/ITdaat/itdaat_attributer.php';
         $this->run(self::MODULE_LINK, 'extension/module');
         $this->load->model('extension/module/itdaat_attributer');
+        $this->document->addScript('view/javascript/itdaat/attributer/conectAttribute.js');
         $this->addItdaatAttribute();
         $this->deleteItdaatAttribute();
         $this->connectItdaatAttributerDictionary();
         $this->connectedToItdaatAttribute();
         $this->syncDictionary();
+        $findAttribute = $this->searchAttributeByName();
+        if($_POST['action'] == 'search_attribute_by_name'){
+            echo json_encode($findAttribute);
+            return; 
+        }
         $this->generateViewData();
         $this->module();
     }
@@ -79,7 +85,6 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat
 
 
             $this->data['back_url'] = $_SERVER['REQUEST_URI'];
-            $this->document->addScript('view/javascript/itdaat/attributer/conectAttribute.js');
             $this->data['no'] = $this->language->get('select_none');
             $this->data['new'] = $this->language->get('select_new');
             $this->viewPath = 'extension/module/itdaat_attributer/itdaat_attributer_connect_itdaat_attribute';
@@ -155,6 +160,19 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat
         if($_POST['action'] == 'sync'){
             $this->viewPath = self::MODULE_LINK;
             $this->model_extension_module_itdaat_attributer->syncDictionary();
+        }
+    }
+
+    public function searchAttributeByName(){
+        if(!isset($_POST['action'])){
+            return;
+        }
+        if($_POST['action'] == 'search_attribute_by_name'){
+            $languages = $this->settings->getValueByKey('languages');
+            $language_id = $this->database->getAssocRequest("select language_id from oc_language where name = '{$languages}' ");
+            $language_id = (($language_id)[0])['language_id'];
+            $res =  $this->model_extension_module_itdaat_attributer->searchItdaatAttributeByName($_POST['attribute_name'],$language_id);
+            return $res != null ? $res : false;
         }
     }
 

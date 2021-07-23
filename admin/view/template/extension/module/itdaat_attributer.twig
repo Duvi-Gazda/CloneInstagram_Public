@@ -1,6 +1,4 @@
 {{header}}
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <div id="content">
 	<div class="page-header">
 		<div class="container-fluid">
@@ -89,9 +87,9 @@
 									</button>
 								</div>
 							</div>
-							<div class="col-sm-12 itdaat-container-overflow">
+							<div class="col-sm-12 itdaat-container-overflow" id="attributes_list">
 								{% for itdaat_attribute in itdaat_attributes %}
-									<div class="col-sm-12">
+									<div class="col-sm-12" >
 
 										<div class="col-sm-11 container">
 											<button type="submit" name="action" value="connect_itdaat_attribute|{{itdaat_attribute.id}}" style="all: unset; width: 100%; height: 100%;" class="btn btn-primary btn-lg btn-block">
