@@ -13,6 +13,21 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat
         $this->run(self::MODULE_LINK, 'extension/module');
         $this->load->model('extension/module/itdaat_attributer');
         $this->document->addScript('view/javascript/itdaat/attributer/conectAttribute.js');
+
+
+        $this->database->getAssocRequest("select language_id, name from oc_language");
+        $this->data['itdaat_languages'] = $this->database->getFields();
+
+        $this->database->getAssocRequest("select name from oc_language");
+        $languages = $this->database->getValueToValue_Field();
+        $this->addFullInputSelect(
+            'languages',
+            $languages,
+            $this->data,
+            $this->language->get('Languages'),
+            'languages',
+        );
+
         $this->addItdaatAttribute();
         $this->deleteItdaatAttribute();
         $this->connectItdaatAttributerDictionary();
@@ -182,19 +197,6 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat
         $this->addCancelButton($this->data, 'marketplace/extension');
         $this->addSaveSettingsButton($this->data, self::MODULE_LINK);
         $this->generateOC_Attributes();
-
-        $this->database->getAssocRequest("select language_id, name from oc_language");
-        $this->data['itdaat_languages'] = $this->database->getFields();
-
-        $this->database->getAssocRequest("select name from oc_language");
-        $languages = $this->database->getValueToValue_Field();
-        $this->addFullInputSelect(
-            'languages',
-            $languages,
-            $this->data,
-            $this->language->get('Languages'),
-            'languages',
-        );
         $this->data['itdaat_attributes'] = $this->model_extension_module_itdaat_attributer->connectItdaatAttributes($this->database->getFields());
         $this->data['current_url'] = $_SERVER['REQUEST_URI'];
         $this->data['add_attribute_placeholder'] = $this->language->get('add_attribute_placeholder');

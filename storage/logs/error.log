@@ -14281,3 +14281,8 @@
 2021-07-23 13:16:11 - PHP Notice:  Undefined index: action in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 22
 2021-07-23 13:16:30 - PHP Notice:  Undefined index: action in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 22
 2021-07-23 13:16:46 - PHP Notice:  Undefined index: action in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 22
+2021-07-23 16:35:48 - PHP Notice:  Undefined index: action in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 22
+2021-07-23 16:42:15 - PHP Notice:  Undefined index: action in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 37
+2021-07-23 16:42:20 - PHP Notice:  Undefined index: action in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 37
+2021-07-23 16:42:20 - PHP Notice:  Undefined index: name in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 210
+2021-07-23 16:42:26 - PHP Notice:  Undefined index: action in /home/david/Sync/Projects/ITdaat/Opencart/Attributer/admin/controller/extension/module/itdaat_attributer.php on line 37
