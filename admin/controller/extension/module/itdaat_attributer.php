@@ -28,7 +28,7 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat
             'languages',
         );
 
-        $this->addItdaatAttribute();
+        $this->post_listener();
         $this->deleteItdaatAttribute();
         $this->connectItdaatAttributerDictionary();
         $this->connectedToItdaatAttribute();
@@ -49,34 +49,41 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat
         $this->module->run([]);
     }
 
-    private function addItdaatAttribute()
-    {
-        if (!isset($_POST['action'])) {
-            return;
+    private function post_listener(){
+        if(!isset($this->request->post)){return;}
+        $this->data['back_url'] = $_SERVER['REQUEST_URI'];
+        $action = $this->request->post['action'];
+        switch($action){
+            case 'new_itdaat_attribute':
+                $this->addItdaatAttributePage();
+                break;
+            case '':
+                break;
         }
-        if (!isset($_POST['itdaat_attributes_name'])) {
-            $this->data['back_url'] = $_SERVER['REQUEST_URI'];
+    }
+
+    private function getSelectedLanguage():int{
+        $languages = $this->settings->getValueByKey('languages');
+        $language_id = $this->database->getAssocRequest("select language_id from oc_language where name = '{$languages}' ");
+        $language_id = (($language_id)[0])['language_id'];
+        return $language_id;
+    }
+
+    private function addItdaatAttributePage(){
+        if(!isset($this->request->post['itdaat_attributes_name'])){
             $this->viewPath = 'extension/module/itdaat_attributer/itdaat_attributer_add_itdaat_attribute';
-        } else {
-            if($_POST['action'] == 'new_itdaat_attribute'){
-                $this->viewPath = self::MODULE_LINK;
-                $this->data['back_url'] = $_SERVER['REQUEST_URI'];
-                
-                
-                if (isset($_POST['itdaat_oc_attributes'])) {
-                    $itdaat_attributes = $_POST['itdaat_oc_attributes'];
-                } else {
-                    $itdaat_attributes = null;
-                }    
-                $itdaat_attributes_name = $_POST['itdaat_attributes_name'];
-                $itdaat_attr_id = $this->model_extension_module_itdaat_attributer->addItdaatAttribute($itdaat_attributes_name, $itdaat_attributes);
-                $languages = $this->settings->getValueByKey('languages');
-                $language_id = $this->database->getAssocRequest("select language_id from oc_language where name = '{$languages}' ");
-                $language_id = (($language_id)[0])['language_id'];
-                foreach ($itdaat_attributes as $key => $value) {
-                    $this->model_extension_module_itdaat_attributer->addItdaatAttributeValue($language_id, $itdaat_attr_id, $value);
-                }
-            }
+        } else{
+            $this->viewPath = self::MODULE_LINK;
+            $this->addItdaatAttribute();
+        }
+    }
+
+    private function addItdaatAttribute(){
+        $oc_attributes = $this->request->post['itdaat_oc_attributes'];
+        $itdaat_attributes_name = $this->request->post['itdaat_attributes_name'];
+        $itdaat_attr_id = $this->model_extension_module_itdaat_attributer->addItdaatAttribute($itdaat_attributes_name, $oc_attributes);
+        foreach ($oc_attributes as $key => $value) {
+            $this->model_extension_module_itdaat_attributer->addItdaatAttributeValue($this->getSelectedLanguage(), $itdaat_attr_id, $value);
         }
     }
 
