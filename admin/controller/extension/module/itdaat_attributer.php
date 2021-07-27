@@ -93,6 +93,7 @@ class ControllerExtensionModuleItdaatAttributer extends ControllerItdaat
             return;
         }
         $action = explode("|", $_POST['action']);
+        
         if ($action[0] == 'connect_itdaat_attribute' || $action[0] == 'delete_itdaat_attribute_value') {
             $languages = $this->settings->getValueByKey('languages');
             $language_id = $this->database->getAssocRequest("select language_id from oc_language where name = '{$languages}' ");
